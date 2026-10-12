@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-12T07:04:19.883Z",
+ "generated": "2026-10-12T07:13:25.797Z",
  "classes": [
   {
    "id": "micro",
@@ -452,9 +452,188 @@
    "done": false
   }
  ],
+ "topics": [
+  {
+   "note": "Unit 1 - What Is Economics",
+   "cls": "micro",
+   "concepts": [
+    "Marginal Analysis",
+    "Opportunity Cost",
+    "Scarcity and Competition",
+    "Scientific Method"
+   ]
+  },
+  {
+   "note": "Unit 2 - The Economic Problem",
+   "cls": "micro",
+   "concepts": [
+    "Marginal Analysis",
+    "Opportunity Cost"
+   ]
+  },
+  {
+   "note": "Unit 3 - Supply and Demand",
+   "cls": "micro",
+   "concepts": [
+    "Opportunity Cost"
+   ]
+  },
+  {
+   "note": "Unit 4 - Elasticity",
+   "cls": "micro",
+   "concepts": [
+    "Sensitivity and Elasticity"
+   ]
+  },
+  {
+   "note": "Unit 5 - Consumer Demand",
+   "cls": "micro",
+   "concepts": [
+    "Marginal Analysis",
+    "Opportunity Cost",
+    "Scarcity and Competition"
+   ]
+  },
+  {
+   "note": "Week 1 - Functions and Trig Review",
+   "cls": "calc",
+   "concepts": []
+  },
+  {
+   "note": "Week 2 - Exponentials, Logs, Inverses and Limits",
+   "cls": "calc",
+   "concepts": [
+    "Marginal Analysis"
+   ]
+  },
+  {
+   "note": "Week 3 - Limits and Continuity",
+   "cls": "calc",
+   "concepts": []
+  },
+  {
+   "note": "Week 4 - IVT and Limits at Infinity",
+   "cls": "calc",
+   "concepts": []
+  },
+  {
+   "note": "Week 2 - What Is Anthropology",
+   "cls": "anthro",
+   "concepts": [
+    "Culture",
+    "Scientific Method"
+   ]
+  },
+  {
+   "note": "Week 3a - What Is a Primate",
+   "cls": "anthro",
+   "concepts": []
+  },
+  {
+   "note": "Week 3b - Primate Behaviour",
+   "cls": "anthro",
+   "concepts": [
+    "Culture",
+    "Scientific Method"
+   ]
+  },
+  {
+   "note": "Week 4 - Evolutionary Thought and Theory",
+   "cls": "anthro",
+   "concepts": [
+    "Culture",
+    "Scarcity and Competition",
+    "Scientific Method"
+   ]
+  },
+  {
+   "note": "01 - Course Intro and the Case Method",
+   "cls": "business",
+   "concepts": []
+  },
+  {
+   "note": "02 - The Three Financial Statements",
+   "cls": "business",
+   "concepts": [
+    "Opportunity Cost"
+   ]
+  },
+  {
+   "note": "03 - The Plug",
+   "cls": "business",
+   "concepts": [
+    "Sensitivity and Elasticity"
+   ]
+  },
+  {
+   "note": "04 - Statement of Cash Flows",
+   "cls": "business",
+   "concepts": []
+  },
+  {
+   "note": "05 - Financial Ratios",
+   "cls": "business",
+   "concepts": []
+  },
+  {
+   "note": "06 - Projected Financial Statements",
+   "cls": "business",
+   "concepts": [
+    "Sensitivity and Elasticity"
+   ]
+  },
+  {
+   "note": "07 - Working Capital Gap",
+   "cls": "business",
+   "concepts": [
+    "Opportunity Cost",
+    "Sensitivity and Elasticity"
+   ]
+  },
+  {
+   "note": "FAM Study Guide",
+   "cls": "business",
+   "concepts": [
+    "Sensitivity and Elasticity"
+   ]
+  },
+  {
+   "note": "Unit 1 - Introduction to Critical Thinking",
+   "cls": "philosophy",
+   "concepts": []
+  },
+  {
+   "note": "Unit 2 - Arguments and Standard Form",
+   "cls": "philosophy",
+   "concepts": []
+  },
+  {
+   "note": "Unit 3 - Validity and Argument Forms",
+   "cls": "philosophy",
+   "concepts": []
+  },
+  {
+   "note": "Web Reading - Statements",
+   "cls": "philosophy",
+   "concepts": []
+  },
+  {
+   "note": "Web Reading - Valid Patterns",
+   "cls": "philosophy",
+   "concepts": []
+  }
+ ],
+ "concepts": [
+  "Culture",
+  "Marginal Analysis",
+  "Opportunity Cost",
+  "Scarcity and Competition",
+  "Scientific Method",
+  "Sensitivity and Elasticity"
+ ],
  "cards": [
   {
-   "id": "7a4bfa1555",
+   "id": "749b9084cd",
    "cls": "micro",
    "note": "Unit 1 - What Is Economics",
    "kind": "term",
@@ -462,7 +641,7 @@
    "back": "wants are greater than the resources available to satisfy them."
   },
   {
-   "id": "0771c5f55f",
+   "id": "cdc2999893",
    "cls": "micro",
    "note": "Unit 1 - What Is Economics",
    "kind": "term",
@@ -470,7 +649,7 @@
    "back": "individual decisions and markets, versus the national and global economy."
   },
   {
-   "id": "c873985d3d",
+   "id": "9a4f0661f5",
    "cls": "micro",
    "note": "Unit 1 - What Is Economics",
    "kind": "term",
@@ -478,7 +657,7 @@
    "back": "getting more of one thing means giving up some of something else."
   },
   {
-   "id": "995f893ef8",
+   "id": "c3a1b96f8c",
    "cls": "micro",
    "note": "Unit 1 - What Is Economics",
    "kind": "term",
@@ -486,7 +665,7 @@
    "back": "the best alternative you give up to get something."
   },
   {
-   "id": "981eb654a5",
+   "id": "f2473b4afe",
    "cls": "micro",
    "note": "Unit 1 - What Is Economics",
    "kind": "term",
@@ -494,7 +673,7 @@
    "back": "the effect of a little bit more or less of something. See Marginal Analysis."
   },
   {
-   "id": "16847380d8",
+   "id": "86747caacf",
    "cls": "micro",
    "note": "Unit 1 - What Is Economics",
    "kind": "term",
@@ -502,7 +681,7 @@
    "back": "a reward or penalty that changes behaviour."
   },
   {
-   "id": "654d9381be",
+   "id": "12a0bc69ee",
    "cls": "micro",
    "note": "Unit 1 - What Is Economics",
    "kind": "term",
@@ -510,7 +689,7 @@
    "back": "what *is* (testable) versus what *ought to be* (a value judgement)."
   },
   {
-   "id": "6af551991f",
+   "id": "86501fee15",
    "cls": "micro",
    "note": "Unit 1 - What Is Economics",
    "kind": "term",
@@ -518,7 +697,7 @@
    "back": "a simplified description of the world, built to be tested."
   },
   {
-   "id": "e55300abed",
+   "id": "1dac631ce3",
    "cls": "micro",
    "note": "Unit 1 - What Is Economics",
    "kind": "question",
@@ -526,7 +705,7 @@
    "back": ""
   },
   {
-   "id": "a7e54db667",
+   "id": "c23300c1d4",
    "cls": "micro",
    "note": "Unit 1 - What Is Economics",
    "kind": "question",
@@ -534,7 +713,7 @@
    "back": ""
   },
   {
-   "id": "934bafc10c",
+   "id": "5fd84bc080",
    "cls": "micro",
    "note": "Unit 1 - What Is Economics",
    "kind": "question",
@@ -542,7 +721,7 @@
    "back": ""
   },
   {
-   "id": "5be88947de",
+   "id": "6eca73a65a",
    "cls": "micro",
    "note": "Unit 1 - What Is Economics",
    "kind": "question",
@@ -550,7 +729,7 @@
    "back": ""
   },
   {
-   "id": "ffa67619af",
+   "id": "5c4d7c0a37",
    "cls": "micro",
    "note": "Unit 2 - The Economic Problem",
    "kind": "term",
@@ -558,7 +737,7 @@
    "back": "the line between combinations of goods you *can* produce and ones you can't."
   },
   {
-   "id": "fa2a8a1eee",
+   "id": "7506bc981d",
    "cls": "micro",
    "note": "Unit 2 - The Economic Problem",
    "kind": "term",
@@ -566,7 +745,7 @@
    "back": "producing *on* the PPF, with no resources wasted."
   },
   {
-   "id": "f564f6ff8f",
+   "id": "b926cb6c81",
    "cls": "micro",
    "note": "Unit 2 - The Economic Problem",
    "kind": "term",
@@ -574,7 +753,7 @@
    "back": "each extra unit of a good costs more of the other good, which is why the PPF bows outward."
   },
   {
-   "id": "78a4f1c582",
+   "id": "ec9d3b8781",
    "cls": "micro",
    "note": "Unit 2 - The Economic Problem",
    "kind": "term",
@@ -582,7 +761,7 @@
    "back": "the opportunity cost of producing one more unit."
   },
   {
-   "id": "168254bcaf",
+   "id": "26a721f27a",
    "cls": "micro",
    "note": "Unit 2 - The Economic Problem",
    "kind": "term",
@@ -590,7 +769,7 @@
    "back": "the benefit of consuming one more unit, measured by willingness to pay. It falls as you get more."
   },
   {
-   "id": "249b812722",
+   "id": "cb3472dd48",
    "cls": "micro",
    "note": "Unit 2 - The Economic Problem",
    "kind": "term",
@@ -598,7 +777,7 @@
    "back": "producing the mix of goods people value most, where MB = MC."
   },
   {
-   "id": "5b0ce60d11",
+   "id": "4dd44f2ad1",
    "cls": "micro",
    "note": "Unit 2 - The Economic Problem",
    "kind": "term",
@@ -606,7 +785,7 @@
    "back": "being able to produce something at a *lower opportunity cost* than others."
   },
   {
-   "id": "57ea4a7671",
+   "id": "51c097e10d",
    "cls": "micro",
    "note": "Unit 2 - The Economic Problem",
    "kind": "term",
@@ -614,7 +793,7 @@
    "back": "the PPF shifting outward, driven by capital accumulation and technological change."
   },
   {
-   "id": "4eb2c52219",
+   "id": "436c2c2e8a",
    "cls": "micro",
    "note": "Unit 2 - The Economic Problem",
    "kind": "question",
@@ -622,7 +801,7 @@
    "back": ""
   },
   {
-   "id": "406862ca08",
+   "id": "6b436fbb80",
    "cls": "micro",
    "note": "Unit 2 - The Economic Problem",
    "kind": "question",
@@ -630,7 +809,7 @@
    "back": ""
   },
   {
-   "id": "32e0ea22db",
+   "id": "22bcb2eefa",
    "cls": "micro",
    "note": "Unit 2 - The Economic Problem",
    "kind": "question",
@@ -638,7 +817,7 @@
    "back": ""
   },
   {
-   "id": "42aa64c43c",
+   "id": "584d7aff68",
    "cls": "micro",
    "note": "Unit 2 - The Economic Problem",
    "kind": "question",
@@ -646,7 +825,7 @@
    "back": ""
   },
   {
-   "id": "e5de2f2994",
+   "id": "6e287b326f",
    "cls": "micro",
    "note": "Unit 3 - Supply and Demand",
    "kind": "term",
@@ -654,7 +833,7 @@
    "back": "so many buyers and sellers that no one can influence the price."
   },
   {
-   "id": "41c633fd8f",
+   "id": "3ecc9fe752",
    "cls": "micro",
    "note": "Unit 3 - Supply and Demand",
    "kind": "term",
@@ -662,7 +841,7 @@
    "back": "a price measured against other goods. It's an Opportunity Cost."
   },
   {
-   "id": "3ce00ca197",
+   "id": "5684acb126",
    "cls": "micro",
    "note": "Unit 3 - Supply and Demand",
    "kind": "term",
@@ -670,7 +849,7 @@
    "back": "other things equal, a higher price means a smaller quantity demanded."
   },
   {
-   "id": "165d29f9dd",
+   "id": "1cc77c3aab",
    "cls": "micro",
    "note": "Unit 3 - Supply and Demand",
    "kind": "term",
@@ -678,7 +857,7 @@
    "back": "other things equal, a higher price means a larger quantity supplied."
   },
   {
-   "id": "c46af39913",
+   "id": "3252eec845",
    "cls": "micro",
    "note": "Unit 3 - Supply and Demand",
    "kind": "term",
@@ -686,7 +865,7 @@
    "back": "goods used *instead of* each other, versus goods used *together*."
   },
   {
-   "id": "882041bcc2",
+   "id": "dc722e70d5",
    "cls": "micro",
    "note": "Unit 3 - Supply and Demand",
    "kind": "term",
@@ -694,7 +873,7 @@
    "back": "demand rises with income, versus demand falls with income."
   },
   {
-   "id": "691da9b612",
+   "id": "f2a45a63b9",
    "cls": "micro",
    "note": "Unit 3 - Supply and Demand",
    "kind": "term",
@@ -702,7 +881,7 @@
    "back": "the price where quantity demanded = quantity supplied."
   },
   {
-   "id": "50f8aa30e6",
+   "id": "609ef8cfeb",
    "cls": "micro",
    "note": "Unit 3 - Supply and Demand",
    "kind": "term",
@@ -710,7 +889,7 @@
    "back": "price above equilibrium means a surplus and the price falls; price below equilibrium means a shortage and the price rises."
   },
   {
-   "id": "88687b8f8b",
+   "id": "86ec328881",
    "cls": "micro",
    "note": "Unit 3 - Supply and Demand",
    "kind": "question",
@@ -718,7 +897,7 @@
    "back": ""
   },
   {
-   "id": "7905af5063",
+   "id": "7df8f6bcd0",
    "cls": "micro",
    "note": "Unit 3 - Supply and Demand",
    "kind": "question",
@@ -726,7 +905,7 @@
    "back": ""
   },
   {
-   "id": "0a7a019926",
+   "id": "118a4a44e4",
    "cls": "micro",
    "note": "Unit 3 - Supply and Demand",
    "kind": "question",
@@ -734,7 +913,7 @@
    "back": ""
   },
   {
-   "id": "9286fd0afb",
+   "id": "514f0a39bd",
    "cls": "micro",
    "note": "Unit 3 - Supply and Demand",
    "kind": "question",
@@ -742,7 +921,7 @@
    "back": ""
   },
   {
-   "id": "b37e4fde03",
+   "id": "1fcad2d494",
    "cls": "micro",
    "note": "Unit 4 - Elasticity",
    "kind": "term",
@@ -750,7 +929,7 @@
    "back": "= % change in quantity demanded ÷ % change in price (use the magnitude)\n• **> 1: elastic** (quantity reacts a lot)\n• **= 1: unit elastic**\n• **< 1: inelastic** (quantity barely reacts)"
   },
   {
-   "id": "336d7675cc",
+   "id": "c8437915f0",
    "cls": "micro",
    "note": "Unit 4 - Elasticity",
    "kind": "term",
@@ -758,7 +937,7 @@
    "back": "= % change in quantity demanded ÷ % change in income\n• Positive: **normal good** (> 1 income elastic, 0–1 income inelastic)\n• Negative: **inferior good**"
   },
   {
-   "id": "584e441a2d",
+   "id": "48313eb265",
    "cls": "micro",
    "note": "Unit 4 - Elasticity",
    "kind": "term",
@@ -766,7 +945,7 @@
    "back": "= % change in quantity of good A ÷ % change in price of good B\n• Positive: **substitutes**\n• Negative: **complements**"
   },
   {
-   "id": "c6cd71c394",
+   "id": "0a96a3edae",
    "cls": "micro",
    "note": "Unit 4 - Elasticity",
    "kind": "term",
@@ -774,7 +953,7 @@
    "back": "= % change in quantity supplied ÷ % change in price (ranges from 0, a vertical curve, to infinity, a horizontal curve)"
   },
   {
-   "id": "a0f0925a7b",
+   "id": "7a8dee7c33",
    "cls": "micro",
    "note": "Unit 4 - Elasticity",
    "kind": "question",
@@ -782,7 +961,7 @@
    "back": ""
   },
   {
-   "id": "b979064067",
+   "id": "b9f3a18a7d",
    "cls": "micro",
    "note": "Unit 4 - Elasticity",
    "kind": "question",
@@ -790,7 +969,7 @@
    "back": ""
   },
   {
-   "id": "072bcb4f17",
+   "id": "e0f5a86e9e",
    "cls": "micro",
    "note": "Unit 4 - Elasticity",
    "kind": "question",
@@ -798,7 +977,7 @@
    "back": ""
   },
   {
-   "id": "65cecb98df",
+   "id": "a400890a72",
    "cls": "micro",
    "note": "Unit 4 - Elasticity",
    "kind": "question",
@@ -806,7 +985,7 @@
    "back": ""
   },
   {
-   "id": "8048f84f2c",
+   "id": "a9e5135f0b",
    "cls": "micro",
    "note": "Unit 5 - Consumer Demand",
    "kind": "term",
@@ -814,7 +993,7 @@
    "back": "has consistent preferences and picks the best affordable bundle. Preferences are learned from *choices* (revealed preference, Samuelson), not from reading minds."
   },
   {
-   "id": "e287bdb0ac",
+   "id": "c1d77b4482",
    "cls": "micro",
    "note": "Unit 5 - Consumer Demand",
    "kind": "term",
@@ -822,7 +1001,7 @@
    "back": "all bundles that use up the whole budget: P_M·Q_M + P_S·Q_S = Y."
   },
   {
-   "id": "1d467b73bb",
+   "id": "7dd5dae950",
    "cls": "micro",
    "note": "Unit 5 - Consumer Demand",
    "kind": "term",
@@ -830,7 +1009,7 @@
    "back": "the affordable area on and under the budget line."
   },
   {
-   "id": "b3b254e4c7",
+   "id": "b87b9d93f7",
    "cls": "micro",
    "note": "Unit 5 - Consumer Demand",
    "kind": "term",
@@ -838,7 +1017,7 @@
    "back": "price of one good in terms of the other. It is the (negative) slope of the budget line: −P_M/P_S."
   },
   {
-   "id": "b31cfbb3df",
+   "id": "61458fbaa5",
    "cls": "micro",
    "note": "Unit 5 - Consumer Demand",
    "kind": "term",
@@ -846,7 +1025,7 @@
    "back": "combinations of goods that are equally good to the consumer. Higher curves are better (\"more is better\")."
   },
   {
-   "id": "ad769a9772",
+   "id": "a381eddf56",
    "cls": "micro",
    "note": "Unit 5 - Consumer Demand",
    "kind": "term",
@@ -854,7 +1033,7 @@
    "back": "how much of one good you'd give up for one more of the other and still be equally happy. It's the slope of the indifference curve and measures marginal benefit."
   },
   {
-   "id": "8318c7c4db",
+   "id": "f8ffa46c70",
    "cls": "micro",
    "note": "Unit 5 - Consumer Demand",
    "kind": "term",
@@ -862,7 +1041,7 @@
    "back": "curves get flatter as you move right, which reflects a preference for variety."
   },
   {
-   "id": "b723425cd7",
+   "id": "57fb6b162e",
    "cls": "micro",
    "note": "Unit 5 - Consumer Demand",
    "kind": "question",
@@ -870,7 +1049,7 @@
    "back": ""
   },
   {
-   "id": "0a256770b5",
+   "id": "2fb3e2a466",
    "cls": "micro",
    "note": "Unit 5 - Consumer Demand",
    "kind": "question",
@@ -878,7 +1057,7 @@
    "back": ""
   },
   {
-   "id": "155ce46a5a",
+   "id": "572e9c6651",
    "cls": "micro",
    "note": "Unit 5 - Consumer Demand",
    "kind": "question",
@@ -886,7 +1065,7 @@
    "back": ""
   },
   {
-   "id": "337c131354",
+   "id": "41a9c5bac9",
    "cls": "micro",
    "note": "Unit 5 - Consumer Demand",
    "kind": "question",
@@ -894,7 +1073,7 @@
    "back": ""
   },
   {
-   "id": "8c5bc12d06",
+   "id": "54c5cff634",
    "cls": "micro",
    "note": "Unit 5 - Consumer Demand",
    "kind": "question",
@@ -902,7 +1081,7 @@
    "back": ""
   },
   {
-   "id": "19b14ebaf3",
+   "id": "c59f76bf69",
    "cls": "micro",
    "note": "Unit 5 - Consumer Demand",
    "kind": "question",
@@ -910,7 +1089,7 @@
    "back": ""
   },
   {
-   "id": "1b40e5787f",
+   "id": "babd353058",
    "cls": "micro",
    "note": "Unit 5 - Consumer Demand",
    "kind": "question",
@@ -918,7 +1097,7 @@
    "back": ""
   },
   {
-   "id": "4cb729bef2",
+   "id": "90a026891e",
    "cls": "calc",
    "note": "Week 1 - Functions and Trig Review",
    "kind": "term",
@@ -926,7 +1105,7 @@
    "back": "put g(x) inside f. Order matters: f(g(x)) ≠ g(f(x)) in general."
   },
   {
-   "id": "af0f81f5d1",
+   "id": "62c2cf3e72",
    "cls": "calc",
    "note": "Week 1 - Functions and Trig Review",
    "kind": "term",
@@ -934,7 +1113,7 @@
    "back": "different rules on different intervals (written with a left brace)."
   },
   {
-   "id": "0e33e20ac5",
+   "id": "4fdc8262dd",
    "cls": "calc",
    "note": "Week 1 - Functions and Trig Review",
    "kind": "term",
@@ -942,7 +1121,7 @@
    "back": "|stuff| = stuff when stuff ≥ 0, and −stuff when stuff < 0."
   },
   {
-   "id": "1edf618dd1",
+   "id": "25089abbee",
    "cls": "calc",
    "note": "Week 1 - Functions and Trig Review",
    "kind": "term",
@@ -950,7 +1129,7 @@
    "back": "all inputs where the formula makes sense (no dividing by 0, no even roots of negatives, log inputs > 0)."
   },
   {
-   "id": "68e8698b5e",
+   "id": "32cf888bec",
    "cls": "calc",
    "note": "Week 1 - Functions and Trig Review",
    "kind": "term",
@@ -958,7 +1137,7 @@
    "back": "the circle of radius 1; cos is the x-coordinate, sin the y-coordinate."
   },
   {
-   "id": "4359917df9",
+   "id": "49a793b582",
    "cls": "calc",
    "note": "Week 1 - Functions and Trig Review",
    "kind": "term",
@@ -966,7 +1145,7 @@
    "back": "sin⁻¹, cos⁻¹, tan⁻¹ undo sin, cos, tan, but only on restricted ranges."
   },
   {
-   "id": "6e7c04bbb3",
+   "id": "a6df686d03",
    "cls": "calc",
    "note": "Week 1 - Functions and Trig Review",
    "kind": "question",
@@ -974,7 +1153,7 @@
    "back": ""
   },
   {
-   "id": "42e90a288c",
+   "id": "03c6af0e68",
    "cls": "calc",
    "note": "Week 1 - Functions and Trig Review",
    "kind": "question",
@@ -982,7 +1161,7 @@
    "back": ""
   },
   {
-   "id": "58b8f75cef",
+   "id": "eeea18f6a9",
    "cls": "calc",
    "note": "Week 1 - Functions and Trig Review",
    "kind": "question",
@@ -990,7 +1169,7 @@
    "back": ""
   },
   {
-   "id": "e001668150",
+   "id": "91ad9d09e1",
    "cls": "calc",
    "note": "Week 1 - Functions and Trig Review",
    "kind": "question",
@@ -998,7 +1177,7 @@
    "back": ""
   },
   {
-   "id": "70d7b862da",
+   "id": "13082f7430",
    "cls": "calc",
    "note": "Week 1 - Functions and Trig Review",
    "kind": "question",
@@ -1006,7 +1185,7 @@
    "back": ""
   },
   {
-   "id": "d947b1ca46",
+   "id": "a958c7adea",
    "cls": "calc",
    "note": "Week 1 - Functions and Trig Review",
    "kind": "question",
@@ -1014,7 +1193,7 @@
    "back": ""
   },
   {
-   "id": "90d139da86",
+   "id": "e8ea14b3d1",
    "cls": "calc",
    "note": "Week 2 - Exponentials, Logs, Inverses and Limits",
    "kind": "term",
@@ -1022,7 +1201,7 @@
    "back": "base b > 0 and b ≠ 1."
   },
   {
-   "id": "9b9fe39a75",
+   "id": "3cc0ce7ebb",
    "cls": "calc",
    "note": "Week 2 - Exponentials, Logs, Inverses and Limits",
    "kind": "term",
@@ -1030,7 +1209,7 @@
    "back": "the inverse of bˣ."
   },
   {
-   "id": "a26c8002bf",
+   "id": "6b785db091",
    "cls": "calc",
    "note": "Week 2 - Exponentials, Logs, Inverses and Limits",
    "kind": "term",
@@ -1038,7 +1217,7 @@
    "back": "log base e. **e ≈ 2.718** (Euler's number)."
   },
   {
-   "id": "e5518a2504",
+   "id": "269a93c528",
    "cls": "calc",
    "note": "Week 2 - Exponentials, Logs, Inverses and Limits",
    "kind": "term",
@@ -1046,7 +1225,7 @@
    "back": "undoes f. f⁻¹ is *not* 1/f."
   },
   {
-   "id": "c2b2bd4c46",
+   "id": "5f8af7ec93",
    "cls": "calc",
    "note": "Week 2 - Exponentials, Logs, Inverses and Limits",
    "kind": "term",
@@ -1054,7 +1233,7 @@
    "back": "a function that has an inverse."
   },
   {
-   "id": "661703a58b",
+   "id": "8c48227329",
    "cls": "calc",
    "note": "Week 2 - Exponentials, Logs, Inverses and Limits",
    "kind": "term",
@@ -1062,7 +1241,7 @@
    "back": "where f(x) heads as x approaches a from the left, the right, or both."
   },
   {
-   "id": "ecd3a38092",
+   "id": "0e80c31fc3",
    "cls": "calc",
    "note": "Week 2 - Exponentials, Logs, Inverses and Limits",
    "kind": "question",
@@ -1070,7 +1249,7 @@
    "back": ""
   },
   {
-   "id": "6889a9101e",
+   "id": "ac18185650",
    "cls": "calc",
    "note": "Week 2 - Exponentials, Logs, Inverses and Limits",
    "kind": "question",
@@ -1078,7 +1257,7 @@
    "back": ""
   },
   {
-   "id": "b72acc44b7",
+   "id": "1146108e5b",
    "cls": "calc",
    "note": "Week 2 - Exponentials, Logs, Inverses and Limits",
    "kind": "question",
@@ -1086,7 +1265,7 @@
    "back": ""
   },
   {
-   "id": "e37c2415a3",
+   "id": "5bae84627c",
    "cls": "calc",
    "note": "Week 2 - Exponentials, Logs, Inverses and Limits",
    "kind": "question",
@@ -1094,7 +1273,7 @@
    "back": ""
   },
   {
-   "id": "704b2e26b0",
+   "id": "533b8e35f5",
    "cls": "calc",
    "note": "Week 2 - Exponentials, Logs, Inverses and Limits",
    "kind": "question",
@@ -1102,7 +1281,7 @@
    "back": ""
   },
   {
-   "id": "40638ae84a",
+   "id": "1ce5e7cacc",
    "cls": "calc",
    "note": "Week 2 - Exponentials, Logs, Inverses and Limits",
    "kind": "question",
@@ -1110,7 +1289,7 @@
    "back": ""
   },
   {
-   "id": "7279df3ffe",
+   "id": "bad6c2ce54",
    "cls": "calc",
    "note": "Week 2 - Exponentials, Logs, Inverses and Limits",
    "kind": "question",
@@ -1118,7 +1297,7 @@
    "back": ""
   },
   {
-   "id": "7f557c5a56",
+   "id": "5a2559fedb",
    "cls": "calc",
    "note": "Week 2 - Exponentials, Logs, Inverses and Limits",
    "kind": "question",
@@ -1126,7 +1305,7 @@
    "back": ""
   },
   {
-   "id": "2a1b71df2f",
+   "id": "4d4f2ad75d",
    "cls": "calc",
    "note": "Week 3 - Limits and Continuity",
    "kind": "term",
@@ -1134,7 +1313,7 @@
    "back": "for basic functions (polynomials, rational, trig, eˣ, ln) inside their domain, lim f(x) = f(a)."
   },
   {
-   "id": "8b446d8f74",
+   "id": "368ecb03e6",
    "cls": "calc",
    "note": "Week 3 - Limits and Continuity",
    "kind": "term",
@@ -1142,7 +1321,7 @@
    "back": "limits of sums, differences, products, quotients, powers and roots can be split up **only when each smaller limit exists** (and the bottom limit ≠ 0)."
   },
   {
-   "id": "2d5d988af0",
+   "id": "c135225b71",
    "cls": "calc",
    "note": "Week 3 - Limits and Continuity",
    "kind": "term",
@@ -1150,7 +1329,7 @@
    "back": "if f ≤ g ≤ h near a and f and h both → L, then g → L."
   },
   {
-   "id": "9b2b802386",
+   "id": "2afd91e29f",
    "cls": "calc",
    "note": "Week 3 - Limits and Continuity",
    "kind": "term",
@@ -1158,7 +1337,7 @@
    "back": "lim f(x) = f(a). Needs the limit to exist, f(a) to exist, and them to be equal."
   },
   {
-   "id": "63b1c543d6",
+   "id": "723f427d2e",
    "cls": "calc",
    "note": "Week 3 - Limits and Continuity",
    "kind": "term",
@@ -1166,7 +1345,7 @@
    "back": "substitute u = g(x) to turn a hard limit into an easy one."
   },
   {
-   "id": "0501a0e142",
+   "id": "9f70d952f5",
    "cls": "calc",
    "note": "Week 3 - Limits and Continuity",
    "kind": "question",
@@ -1174,7 +1353,7 @@
    "back": ""
   },
   {
-   "id": "ca880222b3",
+   "id": "d305570b73",
    "cls": "calc",
    "note": "Week 3 - Limits and Continuity",
    "kind": "question",
@@ -1182,7 +1361,7 @@
    "back": ""
   },
   {
-   "id": "de0f74a0c5",
+   "id": "19ba507dcb",
    "cls": "calc",
    "note": "Week 3 - Limits and Continuity",
    "kind": "question",
@@ -1190,7 +1369,7 @@
    "back": ""
   },
   {
-   "id": "cdd9d2ef54",
+   "id": "9cd0937744",
    "cls": "calc",
    "note": "Week 3 - Limits and Continuity",
    "kind": "question",
@@ -1198,7 +1377,7 @@
    "back": ""
   },
   {
-   "id": "4996b10701",
+   "id": "0dd399f969",
    "cls": "calc",
    "note": "Week 3 - Limits and Continuity",
    "kind": "question",
@@ -1206,7 +1385,7 @@
    "back": ""
   },
   {
-   "id": "1a45d7e4fe",
+   "id": "f162a11705",
    "cls": "calc",
    "note": "Week 3 - Limits and Continuity",
    "kind": "question",
@@ -1214,7 +1393,7 @@
    "back": ""
   },
   {
-   "id": "d2ee7d22aa",
+   "id": "cbd2ee06a4",
    "cls": "calc",
    "note": "Week 3 - Limits and Continuity",
    "kind": "question",
@@ -1222,7 +1401,7 @@
    "back": ""
   },
   {
-   "id": "fc415e140e",
+   "id": "29512e6a2c",
    "cls": "calc",
    "note": "Week 4 - IVT and Limits at Infinity",
    "kind": "term",
@@ -1230,7 +1409,7 @@
    "back": "if f is continuous on [a, b] and z is between f(a) and f(b), some c in [a, b] has f(c) = z."
   },
   {
-   "id": "7e105224aa",
+   "id": "8664e47115",
    "cls": "calc",
    "note": "Week 4 - IVT and Limits at Infinity",
    "kind": "term",
@@ -1238,7 +1417,7 @@
    "back": "finite length, includes both endpoints (e.g., [1, 3])."
   },
   {
-   "id": "f38947e385",
+   "id": "1115b47ecc",
    "cls": "calc",
    "note": "Week 4 - IVT and Limits at Infinity",
    "kind": "term",
@@ -1246,7 +1425,7 @@
    "back": "lim x→∞ f(x) = L or lim x→−∞ f(x) = L."
   },
   {
-   "id": "6c63d34a5a",
+   "id": "8efc1346de",
    "cls": "calc",
    "note": "Week 4 - IVT and Limits at Infinity",
    "kind": "term",
@@ -1254,7 +1433,7 @@
    "back": "the fastest-growing term (largest power, or eˣ beating polynomials)."
   },
   {
-   "id": "d9835b2862",
+   "id": "3db781ecf4",
    "cls": "calc",
    "note": "Week 4 - IVT and Limits at Infinity",
    "kind": "term",
@@ -1262,7 +1441,7 @@
    "back": "not a number; needs a rationalization trick."
   },
   {
-   "id": "9d6debbec8",
+   "id": "1e5461e119",
    "cls": "calc",
    "note": "Week 4 - IVT and Limits at Infinity",
    "kind": "question",
@@ -1270,7 +1449,7 @@
    "back": ""
   },
   {
-   "id": "0766d253dd",
+   "id": "ac22895783",
    "cls": "calc",
    "note": "Week 4 - IVT and Limits at Infinity",
    "kind": "question",
@@ -1278,7 +1457,7 @@
    "back": ""
   },
   {
-   "id": "35e2e8b7a4",
+   "id": "7f1de8de5e",
    "cls": "calc",
    "note": "Week 4 - IVT and Limits at Infinity",
    "kind": "question",
@@ -1286,7 +1465,7 @@
    "back": ""
   },
   {
-   "id": "04c3798ae9",
+   "id": "850f49b50a",
    "cls": "calc",
    "note": "Week 4 - IVT and Limits at Infinity",
    "kind": "question",
@@ -1294,7 +1473,7 @@
    "back": ""
   },
   {
-   "id": "f865c95c72",
+   "id": "380ad4edef",
    "cls": "calc",
    "note": "Week 4 - IVT and Limits at Infinity",
    "kind": "question",
@@ -1302,7 +1481,7 @@
    "back": ""
   },
   {
-   "id": "7c0f28a033",
+   "id": "eece6b2d8d",
    "cls": "calc",
    "note": "Week 4 - IVT and Limits at Infinity",
    "kind": "question",
@@ -1310,7 +1489,7 @@
    "back": ""
   },
   {
-   "id": "31f78dfc27",
+   "id": "fc23479bd6",
    "cls": "calc",
    "note": "Week 4 - IVT and Limits at Infinity",
    "kind": "question",
@@ -1318,7 +1497,7 @@
    "back": ""
   },
   {
-   "id": "468455d4c2",
+   "id": "d70166982b",
    "cls": "calc",
    "note": "Week 4 - IVT and Limits at Infinity",
    "kind": "question",
@@ -1326,7 +1505,7 @@
    "back": ""
   },
   {
-   "id": "564a19c096",
+   "id": "14a4ec32d1",
    "cls": "anthro",
    "note": "Week 2 - What Is Anthropology",
    "kind": "term",
@@ -1334,7 +1513,7 @@
    "back": "from Greek *anthropos* (human) + *logos* (study of)."
   },
   {
-   "id": "2886592eb8",
+   "id": "ad58b00371",
    "cls": "anthro",
    "note": "Week 2 - What Is Anthropology",
    "kind": "term",
@@ -1342,7 +1521,7 @@
    "back": "\n• **Sociocultural**: social and cultural variation between societies\n• **Linguistic**: how language shapes social life and culture\n• **Archaeology**: the human past (and present) through **material remains**\n• **Biological anthropology**: human biology and evolution, seen in a **biocultural** perspective (also called *physical anthropology*)"
   },
   {
-   "id": "c88dc1c527",
+   "id": "6c76856f67",
    "cls": "anthro",
    "note": "Week 2 - What Is Anthropology",
    "kind": "term",
@@ -1350,7 +1529,7 @@
    "back": "you can't understand one part (biology, culture, environment) without the whole."
   },
   {
-   "id": "d82c1e9e94",
+   "id": "45536a0d95",
    "cls": "anthro",
    "note": "Week 2 - What Is Anthropology",
    "kind": "term",
@@ -1358,7 +1537,7 @@
    "back": "compare across cultures, within cultures, across deep time, and with other primates."
   },
   {
-   "id": "694a789c30",
+   "id": "9c83290314",
    "cls": "anthro",
    "note": "Week 2 - What Is Anthropology",
    "kind": "term",
@@ -1366,7 +1545,7 @@
    "back": "understand a practice on its own culture's terms, without judging it by another culture's standards. Associated with Franz Boas."
   },
   {
-   "id": "44ec74472c",
+   "id": "f58347529e",
    "cls": "anthro",
    "note": "Week 2 - What Is Anthropology",
    "kind": "term",
@@ -1374,7 +1553,7 @@
    "back": "shared, learned, social behaviour, or \"the way we do things.\""
   },
   {
-   "id": "46e0d4d3e5",
+   "id": "e928a95135",
    "cls": "anthro",
    "note": "Week 2 - What Is Anthropology",
    "kind": "term",
@@ -1382,7 +1561,7 @@
    "back": "the physical traces of human activity."
   },
   {
-   "id": "775a915626",
+   "id": "92ee3de6e4",
    "cls": "anthro",
    "note": "Week 2 - What Is Anthropology",
    "kind": "term",
@@ -1390,7 +1569,7 @@
    "back": "objects people made or used / natural remains like food waste or seeds."
   },
   {
-   "id": "97ba2ad0df",
+   "id": "db2504a55c",
    "cls": "anthro",
    "note": "Week 2 - What Is Anthropology",
    "kind": "question",
@@ -1398,7 +1577,7 @@
    "back": ""
   },
   {
-   "id": "dfec190110",
+   "id": "01bf25455d",
    "cls": "anthro",
    "note": "Week 2 - What Is Anthropology",
    "kind": "question",
@@ -1406,7 +1585,7 @@
    "back": ""
   },
   {
-   "id": "1806945d25",
+   "id": "5c3850c7bd",
    "cls": "anthro",
    "note": "Week 2 - What Is Anthropology",
    "kind": "question",
@@ -1414,7 +1593,7 @@
    "back": ""
   },
   {
-   "id": "90a2cb56db",
+   "id": "2899bc0c4b",
    "cls": "anthro",
    "note": "Week 2 - What Is Anthropology",
    "kind": "question",
@@ -1422,7 +1601,7 @@
    "back": ""
   },
   {
-   "id": "0f3c949c40",
+   "id": "2086a387e2",
    "cls": "anthro",
    "note": "Week 2 - What Is Anthropology",
    "kind": "question",
@@ -1430,7 +1609,7 @@
    "back": ""
   },
   {
-   "id": "70af7ddbf5",
+   "id": "8adf19620b",
    "cls": "anthro",
    "note": "Week 2 - What Is Anthropology",
    "kind": "question",
@@ -1438,7 +1617,7 @@
    "back": ""
   },
   {
-   "id": "af38c110c0",
+   "id": "af3e5a4aa6",
    "cls": "anthro",
    "note": "Week 3a - What Is a Primate",
    "kind": "term",
@@ -1446,7 +1625,7 @@
    "back": "the science of classifying living things."
   },
   {
-   "id": "d909d283e4",
+   "id": "abd8374ac2",
    "cls": "anthro",
    "note": "Week 3a - What Is a Primate",
    "kind": "term",
@@ -1454,7 +1633,7 @@
    "back": "*Genus species* naming (e.g., *Homo sapiens*), from **Linnaeus** (*Systema Naturae*, 1735)."
   },
   {
-   "id": "787ef54a10",
+   "id": "dab1862c3b",
    "cls": "anthro",
    "note": "Week 3a - What Is a Primate",
    "kind": "term",
@@ -1462,7 +1641,7 @@
    "back": "different tooth types (incisors, canines, premolars, molars), allowing a varied diet."
   },
   {
-   "id": "c302bf69a1",
+   "id": "aec0cb2329",
    "cls": "anthro",
    "note": "Week 3a - What Is a Primate",
    "kind": "term",
@@ -1470,7 +1649,7 @@
    "back": "count of incisors.canines.premolars.molars in one quarter of the mouth."
   },
   {
-   "id": "71fb5294ae",
+   "id": "29f0c9d24f",
    "cls": "anthro",
    "note": "Week 3a - What Is a Primate",
    "kind": "term",
@@ -1478,7 +1657,7 @@
    "back": "able to grasp."
   },
   {
-   "id": "178438acf3",
+   "id": "57fe28d118",
    "cls": "anthro",
    "note": "Week 3a - What Is a Primate",
    "kind": "term",
@@ -1486,7 +1665,7 @@
    "back": "overlapping fields of view from forward-facing eyes, giving 3D depth perception."
   },
   {
-   "id": "a91c514138",
+   "id": "ca95c2ea21",
    "cls": "anthro",
    "note": "Week 3a - What Is a Primate",
    "kind": "term",
@@ -1494,7 +1673,7 @@
    "back": "sense of smell."
   },
   {
-   "id": "5785a1f8be",
+   "id": "b09988f616",
    "cls": "anthro",
    "note": "Week 3a - What Is a Primate",
    "kind": "term",
@@ -1502,7 +1681,7 @@
    "back": "the moist, hairless nose pad of strepsirhines."
   },
   {
-   "id": "801403a9cd",
+   "id": "9ec8a5c4ea",
    "cls": "anthro",
    "note": "Week 3a - What Is a Primate",
    "kind": "term",
@@ -1510,7 +1689,7 @@
    "back": "living in trees / on the ground."
   },
   {
-   "id": "2aa2616a56",
+   "id": "332f27c3b9",
    "cls": "anthro",
    "note": "Week 3a - What Is a Primate",
    "kind": "term",
@@ -1518,7 +1697,7 @@
    "back": "active by day / at night / at irregular times."
   },
   {
-   "id": "cb423f5e9c",
+   "id": "7ae5a0f7e8",
    "cls": "anthro",
    "note": "Week 3a - What Is a Primate",
    "kind": "term",
@@ -1526,7 +1705,7 @@
    "back": "evolutionary relationships between species, estimated using genetic differences and \"molecular clocks.\""
   },
   {
-   "id": "ce1a043ba0",
+   "id": "341f542c0e",
    "cls": "anthro",
    "note": "Week 3a - What Is a Primate",
    "kind": "term",
@@ -1534,7 +1713,7 @@
    "back": "last common ancestor."
   },
   {
-   "id": "c7b7eba87c",
+   "id": "9898c7032f",
    "cls": "anthro",
    "note": "Week 3a - What Is a Primate",
    "kind": "question",
@@ -1542,7 +1721,7 @@
    "back": ""
   },
   {
-   "id": "d9bb4f3b0d",
+   "id": "8b78302d31",
    "cls": "anthro",
    "note": "Week 3a - What Is a Primate",
    "kind": "question",
@@ -1550,7 +1729,7 @@
    "back": ""
   },
   {
-   "id": "594ca28a05",
+   "id": "7770a0299f",
    "cls": "anthro",
    "note": "Week 3a - What Is a Primate",
    "kind": "question",
@@ -1558,7 +1737,7 @@
    "back": ""
   },
   {
-   "id": "f0ec127af8",
+   "id": "efe244cb1c",
    "cls": "anthro",
    "note": "Week 3a - What Is a Primate",
    "kind": "question",
@@ -1566,7 +1745,7 @@
    "back": ""
   },
   {
-   "id": "25e9ba39cf",
+   "id": "3de3b6c771",
    "cls": "anthro",
    "note": "Week 3a - What Is a Primate",
    "kind": "question",
@@ -1574,7 +1753,7 @@
    "back": ""
   },
   {
-   "id": "7b8f56fcf8",
+   "id": "34f7763a77",
    "cls": "anthro",
    "note": "Week 3a - What Is a Primate",
    "kind": "question",
@@ -1582,7 +1761,7 @@
    "back": ""
   },
   {
-   "id": "d529671edd",
+   "id": "7250958366",
    "cls": "anthro",
    "note": "Week 3a - What Is a Primate",
    "kind": "question",
@@ -1590,7 +1769,7 @@
    "back": ""
   },
   {
-   "id": "94c64c0acc",
+   "id": "695b5cd4f2",
    "cls": "anthro",
    "note": "Week 3b - Primate Behaviour",
    "kind": "term",
@@ -1598,7 +1777,7 @@
    "back": "giving animals human traits. Traditionally avoided in science, but Frans de Waal argued that refusing to do it at all can make us miss real similarities. Do it consciously and critically."
   },
   {
-   "id": "4ceb8e64b7",
+   "id": "078f69be54",
    "cls": "anthro",
    "note": "Week 3b - Primate Behaviour",
    "kind": "term",
@@ -1606,7 +1785,7 @@
    "back": "the study of non-human primates (pioneers: **Jane Goodall** (chimps), **Dian Fossey** (gorillas), **Biruté Galdikas** (orangutans), all supported by Louis Leakey)."
   },
   {
-   "id": "3188ea1e39",
+   "id": "ae581ba369",
    "cls": "anthro",
    "note": "Week 3b - Primate Behaviour",
    "kind": "term",
@@ -1614,7 +1793,7 @@
    "back": "energy used at rest. Smaller animals have a higher BMR, so they need energy-rich food (insects, fruit, seeds; not leaves)."
   },
   {
-   "id": "0f81548c2c",
+   "id": "d215125a71",
    "cls": "anthro",
    "note": "Week 3b - Primate Behaviour",
    "kind": "term",
@@ -1622,7 +1801,7 @@
    "back": "one sex leaves the birth group at maturity (usually males)."
   },
   {
-   "id": "7e27b7a3a8",
+   "id": "9ed82b559c",
    "cls": "anthro",
    "note": "Week 3b - Primate Behaviour",
    "kind": "term",
@@ -1630,7 +1809,7 @@
    "back": "gestation length, interbirth interval, weaning age, maturity age, life expectancy."
   },
   {
-   "id": "9591e38c58",
+   "id": "3f2516f232",
    "cls": "anthro",
    "note": "Week 3b - Primate Behaviour",
    "kind": "term",
@@ -1638,7 +1817,7 @@
    "back": "aggressive or conflict behaviour."
   },
   {
-   "id": "9d6467f53f",
+   "id": "82b5ea6820",
    "cls": "anthro",
    "note": "Week 3b - Primate Behaviour",
    "kind": "term",
@@ -1646,7 +1825,7 @@
    "back": "friendly or bonding behaviour."
   },
   {
-   "id": "efa46bb162",
+   "id": "c525555745",
    "cls": "anthro",
    "note": "Week 3b - Primate Behaviour",
    "kind": "term",
@@ -1654,7 +1833,7 @@
    "back": "helping relatives, which indirectly passes on your own genes."
   },
   {
-   "id": "cc14ba1ae0",
+   "id": "4d2d527fec",
    "cls": "anthro",
    "note": "Week 3b - Primate Behaviour",
    "kind": "term",
@@ -1662,7 +1841,7 @@
    "back": "the period of sexual receptivity around ovulation."
   },
   {
-   "id": "6f2feb7c29",
+   "id": "2aff30edc6",
    "cls": "anthro",
    "note": "Week 3b - Primate Behaviour",
    "kind": "term",
@@ -1670,7 +1849,7 @@
    "back": "few offspring, heavy investment in each (primates). *r-selection*: many offspring, little investment."
   },
   {
-   "id": "e65407fc9a",
+   "id": "4995707da8",
    "cls": "anthro",
    "note": "Week 3b - Primate Behaviour",
    "kind": "term",
@@ -1678,7 +1857,7 @@
    "back": "traits that evolve because they help win mates (big canines, a mandrill's colourful face)."
   },
   {
-   "id": "cb12f8f290",
+   "id": "42b979241a",
    "cls": "anthro",
    "note": "Week 3b - Primate Behaviour",
    "kind": "term",
@@ -1686,7 +1865,7 @@
    "back": "understanding that others have their own beliefs and knowledge."
   },
   {
-   "id": "b66a9456cd",
+   "id": "7eb2f950dc",
    "cls": "anthro",
    "note": "Week 3b - Primate Behaviour",
    "kind": "term",
@@ -1694,7 +1873,7 @@
    "back": "no strong hierarchy."
   },
   {
-   "id": "6533572654",
+   "id": "03d31c1e69",
    "cls": "anthro",
    "note": "Week 3b - Primate Behaviour",
    "kind": "term",
@@ -1702,7 +1881,7 @@
    "back": "wild animals hunted for food, a major threat to primates."
   },
   {
-   "id": "d1217cf15e",
+   "id": "bb96482bec",
    "cls": "anthro",
    "note": "Week 3b - Primate Behaviour",
    "kind": "question",
@@ -1710,7 +1889,7 @@
    "back": ""
   },
   {
-   "id": "bb68505c45",
+   "id": "edcf45c3f0",
    "cls": "anthro",
    "note": "Week 3b - Primate Behaviour",
    "kind": "question",
@@ -1718,7 +1897,7 @@
    "back": ""
   },
   {
-   "id": "7137982848",
+   "id": "ac5d847e8f",
    "cls": "anthro",
    "note": "Week 3b - Primate Behaviour",
    "kind": "question",
@@ -1726,7 +1905,7 @@
    "back": ""
   },
   {
-   "id": "0b95da2151",
+   "id": "94b633287f",
    "cls": "anthro",
    "note": "Week 3b - Primate Behaviour",
    "kind": "question",
@@ -1734,7 +1913,7 @@
    "back": ""
   },
   {
-   "id": "d618dc508b",
+   "id": "355be1dd2f",
    "cls": "anthro",
    "note": "Week 3b - Primate Behaviour",
    "kind": "question",
@@ -1742,7 +1921,7 @@
    "back": ""
   },
   {
-   "id": "9cb176c0fe",
+   "id": "8968017156",
    "cls": "anthro",
    "note": "Week 3b - Primate Behaviour",
    "kind": "question",
@@ -1750,7 +1929,7 @@
    "back": ""
   },
   {
-   "id": "f163bbfb13",
+   "id": "291261b4a5",
    "cls": "anthro",
    "note": "Week 4 - Evolutionary Thought and Theory",
    "kind": "term",
@@ -1758,7 +1937,7 @@
    "back": "a testable, **falsifiable** proposed explanation. If it can't be proven wrong, it's a belief system."
   },
   {
-   "id": "578da4596b",
+   "id": "5f0d7f98a1",
    "cls": "anthro",
    "note": "Week 4 - Evolutionary Thought and Theory",
    "kind": "term",
@@ -1766,7 +1945,7 @@
    "back": "a well-supported explanation backed by lots of evidence."
   },
   {
-   "id": "50cad07d98",
+   "id": "7bd92f08d6",
    "cls": "anthro",
    "note": "Week 4 - Evolutionary Thought and Theory",
    "kind": "term",
@@ -1774,7 +1953,7 @@
    "back": "a conclusion from evidence plus reasoning."
   },
   {
-   "id": "a357e07df2",
+   "id": "b717922242",
    "cls": "anthro",
    "note": "Week 4 - Evolutionary Thought and Theory",
    "kind": "term",
@@ -1782,7 +1961,7 @@
    "back": "(Plato) everything has a fixed, perfect \"ideal\" form."
   },
   {
-   "id": "fe6a8178db",
+   "id": "27ad025f95",
    "cls": "anthro",
    "note": "Week 4 - Evolutionary Thought and Theory",
    "kind": "term",
@@ -1790,7 +1969,7 @@
    "back": "(Aristotle) a fixed ladder of life from simple to complex."
   },
   {
-   "id": "8c7ef31155",
+   "id": "dbc1063477",
    "cls": "anthro",
    "note": "Week 4 - Evolutionary Thought and Theory",
    "kind": "term",
@@ -1798,7 +1977,7 @@
    "back": "nature is directed toward a purpose."
   },
   {
-   "id": "82859a0a17",
+   "id": "8821c718d0",
    "cls": "anthro",
    "note": "Week 4 - Evolutionary Thought and Theory",
    "kind": "term",
@@ -1806,7 +1985,7 @@
    "back": "species never change (the medieval view)."
   },
   {
-   "id": "051d7e998d",
+   "id": "de9aa964b0",
    "cls": "anthro",
    "note": "Week 4 - Evolutionary Thought and Theory",
    "kind": "term",
@@ -1814,7 +1993,7 @@
    "back": "(Hutton, then Lyell) the slow processes we see today worked the same way in the past, so Earth must be very old (\"**deep time**\")."
   },
   {
-   "id": "3290915ff6",
+   "id": "a1850ef8f0",
    "cls": "anthro",
    "note": "Week 4 - Evolutionary Thought and Theory",
    "kind": "term",
@@ -1822,7 +2001,7 @@
    "back": "(Cuvier) sudden disasters caused extinctions."
   },
   {
-   "id": "55cded230b",
+   "id": "99612927a2",
    "cls": "anthro",
    "note": "Week 4 - Evolutionary Thought and Theory",
    "kind": "term",
@@ -1830,7 +2009,7 @@
    "back": "(John Ray) a group that can interbreed and produce **fertile offspring**."
   },
   {
-   "id": "b07c607578",
+   "id": "06af028992",
    "cls": "anthro",
    "note": "Week 4 - Evolutionary Thought and Theory",
    "kind": "term",
@@ -1838,7 +2017,7 @@
    "back": "small changes within a population over a few generations."
   },
   {
-   "id": "e1bb00486a",
+   "id": "fe356d9fd7",
    "cls": "anthro",
    "note": "Week 4 - Evolutionary Thought and Theory",
    "kind": "term",
@@ -1846,7 +2025,7 @@
    "back": "new species forming over long periods."
   },
   {
-   "id": "bddb87d9d8",
+   "id": "cf320dde22",
    "cls": "anthro",
    "note": "Week 4 - Evolutionary Thought and Theory",
    "kind": "term",
@@ -1854,7 +2033,7 @@
    "back": "how successful an individual is at leaving offspring."
   },
   {
-   "id": "e65407fc9a",
+   "id": "0280757ecc",
    "cls": "anthro",
    "note": "Week 4 - Evolutionary Thought and Theory",
    "kind": "term",
@@ -1862,7 +2041,7 @@
    "back": "selection for traits that win mates."
   },
   {
-   "id": "5a8e8a523b",
+   "id": "e6926daf3a",
    "cls": "anthro",
    "note": "Week 4 - Evolutionary Thought and Theory",
    "kind": "term",
@@ -1870,7 +2049,7 @@
    "back": "a DNA segment coding for a molecule / one version of a gene / the gene's position on a chromosome."
   },
   {
-   "id": "04de20a16e",
+   "id": "da27339cc6",
    "cls": "anthro",
    "note": "Week 4 - Evolutionary Thought and Theory",
    "kind": "term",
@@ -1878,7 +2057,7 @@
    "back": "genetic makeup / observable traits."
   },
   {
-   "id": "ceef781118",
+   "id": "88a6627780",
    "cls": "anthro",
    "note": "Week 4 - Evolutionary Thought and Theory",
    "kind": "term",
@@ -1886,7 +2065,7 @@
    "back": "two identical alleles (RR, rr) / two different alleles (Rr)."
   },
   {
-   "id": "04e0621fc1",
+   "id": "968224ace8",
    "cls": "anthro",
    "note": "Week 4 - Evolutionary Thought and Theory",
    "kind": "term",
@@ -1894,7 +2073,7 @@
    "back": "slow steady change / long stability broken by bursts of change."
   },
   {
-   "id": "a15e66d1d4",
+   "id": "66f80d2798",
    "cls": "anthro",
    "note": "Week 4 - Evolutionary Thought and Theory",
    "kind": "question",
@@ -1902,7 +2081,7 @@
    "back": ""
   },
   {
-   "id": "7b470d9181",
+   "id": "23c75ba85b",
    "cls": "anthro",
    "note": "Week 4 - Evolutionary Thought and Theory",
    "kind": "question",
@@ -1910,7 +2089,7 @@
    "back": ""
   },
   {
-   "id": "8c839ba797",
+   "id": "b8f05966d6",
    "cls": "anthro",
    "note": "Week 4 - Evolutionary Thought and Theory",
    "kind": "question",
@@ -1918,7 +2097,7 @@
    "back": ""
   },
   {
-   "id": "392c0975fa",
+   "id": "48372d3059",
    "cls": "anthro",
    "note": "Week 4 - Evolutionary Thought and Theory",
    "kind": "question",
@@ -1926,7 +2105,7 @@
    "back": ""
   },
   {
-   "id": "0fb8d251e6",
+   "id": "2d61379fea",
    "cls": "anthro",
    "note": "Week 4 - Evolutionary Thought and Theory",
    "kind": "question",
@@ -1934,7 +2113,7 @@
    "back": ""
   },
   {
-   "id": "153c1ca74b",
+   "id": "61abe63eb2",
    "cls": "anthro",
    "note": "Week 4 - Evolutionary Thought and Theory",
    "kind": "question",
@@ -1942,7 +2121,7 @@
    "back": ""
   },
   {
-   "id": "3edddda6b0",
+   "id": "a09099b154",
    "cls": "anthro",
    "note": "Week 4 - Evolutionary Thought and Theory",
    "kind": "question",
@@ -1950,7 +2129,7 @@
    "back": ""
   },
   {
-   "id": "0d0f43084d",
+   "id": "ab1ba65374",
    "cls": "anthro",
    "note": "Week 4 - Evolutionary Thought and Theory",
    "kind": "question",
@@ -1958,7 +2137,7 @@
    "back": ""
   },
   {
-   "id": "fb8d91e6de",
+   "id": "7f342e54ed",
    "cls": "anthro",
    "note": "Week 4 - Evolutionary Thought and Theory",
    "kind": "question",
@@ -1966,7 +2145,7 @@
    "back": ""
   },
   {
-   "id": "6e56dab03e",
+   "id": "e8c2c5fd0c",
    "cls": "business",
    "note": "01 - Course Intro and the Case Method",
    "kind": "question",
@@ -1974,7 +2153,7 @@
    "back": ""
   },
   {
-   "id": "69ab93fac4",
+   "id": "f680c7c10b",
    "cls": "business",
    "note": "01 - Course Intro and the Case Method",
    "kind": "question",
@@ -1982,7 +2161,7 @@
    "back": ""
   },
   {
-   "id": "61fc2ef6ea",
+   "id": "5df66b782d",
    "cls": "business",
    "note": "01 - Course Intro and the Case Method",
    "kind": "question",
@@ -1990,7 +2169,7 @@
    "back": ""
   },
   {
-   "id": "65f92d5d9a",
+   "id": "bb0120b2f4",
    "cls": "business",
    "note": "02 - The Three Financial Statements",
    "kind": "question",
@@ -1998,7 +2177,7 @@
    "back": ""
   },
   {
-   "id": "6a81fbeec2",
+   "id": "ba779bb259",
    "cls": "business",
    "note": "02 - The Three Financial Statements",
    "kind": "question",
@@ -2006,7 +2185,7 @@
    "back": ""
   },
   {
-   "id": "aab5d01539",
+   "id": "d9f37fcb06",
    "cls": "business",
    "note": "02 - The Three Financial Statements",
    "kind": "question",
@@ -2014,7 +2193,7 @@
    "back": ""
   },
   {
-   "id": "92a08a6e3f",
+   "id": "b692a6b7d0",
    "cls": "business",
    "note": "02 - The Three Financial Statements",
    "kind": "question",
@@ -2022,7 +2201,7 @@
    "back": ""
   },
   {
-   "id": "91fb5474af",
+   "id": "2f7d19e793",
    "cls": "business",
    "note": "02 - The Three Financial Statements",
    "kind": "question",
@@ -2030,7 +2209,7 @@
    "back": ""
   },
   {
-   "id": "966e9b5730",
+   "id": "e94da58761",
    "cls": "business",
    "note": "03 - The Plug",
    "kind": "question",
@@ -2038,7 +2217,7 @@
    "back": ""
   },
   {
-   "id": "a3b859f55e",
+   "id": "e68545e752",
    "cls": "business",
    "note": "03 - The Plug",
    "kind": "question",
@@ -2046,7 +2225,7 @@
    "back": ""
   },
   {
-   "id": "2781add7c6",
+   "id": "2b84cca262",
    "cls": "business",
    "note": "04 - Statement of Cash Flows",
    "kind": "question",
@@ -2054,7 +2233,7 @@
    "back": ""
   },
   {
-   "id": "9219c8e68d",
+   "id": "c69787d0e1",
    "cls": "business",
    "note": "04 - Statement of Cash Flows",
    "kind": "question",
@@ -2062,7 +2241,7 @@
    "back": ""
   },
   {
-   "id": "02490d56e3",
+   "id": "922621045c",
    "cls": "business",
    "note": "04 - Statement of Cash Flows",
    "kind": "question",
@@ -2070,7 +2249,7 @@
    "back": ""
   },
   {
-   "id": "00d5c97485",
+   "id": "f71905fc26",
    "cls": "business",
    "note": "04 - Statement of Cash Flows",
    "kind": "question",
@@ -2078,7 +2257,7 @@
    "back": ""
   },
   {
-   "id": "58bd0fd08e",
+   "id": "435205db51",
    "cls": "business",
    "note": "05 - Financial Ratios",
    "kind": "question",
@@ -2086,7 +2265,7 @@
    "back": ""
   },
   {
-   "id": "d3b133b420",
+   "id": "1e9f673115",
    "cls": "business",
    "note": "05 - Financial Ratios",
    "kind": "question",
@@ -2094,7 +2273,7 @@
    "back": ""
   },
   {
-   "id": "647044f62c",
+   "id": "f4e1ac5178",
    "cls": "business",
    "note": "05 - Financial Ratios",
    "kind": "question",
@@ -2102,7 +2281,7 @@
    "back": ""
   },
   {
-   "id": "45c6dfe312",
+   "id": "b4d11c658d",
    "cls": "business",
    "note": "05 - Financial Ratios",
    "kind": "question",
@@ -2110,7 +2289,7 @@
    "back": ""
   },
   {
-   "id": "79d2a9960a",
+   "id": "8dd210085b",
    "cls": "business",
    "note": "06 - Projected Financial Statements",
    "kind": "question",
@@ -2118,7 +2297,7 @@
    "back": ""
   },
   {
-   "id": "4bc3f71165",
+   "id": "692c7461e9",
    "cls": "business",
    "note": "06 - Projected Financial Statements",
    "kind": "question",
@@ -2126,7 +2305,7 @@
    "back": ""
   },
   {
-   "id": "222710ecdc",
+   "id": "d24c44c331",
    "cls": "business",
    "note": "06 - Projected Financial Statements",
    "kind": "question",
@@ -2134,7 +2313,7 @@
    "back": ""
   },
   {
-   "id": "e665e2b094",
+   "id": "124bb63057",
    "cls": "business",
    "note": "06 - Projected Financial Statements",
    "kind": "question",
@@ -2142,7 +2321,7 @@
    "back": ""
   },
   {
-   "id": "c027f52dca",
+   "id": "6f10d9e575",
    "cls": "business",
    "note": "07 - Working Capital Gap",
    "kind": "question",
@@ -2150,7 +2329,7 @@
    "back": ""
   },
   {
-   "id": "32daf8825f",
+   "id": "e5f508af70",
    "cls": "business",
    "note": "07 - Working Capital Gap",
    "kind": "question",
@@ -2158,7 +2337,7 @@
    "back": ""
   },
   {
-   "id": "248fcaffc4",
+   "id": "d25d20298f",
    "cls": "business",
    "note": "07 - Working Capital Gap",
    "kind": "question",
@@ -2166,7 +2345,7 @@
    "back": ""
   },
   {
-   "id": "e207c3a4fb",
+   "id": "d009c5a8eb",
    "cls": "business",
    "note": "FAM Study Guide",
    "kind": "question",
@@ -2174,7 +2353,7 @@
    "back": ""
   },
   {
-   "id": "defce69fd8",
+   "id": "432866f120",
    "cls": "business",
    "note": "FAM Study Guide",
    "kind": "question",
@@ -2182,7 +2361,7 @@
    "back": ""
   },
   {
-   "id": "2b790bed0c",
+   "id": "05b8a99321",
    "cls": "business",
    "note": "FAM Study Guide",
    "kind": "question",
@@ -2190,7 +2369,7 @@
    "back": ""
   },
   {
-   "id": "2392c1140b",
+   "id": "e7e0b49d9b",
    "cls": "business",
    "note": "FAM Study Guide",
    "kind": "question",
@@ -2198,7 +2377,7 @@
    "back": ""
   },
   {
-   "id": "d4733babed",
+   "id": "0bd43afde0",
    "cls": "business",
    "note": "FAM Study Guide",
    "kind": "question",
@@ -2206,7 +2385,7 @@
    "back": ""
   },
   {
-   "id": "b452b5fecb",
+   "id": "b210da27e3",
    "cls": "philosophy",
    "note": "Unit 1 - Introduction to Critical Thinking",
    "kind": "term",
@@ -2214,7 +2393,7 @@
    "back": "\"the ability to think clearly and rationally about what to do or what to believe\" (Lau, ch. 1)."
   },
   {
-   "id": "64a0486593",
+   "id": "025a927aec",
    "cls": "philosophy",
    "note": "Unit 1 - Introduction to Critical Thinking",
    "kind": "term",
@@ -2222,7 +2401,7 @@
    "back": "reasoning about what to **believe**."
   },
   {
-   "id": "c45b792c83",
+   "id": "f5be75af39",
    "cls": "philosophy",
    "note": "Unit 1 - Introduction to Critical Thinking",
    "kind": "term",
@@ -2230,7 +2409,7 @@
    "back": "reasoning about what to **do**."
   },
   {
-   "id": "02fb94a6b5",
+   "id": "0bafaebeb7",
    "cls": "philosophy",
    "note": "Unit 1 - Introduction to Critical Thinking",
    "kind": "term",
@@ -2238,7 +2417,7 @@
    "back": "useful in any field, not just one subject."
   },
   {
-   "id": "73735f0fee",
+   "id": "f21cce256b",
    "cls": "philosophy",
    "note": "Unit 1 - Introduction to Critical Thinking",
    "kind": "term",
@@ -2246,7 +2425,7 @@
    "back": "the reasons, and the claim they're meant to support (see Unit 2 - Arguments and Standard Form)."
   },
   {
-   "id": "3ca0d153a9",
+   "id": "60284de17d",
    "cls": "philosophy",
    "note": "Unit 1 - Introduction to Critical Thinking",
    "kind": "question",
@@ -2254,7 +2433,7 @@
    "back": ""
   },
   {
-   "id": "c31f922e5b",
+   "id": "fc91c872d5",
    "cls": "philosophy",
    "note": "Unit 1 - Introduction to Critical Thinking",
    "kind": "question",
@@ -2262,7 +2441,7 @@
    "back": ""
   },
   {
-   "id": "08749cdf4a",
+   "id": "ddf2c8a630",
    "cls": "philosophy",
    "note": "Unit 1 - Introduction to Critical Thinking",
    "kind": "question",
@@ -2270,7 +2449,7 @@
    "back": ""
   },
   {
-   "id": "776dac33c7",
+   "id": "b896ad535b",
    "cls": "philosophy",
    "note": "Unit 1 - Introduction to Critical Thinking",
    "kind": "question",
@@ -2278,7 +2457,7 @@
    "back": ""
   },
   {
-   "id": "7334cc791a",
+   "id": "258c6aff25",
    "cls": "philosophy",
    "note": "Unit 1 - Introduction to Critical Thinking",
    "kind": "question",
@@ -2286,7 +2465,7 @@
    "back": ""
   },
   {
-   "id": "bb9937b196",
+   "id": "035d0d61bb",
    "cls": "philosophy",
    "note": "Unit 1 - Introduction to Critical Thinking",
    "kind": "question",
@@ -2294,7 +2473,7 @@
    "back": ""
   },
   {
-   "id": "1d28a579d4",
+   "id": "d078b35d08",
    "cls": "philosophy",
    "note": "Unit 2 - Arguments and Standard Form",
    "kind": "term",
@@ -2302,7 +2481,7 @@
    "back": "(declarative sentence) says that something is the case. It can be true or false, even if it's false or only an opinion. \"Spot is a good dog\" is a statement."
   },
   {
-   "id": "4bb3d2ac57",
+   "id": "fef2701b18",
    "cls": "philosophy",
    "note": "Unit 2 - Arguments and Standard Form",
    "kind": "term",
@@ -2310,7 +2489,7 @@
    "back": "asks a question (\"Is Spot a good dog?\"). Not a statement."
   },
   {
-   "id": "213f9f0578",
+   "id": "1cef8e023a",
    "cls": "philosophy",
    "note": "Unit 2 - Arguments and Standard Form",
    "kind": "term",
@@ -2318,7 +2497,7 @@
    "back": "gives a command (\"Be a good dog, Spot\"). Not a statement."
   },
   {
-   "id": "5b0279ef42",
+   "id": "2340914207",
    "cls": "philosophy",
    "note": "Unit 2 - Arguments and Standard Form",
    "kind": "term",
@@ -2326,7 +2505,7 @@
    "back": "a set of statements, one of which (the conclusion) is supposed to be supported by the others (the premises)."
   },
   {
-   "id": "1f9c5f09dc",
+   "id": "dfc25e8adc",
    "cls": "philosophy",
    "note": "Unit 2 - Arguments and Standard Form",
    "kind": "term",
@@ -2334,7 +2513,7 @@
    "back": "words that flag which statements are which."
   },
   {
-   "id": "12f45dcf9b",
+   "id": "458d69187d",
    "cls": "philosophy",
    "note": "Unit 2 - Arguments and Standard Form",
    "kind": "term",
@@ -2342,7 +2521,7 @@
    "back": "numbered premises, then the conclusion on the last line."
   },
   {
-   "id": "78cada922a",
+   "id": "08525c35ae",
    "cls": "philosophy",
    "note": "Unit 2 - Arguments and Standard Form",
    "kind": "term",
@@ -2350,7 +2529,7 @@
    "back": "no logically possible situation where all premises are true and the conclusion is false."
   },
   {
-   "id": "76aae19710",
+   "id": "e3f246239f",
    "cls": "philosophy",
    "note": "Unit 2 - Arguments and Standard Form",
    "kind": "term",
@@ -2358,7 +2537,7 @@
    "back": "not valid."
   },
   {
-   "id": "714571e167",
+   "id": "1f48fc30eb",
    "cls": "philosophy",
    "note": "Unit 2 - Arguments and Standard Form",
    "kind": "term",
@@ -2366,7 +2545,7 @@
    "back": "valid **and** all premises are actually true."
   },
   {
-   "id": "a6bde9a104",
+   "id": "a9d9e69847",
    "cls": "philosophy",
    "note": "Unit 2 - Arguments and Standard Form",
    "kind": "term",
@@ -2374,7 +2553,7 @@
    "back": "not sound (invalid, or has a false premise)."
   },
   {
-   "id": "9e1d1b9479",
+   "id": "b970dd7ea2",
    "cls": "philosophy",
    "note": "Unit 2 - Arguments and Standard Form",
    "kind": "question",
@@ -2382,7 +2561,7 @@
    "back": ""
   },
   {
-   "id": "fd1c23bb45",
+   "id": "94fa467abb",
    "cls": "philosophy",
    "note": "Unit 2 - Arguments and Standard Form",
    "kind": "question",
@@ -2390,7 +2569,7 @@
    "back": ""
   },
   {
-   "id": "0921dd88e6",
+   "id": "c34d8fcff0",
    "cls": "philosophy",
    "note": "Unit 2 - Arguments and Standard Form",
    "kind": "question",
@@ -2398,7 +2577,7 @@
    "back": ""
   },
   {
-   "id": "01dcf4bb3c",
+   "id": "62ece420ae",
    "cls": "philosophy",
    "note": "Unit 2 - Arguments and Standard Form",
    "kind": "question",
@@ -2406,7 +2585,7 @@
    "back": ""
   },
   {
-   "id": "fcd541897b",
+   "id": "34d6e20ae0",
    "cls": "philosophy",
    "note": "Unit 2 - Arguments and Standard Form",
    "kind": "question",
@@ -2414,7 +2593,7 @@
    "back": ""
   },
   {
-   "id": "6a83fd62a3",
+   "id": "462848b0bd",
    "cls": "philosophy",
    "note": "Unit 2 - Arguments and Standard Form",
    "kind": "question",
@@ -2422,7 +2601,7 @@
    "back": ""
   },
   {
-   "id": "4a3719b7b9",
+   "id": "5ffab4d457",
    "cls": "philosophy",
    "note": "Unit 3 - Validity and Argument Forms",
    "kind": "term",
@@ -2430,7 +2609,7 @@
    "back": "not contradictory. (A four-sided triangle is logically impossible. A flying gold mountain is logically possible, even if it breaks the laws of nature.)"
   },
   {
-   "id": "b5ea6aee7b",
+   "id": "427b7d227f",
    "cls": "philosophy",
    "note": "Unit 3 - Validity and Argument Forms",
    "kind": "term",
@@ -2438,7 +2617,7 @@
    "back": "a logically possible scenario where the premises are true and the conclusion is false."
   },
   {
-   "id": "a20ba5006b",
+   "id": "25db6ec99f",
    "cls": "philosophy",
    "note": "Unit 3 - Validity and Argument Forms",
    "kind": "term",
@@ -2446,7 +2625,7 @@
    "back": "the pattern left when you replace statements with variables (p, q, r)."
   },
   {
-   "id": "bc52414de6",
+   "id": "573848412a",
    "cls": "philosophy",
    "note": "Unit 3 - Validity and Argument Forms",
    "kind": "term",
@@ -2454,7 +2633,7 @@
    "back": "a statement that's true no matter what (e.g. \"Either it's raining or it's not\")."
   },
   {
-   "id": "16638f385f",
+   "id": "c54f1788c7",
    "cls": "philosophy",
    "note": "Unit 3 - Validity and Argument Forms",
    "kind": "term",
@@ -2462,7 +2641,7 @@
    "back": "premises: cannot all be true at the same time."
   },
   {
-   "id": "7f2d71d152",
+   "id": "9e1be1e285",
    "cls": "philosophy",
    "note": "Unit 3 - Validity and Argument Forms",
    "kind": "term",
@@ -2470,7 +2649,7 @@
    "back": "(as defined here) the conclusion is also one of the premises."
   },
   {
-   "id": "21e6133ce5",
+   "id": "babf9cd70b",
    "cls": "philosophy",
    "note": "Unit 3 - Validity and Argument Forms",
    "kind": "term",
@@ -2478,7 +2657,7 @@
    "back": "a *method* of arguing by showing the opposite leads to an absurdity."
   },
   {
-   "id": "d6262b7c7e",
+   "id": "5d1fd30b0d",
    "cls": "philosophy",
    "note": "Unit 3 - Validity and Argument Forms",
    "kind": "question",
@@ -2486,7 +2665,7 @@
    "back": ""
   },
   {
-   "id": "e978ad814a",
+   "id": "e8df0fd6c6",
    "cls": "philosophy",
    "note": "Unit 3 - Validity and Argument Forms",
    "kind": "question",
@@ -2494,7 +2673,7 @@
    "back": ""
   },
   {
-   "id": "1b222d955e",
+   "id": "d0fe82bff6",
    "cls": "philosophy",
    "note": "Unit 3 - Validity and Argument Forms",
    "kind": "question",
@@ -2502,7 +2681,7 @@
    "back": ""
   },
   {
-   "id": "ed9b167937",
+   "id": "8d064e391c",
    "cls": "philosophy",
    "note": "Unit 3 - Validity and Argument Forms",
    "kind": "question",
@@ -2510,7 +2689,7 @@
    "back": ""
   },
   {
-   "id": "b708b167a9",
+   "id": "77995d8148",
    "cls": "philosophy",
    "note": "Unit 3 - Validity and Argument Forms",
    "kind": "question",
@@ -2518,7 +2697,7 @@
    "back": ""
   },
   {
-   "id": "6366288e66",
+   "id": "ccf7219e80",
    "cls": "philosophy",
    "note": "Unit 3 - Validity and Argument Forms",
    "kind": "question",
@@ -2526,7 +2705,7 @@
    "back": ""
   },
   {
-   "id": "02f4fb22c5",
+   "id": "cde09eedc5",
    "cls": "philosophy",
    "note": "Unit 3 - Validity and Argument Forms",
    "kind": "question",
@@ -2534,7 +2713,7 @@
    "back": ""
   },
   {
-   "id": "8140653971",
+   "id": "2b9049b573",
    "cls": "philosophy",
    "note": "Web Reading - Statements",
    "kind": "term",
@@ -2542,7 +2721,7 @@
    "back": "asserts something (\"He is here.\"). **This is a statement.**"
   },
   {
-   "id": "f0c205e0ae",
+   "id": "4bfdda989f",
    "cls": "philosophy",
    "note": "Web Reading - Statements",
    "kind": "term",
@@ -2550,7 +2729,7 @@
    "back": "asks a question (\"Is he here?\")."
   },
   {
-   "id": "95fb39d4c7",
+   "id": "e056185283",
    "cls": "philosophy",
    "note": "Web Reading - Statements",
    "kind": "term",
@@ -2558,7 +2737,7 @@
    "back": "makes a request or gives a command (\"Come here!\")."
   },
   {
-   "id": "1d28a579d4",
+   "id": "d279e5fbc6",
    "cls": "philosophy",
    "note": "Web Reading - Statements",
    "kind": "term",
@@ -2566,7 +2745,7 @@
    "back": "any declarative sentence (a complete, grammatical sentence that makes a claim)."
   },
   {
-   "id": "3e486cec33",
+   "id": "0c01b127c0",
    "cls": "philosophy",
    "note": "Web Reading - Statements",
    "kind": "question",
@@ -2574,7 +2753,7 @@
    "back": ""
   },
   {
-   "id": "06e3ca7eb7",
+   "id": "178321a31a",
    "cls": "philosophy",
    "note": "Web Reading - Statements",
    "kind": "question",
@@ -2582,7 +2761,7 @@
    "back": ""
   },
   {
-   "id": "ba1cfd69d0",
+   "id": "1c86d040e0",
    "cls": "philosophy",
    "note": "Web Reading - Statements",
    "kind": "question",
@@ -2590,7 +2769,7 @@
    "back": ""
   },
   {
-   "id": "bb50a1f188",
+   "id": "e06ace9234",
    "cls": "philosophy",
    "note": "Web Reading - Statements",
    "kind": "question",
@@ -2598,7 +2777,7 @@
    "back": ""
   },
   {
-   "id": "7ec95a7d79",
+   "id": "f755f2d529",
    "cls": "philosophy",
    "note": "Web Reading - Valid Patterns",
    "kind": "term",
@@ -2606,7 +2785,7 @@
    "back": "(P, Q, R…) stand for statements."
   },
   {
-   "id": "c2b06ae9cd",
+   "id": "0c993034dc",
    "cls": "philosophy",
    "note": "Web Reading - Valid Patterns",
    "kind": "term",
@@ -2614,7 +2793,7 @@
    "back": "the denial of Q (\"It is not the case that Q\")."
   },
   {
-   "id": "82eb25a137",
+   "id": "27a3c0979b",
    "cls": "philosophy",
    "note": "Web Reading - Valid Patterns",
    "kind": "term",
@@ -2622,7 +2801,7 @@
    "back": "a mistake in reasoning."
   },
   {
-   "id": "a976d69d52",
+   "id": "def8d4ee3e",
    "cls": "philosophy",
    "note": "Web Reading - Valid Patterns",
    "kind": "term",
@@ -2630,7 +2809,7 @@
    "back": "P or Q but *not both*."
   },
   {
-   "id": "cac31503a5",
+   "id": "8e526f004f",
    "cls": "philosophy",
    "note": "Web Reading - Valid Patterns",
    "kind": "term",
@@ -2638,7 +2817,7 @@
    "back": "P or Q *or both*. Default in this course: inclusive."
   },
   {
-   "id": "a523ff0a4e",
+   "id": "2fdf6f2af7",
    "cls": "philosophy",
    "note": "Web Reading - Valid Patterns",
    "kind": "question",
@@ -2646,7 +2825,7 @@
    "back": ""
   },
   {
-   "id": "f490935cef",
+   "id": "b6ef16921a",
    "cls": "philosophy",
    "note": "Web Reading - Valid Patterns",
    "kind": "question",
@@ -2654,7 +2833,7 @@
    "back": ""
   },
   {
-   "id": "064f73cc74",
+   "id": "5ed5307d04",
    "cls": "philosophy",
    "note": "Web Reading - Valid Patterns",
    "kind": "question",
@@ -2662,7 +2841,7 @@
    "back": ""
   },
   {
-   "id": "54d6187ebd",
+   "id": "6b3373e375",
    "cls": "philosophy",
    "note": "Web Reading - Valid Patterns",
    "kind": "question",
@@ -2670,7 +2849,7 @@
    "back": ""
   },
   {
-   "id": "d96b36d013",
+   "id": "8ab4299459",
    "cls": "philosophy",
    "note": "Web Reading - Valid Patterns",
    "kind": "question",
@@ -2678,7 +2857,7 @@
    "back": ""
   },
   {
-   "id": "3a26ca173e",
+   "id": "4722d751f0",
    "cls": "philosophy",
    "note": "Web Reading - Valid Patterns",
    "kind": "question",

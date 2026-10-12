@@ -1,5 +1,5 @@
 // Offline support: always try the network, fall back to the cached copy.
-const VERSION = "study-v2";
+const VERSION = "study-v3";
 const SHELL = ["./", "index.html", "styles.css", "app.js", "manifest.json", "icon-180.png", "icon-512.png"];
 
 self.addEventListener("install", (e) => {

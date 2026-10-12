@@ -173,6 +173,30 @@ a.btn { color: var(--text); }
 .rate .btn { flex-direction: column; gap: 0; padding: 11px 6px; }
 .rate small { font-weight: 500; color: var(--muted); font-size: 12px; }
 
+/* ---------- progress ---------- */
+.ring-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 8px; }
+.ring-card { display: flex; flex-direction: column; align-items: center; gap: 6px; padding: 10px 2px; font-size: 12px; font-weight: 600; color: var(--muted); }
+.ring-card.on { border-color: var(--c); color: var(--text); }
+.ring-card .mini { position: relative; width: 52px; height: 52px; }
+.ring-card .mini svg { width: 52px; height: 52px; }
+.ring-card .mini b { position: absolute; inset: 0; display: grid; place-items: center; font-size: 12px; color: var(--text); }
+.legend { display: flex; flex-wrap: wrap; gap: 6px 14px; margin: 12px 4px 0; font-size: 12px; color: var(--muted); }
+.legend span { display: inline-flex; align-items: center; gap: 6px; }
+.legend i { width: 10px; height: 10px; border-radius: 3px; display: inline-block; }
+.topic-head { display: flex; justify-content: space-between; gap: 10px; align-items: baseline; }
+.topic-pct { font-variant-numeric: tabular-nums; }
+.stack { display: flex; gap: 2px; height: 8px; border-radius: 6px; overflow: hidden; background: var(--surface-2); margin: 8px 0; }
+.stack i { display: block; min-width: 3px; }
+.topic-foot { display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px; }
+.conf { display: flex; align-items: center; gap: 6px; font-size: 13px; color: var(--muted); }
+.conf span { margin-right: 4px; }
+.conf button { width: 20px; height: 20px; border-radius: 50%; border: 2px solid var(--faint); }
+.conf button.on { background: var(--c); border-color: var(--c); }
+.hbar { display: grid; grid-template-columns: 74px 1fr 44px; align-items: center; gap: 10px; padding: 5px 0; font-size: 14px; }
+.hbar div { height: 10px; background: var(--surface-2); border-radius: 6px; overflow: hidden; }
+.hbar i { display: block; height: 100%; border-radius: 6px; }
+.hbar b { text-align: right; font-variant-numeric: tabular-nums; }
+
 /* ---------- tab bar ---------- */
 .tabbar {
   position: fixed; left: 0; right: 0; bottom: 0; z-index: 10;
@@ -182,7 +206,7 @@ a.btn { color: var(--text); }
   backdrop-filter: saturate(180%) blur(20px); -webkit-backdrop-filter: saturate(180%) blur(20px);
   border-top: 1px solid var(--line);
 }
-.tabbar button { flex: 1; max-width: 110px; display: flex; flex-direction: column; align-items: center; gap: 3px; color: var(--faint); font-size: 11px; font-weight: 600; padding: 4px 0; }
+.tabbar button { flex: 1; max-width: 96px; min-width: 0; display: flex; flex-direction: column; align-items: center; gap: 3px; color: var(--faint); font-size: 11px; font-weight: 600; padding: 4px 0; }
 .tabbar svg { width: 25px; height: 25px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
 .tabbar button.on { color: var(--text); }
 

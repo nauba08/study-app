@@ -76,8 +76,10 @@ const INTERVALS = [0, 1, 2, 4, 8, 16, 32, 60]; // days, by box
 const NEW_PER_DAY = 25;
 const srs = () => store.get("srs", {});
 const newSeenToday = () => store.get("newSeen", {})[today()] || 0;
+// deck is "all", a class id, or "note:<topic note name>"
 function cardsFor(deck, kind) {
-  return DATA.cards.filter((c) => (deck === "all" || c.cls === deck) && (kind === "both" || c.kind === kind));
+  const topic = deck.startsWith("note:") ? deck.slice(5) : null;
+  return DATA.cards.filter((c) => (deck === "all" || c.cls === deck || c.note === topic) && (kind === "both" || c.kind === kind));
 }
 function deckCounts(deck, kind) {
   const s = srs(), t = today();
@@ -463,7 +465,7 @@ let session = null; // { deck, cram, queue, i, flipped, seen }
 
 function startSession(deck, cram) {
   const s = srs(), t = today();
-  let pool = cardsFor(deck, cardKind);
+  let pool = cardsFor(deck, deck.startsWith("note:") ? "both" : cardKind);
   let queue;
   if (cram) queue = pool.map((c) => c.id);
   else {
@@ -537,7 +539,7 @@ function deckView() {
 
 function studyView() {
   const { queue, i, flipped } = session;
-  const deckName = session.deck === "all" ? "All classes" : cls(session.deck).short;
+  const deckName = session.deck === "all" ? "All classes" : session.deck.startsWith("note:") ? session.deck.slice(5) : cls(session.deck).short;
   if (i >= queue.length) {
     $("#view").innerHTML = `
       <div class="study-top"><button class="pill" data-act="end">‹ Decks</button><span class="sub" style="color:var(--muted)">${esc(deckName)}</span></div>
@@ -590,6 +592,206 @@ function studyView() {
     </div>
     </div>
   `;
+}
+
+// ------------------------------------------------------------- Progress -----
+// A card's level comes from its spaced-repetition box:
+// never seen = New, box 0–1 = Learning, box 2–3 = Familiar, box 4+ (8+ day gap) = Mastered
+const LEVELS = [
+  { key: "mastered", label: "Mastered", value: 1, color: "#4cc38a" },
+  { key: "familiar", label: "Familiar", value: 0.6, color: "#8ab4ff" },
+  { key: "learning", label: "Learning", value: 0.25, color: "#f2c94c" },
+  { key: "fresh", label: "New", value: 0, color: "var(--surface-2)" },
+];
+function levelOf(st) {
+  if (!st) return "fresh";
+  if (st.box >= 4) return "mastered";
+  if (st.box >= 2) return "familiar";
+  return "learning";
+}
+function mastery(cards) {
+  const s = srs(), n = { mastered: 0, familiar: 0, learning: 0, fresh: 0 };
+  for (const c of cards) n[levelOf(s[c.id])]++;
+  const total = cards.length;
+  const score = total ? LEVELS.reduce((a, l) => a + n[l.key] * l.value, 0) / total : 0;
+  return { ...n, total, score, seen: total - n.fresh };
+}
+const topicCards = (note) => DATA.cards.filter((c) => c.note === note);
+const pct = (x) => Math.round(x * 100) + "%";
+
+function stackBar(m) {
+  return `<div class="stack">${LEVELS.filter((l) => m[l.key]).map((l) =>
+    `<i style="flex:${m[l.key]};background:${l.color}" title="${l.label}: ${m[l.key]}"></i>`).join("")}</div>`;
+}
+function miniRing(frac, color, size = 64) {
+  const r = 26, C = 2 * Math.PI * r;
+  return `<svg viewBox="0 0 64 64" width="${size}" height="${size}" style="transform:rotate(-90deg)">
+    <circle cx="32" cy="32" r="${r}" fill="none" stroke="var(--surface-2)" stroke-width="6"/>
+    <circle cx="32" cy="32" r="${r}" fill="none" stroke="${color}" stroke-width="6" stroke-linecap="round"
+      stroke-dasharray="${C}" stroke-dashoffset="${C * (1 - frac)}"/></svg>`;
+}
+
+let progCls = "all";
+views.progress = () => {
+  const conf = store.get("conf", {});
+  const all = mastery(DATA.cards);
+  const topics = (DATA.topics || []).map((t) => ({ ...t, m: mastery(topicCards(t.note)), conf: conf[t.note] || 0 }));
+
+  // Weakness blends both signals: confidence 1–5 maps to 0–1, and the lower of the two wins
+  const strength = (t) => Math.min(t.m.seen ? t.m.score : 1, t.conf ? (t.conf - 1) / 4 : 1);
+  const weak = topics
+    .filter((t) => strength(t) < 0.7)
+    .sort((a, b) => strength(a) - strength(b))
+    .slice(0, 4);
+  const untouched = topics.filter((t) => !t.m.seen && !t.conf);
+
+  // Focus minutes per class over the last 7 days
+  const since = addDays(today(), -6);
+  const week = {};
+  pomoLog().filter((l) => l.d >= since).forEach((l) => (week[l.cls || ""] = (week[l.cls || ""] || 0) + l.min));
+  const maxMin = Math.max(1, ...Object.values(week));
+
+  const lastBackup = store.get("lastBackup", null);
+  const backupAge = lastBackup ? -daysUntil(lastBackup) : null;
+
+  const topicRow = (t) => {
+    const c = cls(t.cls);
+    return `<div class="row topic">
+      <div class="main">
+        <div class="topic-head"><div class="title">${esc(t.note)}</div><b class="topic-pct">${pct(t.m.score)}</b></div>
+        ${stackBar(t.m)}
+        <div class="topic-foot">
+          <div class="conf" aria-label="Confidence">
+            <span>Confidence</span>
+            ${[1, 2, 3, 4, 5].map((n) => `<button data-act="conf" data-note="${esc(t.note)}" data-n="${n}" aria-label="${n} of 5"
+              class="${n <= t.conf ? "on" : ""}" style="--c:${c.color}"></button>`).join("")}
+          </div>
+          <button class="pill" data-act="study-topic" data-note="${esc(t.note)}">Study</button>
+        </div>
+        <div class="sub">${t.m.mastered} mastered · ${t.m.familiar} familiar · ${t.m.learning} learning · ${t.m.fresh} new</div>
+      </div>
+    </div>`;
+  };
+
+  const shown = progCls === "all" ? DATA.classes : DATA.classes.filter((c) => c.id === progCls);
+
+  $("#view").innerHTML = `
+    <div class="eyebrow">${all.seen} of ${all.total} cards studied</div>
+    <h1>Progress</h1>
+
+    <div class="ring-grid">
+      ${DATA.classes.map((c) => {
+        const m = mastery(DATA.cards.filter((x) => x.cls === c.id));
+        return `<button class="panel ring-card ${progCls === c.id ? "on" : ""}" data-act="prog-cls" data-cls="${progCls === c.id ? "all" : c.id}" style="--c:${c.color}">
+          <div class="mini">${miniRing(m.score, c.color)}<b>${pct(m.score)}</b></div>
+          <span>${esc(c.short)}</span>
+        </button>`;
+      }).join("")}
+    </div>
+    <div class="legend">${LEVELS.map((l) => `<span><i style="background:${l.color}"></i>${l.label}</span>`).join("")}</div>
+
+    <h2>Needs work</h2>
+    <section class="panel list">
+      ${weak.length ? weak.map((t) => `<div class="row">
+          <span class="dot" style="background:${cls(t.cls).color};margin-top:7px"></span>
+          <div class="main"><div class="title">${esc(t.note)}</div>
+            <div class="sub">${t.conf ? `Confidence ${t.conf}/5 · ` : ""}${pct(t.m.score)} mastered</div></div>
+          <button class="pill" data-act="study-topic" data-note="${esc(t.note)}">Study</button></div>`).join("")
+        : `<div class="empty">${all.seen ? "Nothing weak right now. Nice." : "Study some flashcards or rate your confidence below, and your weakest topics will show up here."}</div>`}
+    </section>
+    ${untouched.length && all.seen ? `<p class="note">${untouched.length} topic${untouched.length === 1 ? "" : "s"} not started yet.</p>` : ""}
+
+    <h2>Topics</h2>
+    <div class="chips">
+      <button class="chip ${progCls === "all" ? "on" : ""}" data-act="prog-cls" data-cls="all">All</button>
+      ${DATA.classes.map((c) => `<button class="chip ${progCls === c.id ? "on" : ""}" data-act="prog-cls" data-cls="${c.id}"><span class="dot" style="background:${c.color}"></span>${esc(c.short)}</button>`).join("")}
+    </div>
+    ${shown.map((c) => {
+      const list = topics.filter((t) => t.cls === c.id);
+      return list.length ? `<h2 style="color:${c.color}">${esc(c.name)}</h2><section class="panel list">${list.map(topicRow).join("")}</section>` : "";
+    }).join("")}
+
+    ${(DATA.concepts || []).length ? `<h2>Big ideas across classes</h2>
+    <section class="panel list">
+      ${DATA.concepts.map((name) => {
+        const notes = topics.filter((t) => t.concepts.includes(name));
+        const m = mastery(DATA.cards.filter((c) => notes.some((t) => t.note === c.note)));
+        const dots = [...new Set(notes.map((t) => t.cls))].map((id) => `<span class="dot" style="background:${cls(id).color}"></span>`).join("");
+        return `<div class="row"><div class="main">
+          <div class="topic-head"><div class="title">${esc(name)}</div><b class="topic-pct">${pct(m.score)}</b></div>
+          ${stackBar(m)}
+          <div class="sub">${dots} ${notes.length} topic${notes.length === 1 ? "" : "s"}</div>
+        </div></div>`;
+      }).join("")}
+    </section>` : ""}
+
+    <h2>Focus time, last 7 days</h2>
+    <section class="panel" style="padding:14px 16px">
+      ${Object.keys(week).length ? Object.entries(week).sort((a, b) => b[1] - a[1]).map(([id, min]) => {
+        const c = id ? cls(id) : { short: "General", color: "var(--faint)" };
+        return `<div class="hbar"><span>${esc(c.short)}</span><div><i style="width:${(min / maxMin) * 100}%;background:${c.color}"></i></div><b>${min}m</b></div>`;
+      }).join("") : `<div class="empty" style="padding:8px">No focus sessions this week yet.</div>`}
+    </section>
+
+    <h2>Backup</h2>
+    <section class="panel" style="padding:16px">
+      <div style="font-weight:600">Your progress lives only on this phone.</div>
+      <div class="sub" style="color:var(--muted);font-size:14px;margin:4px 0 14px">
+        ${lastBackup ? `Last backup ${backupAge === 0 ? "today" : backupAge === 1 ? "yesterday" : backupAge + " days ago"}.` : "No backup yet."}
+        Save one to iCloud Drive (Files app) every week or so.</div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px">
+        <button class="btn primary" data-act="backup">Back up</button>
+        <button class="btn" data-act="restore">Restore</button>
+      </div>
+      <input type="file" id="restore-file" accept=".json,application/json" hidden>
+    </section>
+  `;
+
+  $("#restore-file").addEventListener("change", (e) => restore(e.target.files[0]));
+};
+
+// --------------------------------------------------------- Backup/restore ---
+// Everything the app saves on this phone, except UI bits like the open tab
+const BACKUP_SKIP = new Set(["tab", "cardKind", "timer"]);
+async function backup() {
+  const data = {};
+  try {
+    for (let i = 0; i < localStorage.length; i++) {
+      const k = localStorage.key(i);
+      if (!BACKUP_SKIP.has(k)) data[k] = localStorage.getItem(k);
+    }
+  } catch {}
+  const blob = new Blob([JSON.stringify({ app: "study-app", version: 1, saved: new Date().toISOString(), data }, null, 1)], { type: "application/json" });
+  const name = `study-backup-${today()}.json`;
+  const file = new File([blob], name, { type: "application/json" });
+  try {
+    if (navigator.canShare && navigator.canShare({ files: [file] })) {
+      await navigator.share({ files: [file], title: "Study backup" }); // iPhone: pick "Save to Files" → iCloud Drive
+    } else {
+      const a = Object.assign(document.createElement("a"), { href: URL.createObjectURL(blob), download: name });
+      document.body.appendChild(a); a.click(); a.remove();
+      setTimeout(() => URL.revokeObjectURL(a.href), 5000);
+    }
+    store.set("lastBackup", today());
+    toast("Backup saved");
+    render();
+  } catch (err) {
+    if (err && err.name !== "AbortError") toast("Couldn't save the backup");
+  }
+}
+async function restore(file) {
+  if (!file) return;
+  try {
+    const parsed = JSON.parse(await file.text());
+    if (parsed.app !== "study-app" || typeof parsed.data !== "object") throw new Error("not a backup");
+    const when = new Date(parsed.saved).toLocaleDateString(undefined, { month: "short", day: "numeric" });
+    if (!confirm(`Restore the backup from ${when}? This replaces the progress currently on this phone.`)) return;
+    for (const [k, v] of Object.entries(parsed.data)) if (typeof v === "string") localStorage.setItem(k, v);
+    toast("Progress restored");
+    setTimeout(() => location.reload(), 800);
+  } catch {
+    toast("That file isn't a Study backup");
+  }
 }
 
 // ============================================================================
@@ -646,6 +848,17 @@ document.addEventListener("click", (e) => {
     case "study": startSession(el.dataset.deck, false); break;
     case "cram": startSession(el.dataset.deck, true); break;
     case "end": session = null; render(); break;
+    case "prog-cls": progCls = el.dataset.cls; render(); break;
+    case "conf": {
+      const conf = store.get("conf", {}), n = Number(el.dataset.n);
+      conf[el.dataset.note] = conf[el.dataset.note] === n ? 0 : n; // tap the same dot again to clear
+      store.set("conf", conf); render(); break;
+    }
+    case "study-topic": session = null; tab = "cards"; store.set("tab", "cards"); startSession("note:" + el.dataset.note, false);
+      if (session.queue.length === 0) startSession("note:" + el.dataset.note, true); // nothing due: practise them all
+      break;
+    case "backup": backup(); break;
+    case "restore": $("#restore-file").click(); break;
     case "flip": flip(); break;
     case "rate": rate(el.dataset.r); break;
   }
