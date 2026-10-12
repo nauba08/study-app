@@ -252,6 +252,9 @@ views.today = () => {
 };
 
 // ------------------------------------------------------------ Deadlines -----
+// webcal:// makes iPhone offer "Subscribe" instead of a one-time import
+const calendarLink = () => new URL("deadlines.ics", location.href).href.replace(/^https?:/, "webcal:");
+
 let dlFilter = "all";
 let showPast = false;
 views.deadlines = () => {
@@ -294,6 +297,8 @@ views.deadlines = () => {
     ${past.length ? `<h2>Past</h2>
       ${showPast ? `<section class="panel list">${past.map(row).join("")}</section>` : ""}
       <button class="btn block" style="margin-top:10px" data-act="past">${showPast ? "Hide" : "Show"} ${past.length} past</button>` : ""}
+    <a class="btn block" style="margin-top:22px;text-decoration:none" href="${calendarLink()}">Get deadline alerts in iPhone Calendar</a>
+    <p class="note">Adds every deadline to your Calendar with alerts 3 days before and the morning it's due (plus a week before midterms and exams). When subscribing, switch <b>Remove Alerts</b> off.</p>
     <p class="note">Ticking something off here only saves on this phone. Your Obsidian vault is the main list.</p>
   `;
 };
