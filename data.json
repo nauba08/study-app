@@ -1,0 +1,2689 @@
+{
+ "generated": "2026-10-12T06:45:09.400Z",
+ "classes": [
+  {
+   "id": "micro",
+   "short": "Micro",
+   "name": "Microeconomics 1021A",
+   "color": "#f28c38"
+  },
+  {
+   "id": "calc",
+   "short": "Calc",
+   "name": "Calculus 1000A",
+   "color": "#f2c94c"
+  },
+  {
+   "id": "anthro",
+   "short": "Anthro",
+   "name": "Anthro 1022A",
+   "color": "#4f9cf2"
+  },
+  {
+   "id": "business",
+   "short": "Business",
+   "name": "Business 1220E",
+   "color": "#a274f2"
+  },
+  {
+   "id": "philosophy",
+   "short": "Philosophy",
+   "name": "Philosophy 1230A",
+   "color": "#4cc38a"
+  }
+ ],
+ "deadlines": [
+  {
+   "id": "711c6031b1",
+   "title": "Micro Midterm 1",
+   "cls": "micro",
+   "due": "2026-10-04",
+   "time": "1:00–2:30 pm",
+   "type": "Midterm",
+   "weight": 25,
+   "details": "Units 1–4",
+   "done": false
+  },
+  {
+   "id": "4ebcea2e08",
+   "title": "Calc Quiz 2",
+   "cls": "calc",
+   "due": "2026-10-07",
+   "time": "11:59 pm",
+   "type": "Quiz",
+   "weight": 2,
+   "details": "Sections 1.3–1.5",
+   "done": false
+  },
+  {
+   "id": "a8516f4415",
+   "title": "Anthro Lab 2 - Brain and Body Evolution",
+   "cls": "anthro",
+   "due": "2026-10-09",
+   "time": "11:59 pm",
+   "type": "Lab",
+   "weight": 5,
+   "details": "Lab Thu Oct 8 (attend in person); worksheet due Fri",
+   "done": false
+  },
+  {
+   "id": "f88dffb2ef",
+   "title": "Anthro Quiz 4",
+   "cls": "anthro",
+   "due": "2026-10-09",
+   "time": "11:59 pm",
+   "type": "Quiz",
+   "weight": 1,
+   "details": "",
+   "done": false
+  },
+  {
+   "id": "abb55320c7",
+   "title": "Calc Homework 1",
+   "cls": "calc",
+   "due": "2026-10-09",
+   "time": "",
+   "type": "Homework",
+   "weight": 4,
+   "details": "On Gradescope (+48 h grace)",
+   "done": false
+  },
+  {
+   "id": "adb8c892b0",
+   "title": "Reading Week",
+   "cls": "all",
+   "due": "2026-10-12",
+   "time": "",
+   "type": "Break",
+   "weight": null,
+   "details": "Oct 12–16, no classes",
+   "done": false
+  },
+  {
+   "id": "37b55dde4b",
+   "title": "Anthro Assignment 1 - Diversity, Racism and Health",
+   "cls": "anthro",
+   "due": "2026-10-20",
+   "time": "11:59 pm",
+   "type": "Assignment",
+   "weight": 15,
+   "details": "+72 h grace (no feedback)",
+   "done": false
+  },
+  {
+   "id": "4a0ab5587e",
+   "title": "Calc Quiz 3",
+   "cls": "calc",
+   "due": "2026-10-21",
+   "time": "11:59 pm",
+   "type": "Quiz",
+   "weight": 2,
+   "details": "Sections 2.2–2.4, 3.1, 4.6",
+   "done": false
+  },
+  {
+   "id": "6c9192ae53",
+   "title": "Anthro Quiz 5",
+   "cls": "anthro",
+   "due": "2026-10-23",
+   "time": "11:59 pm",
+   "type": "Quiz",
+   "weight": 1,
+   "details": "",
+   "done": false
+  },
+  {
+   "id": "42ea7f8457",
+   "title": "Philosophy Practice Midterm 1",
+   "cls": "philosophy",
+   "due": "2026-10-23",
+   "time": "Slot 1 7–8pm · Slot 2 8:45–9:45pm",
+   "type": "Practice midterm",
+   "weight": 0,
+   "details": "Optional, not graded · sign up for ONE session (limited seating) · 3M Centre 3250",
+   "done": false
+  },
+  {
+   "id": "c9a774b339",
+   "title": "Calc Quiz 4",
+   "cls": "calc",
+   "due": "2026-10-28",
+   "time": "11:59 pm",
+   "type": "Quiz",
+   "weight": 2,
+   "details": "Sections 3.3, 3.5, 3.6",
+   "done": false
+  },
+  {
+   "id": "05dad558b1",
+   "title": "Anthro Lab 3 - Human Osteology",
+   "cls": "anthro",
+   "due": "2026-10-30",
+   "time": "11:59 pm",
+   "type": "Lab",
+   "weight": 5,
+   "details": "Lab Thu Oct 29; worksheet due Fri",
+   "done": false
+  },
+  {
+   "id": "f63782814a",
+   "title": "Anthro Quiz 6",
+   "cls": "anthro",
+   "due": "2026-10-30",
+   "time": "11:59 pm",
+   "type": "Quiz",
+   "weight": 1,
+   "details": "",
+   "done": false
+  },
+  {
+   "id": "6231a13afb",
+   "title": "Calc Midterm",
+   "cls": "calc",
+   "due": "2026-10-30",
+   "time": "7:30–9:30 pm",
+   "type": "Midterm",
+   "weight": 32,
+   "details": "Weeks 1–7",
+   "done": false
+  },
+  {
+   "id": "e7331981a6",
+   "title": "Micro Quiz 2",
+   "cls": "micro",
+   "due": "2026-10-30",
+   "time": "",
+   "type": "Quiz",
+   "weight": 3,
+   "details": "Weight approx. 3%",
+   "done": false
+  },
+  {
+   "id": "459a0ebf70",
+   "title": "Philosophy Practice Midterm 2",
+   "cls": "philosophy",
+   "due": "2026-10-30",
+   "time": "Slot 1 7–8pm · Slot 2 8:45–9:45pm",
+   "type": "Practice midterm",
+   "weight": 0,
+   "details": "Optional, not graded · sign up for ONE session · Talbot College 141 · clashes with the Calc midterm (7:30pm)",
+   "done": false
+  },
+  {
+   "id": "7d6978195b",
+   "title": "Philosophy Midterm",
+   "cls": "philosophy",
+   "due": "2026-11-01",
+   "time": "Session A 10am–12pm · B 1–3pm · C 4–6pm · D 7–9pm (arrive 30 min early)",
+   "type": "Midterm",
+   "weight": 40,
+   "details": "North Campus Building 101 · in person, MCQ, own laptop with MATCHA · makeup Nov 15, 11am–1pm (needs documented absence)",
+   "done": false
+  },
+  {
+   "id": "8c8327e2aa",
+   "title": "Business Gourmet Gusto Practice Decision",
+   "cls": "business",
+   "due": "2026-11-04",
+   "time": "11:59 pm",
+   "type": "Assignment",
+   "weight": null,
+   "details": "Practice, ungraded",
+   "done": false
+  },
+  {
+   "id": "060d18a76c",
+   "title": "Anthro Quiz 7",
+   "cls": "anthro",
+   "due": "2026-11-06",
+   "time": "11:59 pm",
+   "type": "Quiz",
+   "weight": 1,
+   "details": "",
+   "done": false
+  },
+  {
+   "id": "1ca801d8bb",
+   "title": "Business FAM Exam",
+   "cls": "business",
+   "due": "2026-11-06",
+   "time": "6:00–10:00 pm",
+   "type": "Exam",
+   "weight": 20,
+   "details": "20% of course",
+   "done": false
+  },
+  {
+   "id": "e6c32473e1",
+   "title": "Calc Quiz 5",
+   "cls": "calc",
+   "due": "2026-11-11",
+   "time": "",
+   "type": "Quiz",
+   "weight": 2,
+   "details": "",
+   "done": false
+  },
+  {
+   "id": "97175ac130",
+   "title": "Anthro Lab 4 - Garbology",
+   "cls": "anthro",
+   "due": "2026-11-13",
+   "time": "11:59 pm",
+   "type": "Lab",
+   "weight": 5,
+   "details": "Lab Thu Nov 12; worksheet due Fri",
+   "done": false
+  },
+  {
+   "id": "40019ac89a",
+   "title": "Anthro Quiz 8",
+   "cls": "anthro",
+   "due": "2026-11-13",
+   "time": "11:59 pm",
+   "type": "Quiz",
+   "weight": 1,
+   "details": "",
+   "done": false
+  },
+  {
+   "id": "f61794b235",
+   "title": "Calc Homework 2",
+   "cls": "calc",
+   "due": "2026-11-13",
+   "time": "",
+   "type": "Homework",
+   "weight": 4,
+   "details": "",
+   "done": false
+  },
+  {
+   "id": "c1b6c3edc2",
+   "title": "Micro Midterm 2",
+   "cls": "micro",
+   "due": "2026-11-15",
+   "time": "1:00–2:30 pm",
+   "type": "Midterm",
+   "weight": 25,
+   "details": "Units 5–9",
+   "done": false
+  },
+  {
+   "id": "77618a8065",
+   "title": "Calc Quiz 6",
+   "cls": "calc",
+   "due": "2026-11-18",
+   "time": "",
+   "type": "Quiz",
+   "weight": 2,
+   "details": "",
+   "done": false
+  },
+  {
+   "id": "2214652457",
+   "title": "Anthro Quiz 9",
+   "cls": "anthro",
+   "due": "2026-11-20",
+   "time": "11:59 pm",
+   "type": "Quiz",
+   "weight": 1,
+   "details": "",
+   "done": false
+  },
+  {
+   "id": "c34f44f3a2",
+   "title": "Anthro Assignment 2 - Repatriation",
+   "cls": "anthro",
+   "due": "2026-11-24",
+   "time": "11:59 pm",
+   "type": "Assignment",
+   "weight": 15,
+   "details": "+72 h grace (no feedback)",
+   "done": false
+  },
+  {
+   "id": "86292d9d35",
+   "title": "Calc Quiz 7",
+   "cls": "calc",
+   "due": "2026-11-25",
+   "time": "",
+   "type": "Quiz",
+   "weight": 2,
+   "details": "",
+   "done": false
+  },
+  {
+   "id": "7df978dc8a",
+   "title": "Anthro Lab 5 - Typology",
+   "cls": "anthro",
+   "due": "2026-11-27",
+   "time": "11:59 pm",
+   "type": "Lab",
+   "weight": 5,
+   "details": "Lab Thu Nov 26; worksheet due Fri",
+   "done": false
+  },
+  {
+   "id": "13c819fd2d",
+   "title": "Anthro Quiz 10",
+   "cls": "anthro",
+   "due": "2026-11-27",
+   "time": "11:59 pm",
+   "type": "Quiz",
+   "weight": 1,
+   "details": "",
+   "done": false
+  },
+  {
+   "id": "7cab4eee0f",
+   "title": "Calc Homework 3",
+   "cls": "calc",
+   "due": "2026-11-27",
+   "time": "",
+   "type": "Homework",
+   "weight": 4,
+   "details": "",
+   "done": false
+  },
+  {
+   "id": "b970ac9f71",
+   "title": "Micro Quiz 3",
+   "cls": "micro",
+   "due": "2026-11-27",
+   "time": "",
+   "type": "Quiz",
+   "weight": 3,
+   "details": "Weight approx. 3%",
+   "done": false
+  },
+  {
+   "id": "6c124f7448",
+   "title": "Last Day to Drop",
+   "cls": "all",
+   "due": "2026-11-30",
+   "time": "",
+   "type": "Admin",
+   "weight": null,
+   "details": "Last day to drop a fall course without academic penalty",
+   "done": false
+  },
+  {
+   "id": "08a568e6e0",
+   "title": "Anthro Quiz 11",
+   "cls": "anthro",
+   "due": "2026-12-04",
+   "time": "11:59 pm",
+   "type": "Quiz",
+   "weight": 1,
+   "details": "",
+   "done": false
+  },
+  {
+   "id": "63ff985772",
+   "title": "Business Marketing Pitch",
+   "cls": "business",
+   "due": "2026-12-09",
+   "time": "",
+   "type": "Assignment",
+   "weight": 15,
+   "details": "",
+   "done": false
+  },
+  {
+   "id": "04e4436652",
+   "title": "Calc Quiz 8",
+   "cls": "calc",
+   "due": "2026-12-09",
+   "time": "",
+   "type": "Quiz",
+   "weight": 2,
+   "details": "Also the last day of classes",
+   "done": false
+  },
+  {
+   "id": "a7ef35a442",
+   "title": "Final Exam Period",
+   "cls": "all",
+   "due": "2026-12-11",
+   "time": "",
+   "type": "Exam",
+   "weight": null,
+   "details": "Dec 11–22; individual dates TBA",
+   "done": false
+  }
+ ],
+ "cards": [
+  {
+   "id": "7a4bfa1555",
+   "cls": "micro",
+   "note": "Unit 1 - What Is Economics",
+   "kind": "term",
+   "front": "Scarcity",
+   "back": "wants are greater than the resources available to satisfy them."
+  },
+  {
+   "id": "0771c5f55f",
+   "cls": "micro",
+   "note": "Unit 1 - What Is Economics",
+   "kind": "term",
+   "front": "Microeconomics / macroeconomics",
+   "back": "individual decisions and markets, versus the national and global economy."
+  },
+  {
+   "id": "c873985d3d",
+   "cls": "micro",
+   "note": "Unit 1 - What Is Economics",
+   "kind": "term",
+   "front": "Tradeoff",
+   "back": "getting more of one thing means giving up some of something else."
+  },
+  {
+   "id": "995f893ef8",
+   "cls": "micro",
+   "note": "Unit 1 - What Is Economics",
+   "kind": "term",
+   "front": "Opportunity Cost",
+   "back": "the best alternative you give up to get something."
+  },
+  {
+   "id": "981eb654a5",
+   "cls": "micro",
+   "note": "Unit 1 - What Is Economics",
+   "kind": "term",
+   "front": "Margin / marginal",
+   "back": "the effect of a little bit more or less of something. See Marginal Analysis."
+  },
+  {
+   "id": "16847380d8",
+   "cls": "micro",
+   "note": "Unit 1 - What Is Economics",
+   "kind": "term",
+   "front": "Incentive",
+   "back": "a reward or penalty that changes behaviour."
+  },
+  {
+   "id": "654d9381be",
+   "cls": "micro",
+   "note": "Unit 1 - What Is Economics",
+   "kind": "term",
+   "front": "Positive vs. normative statements",
+   "back": "what *is* (testable) versus what *ought to be* (a value judgement)."
+  },
+  {
+   "id": "6af551991f",
+   "cls": "micro",
+   "note": "Unit 1 - What Is Economics",
+   "kind": "term",
+   "front": "Economic model",
+   "back": "a simplified description of the world, built to be tested."
+  },
+  {
+   "id": "e55300abed",
+   "cls": "micro",
+   "note": "Unit 1 - What Is Economics",
+   "kind": "question",
+   "front": "Give one example of scarcity from your own week.",
+   "back": ""
+  },
+  {
+   "id": "a7e54db667",
+   "cls": "micro",
+   "note": "Unit 1 - What Is Economics",
+   "kind": "question",
+   "front": "Is \"the minimum wage should be raised\" positive or normative? Rewrite it as the other type.",
+   "back": ""
+  },
+  {
+   "id": "934bafc10c",
+   "cls": "micro",
+   "note": "Unit 1 - What Is Economics",
+   "kind": "question",
+   "front": "What was the opportunity cost of the last hour you spent studying?",
+   "back": ""
+  },
+  {
+   "id": "5be88947de",
+   "cls": "micro",
+   "note": "Unit 1 - What Is Economics",
+   "kind": "question",
+   "front": "Why do economists say most choices are made \"at the margin\"?",
+   "back": ""
+  },
+  {
+   "id": "ffa67619af",
+   "cls": "micro",
+   "note": "Unit 2 - The Economic Problem",
+   "kind": "term",
+   "front": "Production possibilities frontier (PPF)",
+   "back": "the line between combinations of goods you *can* produce and ones you can't."
+  },
+  {
+   "id": "fa2a8a1eee",
+   "cls": "micro",
+   "note": "Unit 2 - The Economic Problem",
+   "kind": "term",
+   "front": "Production efficiency",
+   "back": "producing *on* the PPF, with no resources wasted."
+  },
+  {
+   "id": "f564f6ff8f",
+   "cls": "micro",
+   "note": "Unit 2 - The Economic Problem",
+   "kind": "term",
+   "front": "Increasing opportunity cost",
+   "back": "each extra unit of a good costs more of the other good, which is why the PPF bows outward."
+  },
+  {
+   "id": "78a4f1c582",
+   "cls": "micro",
+   "note": "Unit 2 - The Economic Problem",
+   "kind": "term",
+   "front": "Marginal cost (MC)",
+   "back": "the opportunity cost of producing one more unit."
+  },
+  {
+   "id": "168254bcaf",
+   "cls": "micro",
+   "note": "Unit 2 - The Economic Problem",
+   "kind": "term",
+   "front": "Marginal benefit (MB)",
+   "back": "the benefit of consuming one more unit, measured by willingness to pay. It falls as you get more."
+  },
+  {
+   "id": "249b812722",
+   "cls": "micro",
+   "note": "Unit 2 - The Economic Problem",
+   "kind": "term",
+   "front": "Allocative efficiency",
+   "back": "producing the mix of goods people value most, where MB = MC."
+  },
+  {
+   "id": "5b0ce60d11",
+   "cls": "micro",
+   "note": "Unit 2 - The Economic Problem",
+   "kind": "term",
+   "front": "Comparative advantage",
+   "back": "being able to produce something at a *lower opportunity cost* than others."
+  },
+  {
+   "id": "57ea4a7671",
+   "cls": "micro",
+   "note": "Unit 2 - The Economic Problem",
+   "kind": "term",
+   "front": "Economic growth",
+   "back": "the PPF shifting outward, driven by capital accumulation and technological change."
+  },
+  {
+   "id": "4eb2c52219",
+   "cls": "micro",
+   "note": "Unit 2 - The Economic Problem",
+   "kind": "question",
+   "front": "Why does the PPF bow outward instead of being a straight line?",
+   "back": ""
+  },
+  {
+   "id": "406862ca08",
+   "cls": "micro",
+   "note": "Unit 2 - The Economic Problem",
+   "kind": "question",
+   "front": "Alex can make 4 pizzas or 2 cakes an hour; Sam can make 3 pizzas or 3 cakes. Who has the comparative advantage in cakes?",
+   "back": ""
+  },
+  {
+   "id": "32e0ea22db",
+   "cls": "micro",
+   "note": "Unit 2 - The Economic Problem",
+   "kind": "question",
+   "front": "If MB > MC for the last unit produced, should the economy produce more or less? Why?",
+   "back": ""
+  },
+  {
+   "id": "42aa64c43c",
+   "cls": "micro",
+   "note": "Unit 2 - The Economic Problem",
+   "kind": "question",
+   "front": "What does a point inside the PPF mean in real life?",
+   "back": ""
+  },
+  {
+   "id": "e5de2f2994",
+   "cls": "micro",
+   "note": "Unit 3 - Supply and Demand",
+   "kind": "term",
+   "front": "Competitive market",
+   "back": "so many buyers and sellers that no one can influence the price."
+  },
+  {
+   "id": "41c633fd8f",
+   "cls": "micro",
+   "note": "Unit 3 - Supply and Demand",
+   "kind": "term",
+   "front": "Relative price",
+   "back": "a price measured against other goods. It's an Opportunity Cost."
+  },
+  {
+   "id": "3ce00ca197",
+   "cls": "micro",
+   "note": "Unit 3 - Supply and Demand",
+   "kind": "term",
+   "front": "Law of demand",
+   "back": "other things equal, a higher price means a smaller quantity demanded."
+  },
+  {
+   "id": "165d29f9dd",
+   "cls": "micro",
+   "note": "Unit 3 - Supply and Demand",
+   "kind": "term",
+   "front": "Law of supply",
+   "back": "other things equal, a higher price means a larger quantity supplied."
+  },
+  {
+   "id": "c46af39913",
+   "cls": "micro",
+   "note": "Unit 3 - Supply and Demand",
+   "kind": "term",
+   "front": "Substitutes / complements",
+   "back": "goods used *instead of* each other, versus goods used *together*."
+  },
+  {
+   "id": "882041bcc2",
+   "cls": "micro",
+   "note": "Unit 3 - Supply and Demand",
+   "kind": "term",
+   "front": "Normal / inferior good",
+   "back": "demand rises with income, versus demand falls with income."
+  },
+  {
+   "id": "691da9b612",
+   "cls": "micro",
+   "note": "Unit 3 - Supply and Demand",
+   "kind": "term",
+   "front": "Equilibrium",
+   "back": "the price where quantity demanded = quantity supplied."
+  },
+  {
+   "id": "50f8aa30e6",
+   "cls": "micro",
+   "note": "Unit 3 - Supply and Demand",
+   "kind": "term",
+   "front": "Surplus / shortage",
+   "back": "price above equilibrium means a surplus and the price falls; price below equilibrium means a shortage and the price rises."
+  },
+  {
+   "id": "88687b8f8b",
+   "cls": "micro",
+   "note": "Unit 3 - Supply and Demand",
+   "kind": "question",
+   "front": "Coffee gets more expensive. What happens to demand for tea (a substitute) and for coffee creamer (a complement)?",
+   "back": ""
+  },
+  {
+   "id": "7905af5063",
+   "cls": "micro",
+   "note": "Unit 3 - Supply and Demand",
+   "kind": "question",
+   "front": "A new technology cuts the cost of making phones. Which curve shifts, which way, and what happens to price and quantity?",
+   "back": ""
+  },
+  {
+   "id": "0a7a019926",
+   "cls": "micro",
+   "note": "Unit 3 - Supply and Demand",
+   "kind": "question",
+   "front": "Why does a price above equilibrium fall on its own?",
+   "back": ""
+  },
+  {
+   "id": "9286fd0afb",
+   "cls": "micro",
+   "note": "Unit 3 - Supply and Demand",
+   "kind": "question",
+   "front": "Demand rises and supply falls at the same time. What do we know for sure?",
+   "back": ""
+  },
+  {
+   "id": "b37e4fde03",
+   "cls": "micro",
+   "note": "Unit 4 - Elasticity",
+   "kind": "term",
+   "front": "Price elasticity of demand",
+   "back": "= % change in quantity demanded ÷ % change in price (use the magnitude)\n• **> 1: elastic** (quantity reacts a lot)\n• **= 1: unit elastic**\n• **< 1: inelastic** (quantity barely reacts)"
+  },
+  {
+   "id": "336d7675cc",
+   "cls": "micro",
+   "note": "Unit 4 - Elasticity",
+   "kind": "term",
+   "front": "Income elasticity of demand",
+   "back": "= % change in quantity demanded ÷ % change in income\n• Positive: **normal good** (> 1 income elastic, 0–1 income inelastic)\n• Negative: **inferior good**"
+  },
+  {
+   "id": "584e441a2d",
+   "cls": "micro",
+   "note": "Unit 4 - Elasticity",
+   "kind": "term",
+   "front": "Cross elasticity of demand",
+   "back": "= % change in quantity of good A ÷ % change in price of good B\n• Positive: **substitutes**\n• Negative: **complements**"
+  },
+  {
+   "id": "c6cd71c394",
+   "cls": "micro",
+   "note": "Unit 4 - Elasticity",
+   "kind": "term",
+   "front": "Elasticity of supply",
+   "back": "= % change in quantity supplied ÷ % change in price (ranges from 0, a vertical curve, to infinity, a horizontal curve)"
+  },
+  {
+   "id": "a0f0925a7b",
+   "cls": "micro",
+   "note": "Unit 4 - Elasticity",
+   "kind": "question",
+   "front": "A 10% price rise cuts quantity demanded by 5%. Elastic or inelastic? What happens to total revenue?",
+   "back": ""
+  },
+  {
+   "id": "b979064067",
+   "cls": "micro",
+   "note": "Unit 4 - Elasticity",
+   "kind": "question",
+   "front": "Income rises 20% and bus rides fall 10%. What's the income elasticity, and what kind of good is it?",
+   "back": ""
+  },
+  {
+   "id": "072bcb4f17",
+   "cls": "micro",
+   "note": "Unit 4 - Elasticity",
+   "kind": "question",
+   "front": "Why is the demand for gasoline more elastic over five years than over five days?",
+   "back": ""
+  },
+  {
+   "id": "65cecb98df",
+   "cls": "micro",
+   "note": "Unit 4 - Elasticity",
+   "kind": "question",
+   "front": "Hot dogs and buns: is the cross elasticity positive or negative?",
+   "back": ""
+  },
+  {
+   "id": "8048f84f2c",
+   "cls": "micro",
+   "note": "Unit 5 - Consumer Demand",
+   "kind": "term",
+   "front": "Rational consumer:",
+   "back": "has consistent preferences and picks the best affordable bundle. Preferences are learned from *choices* (revealed preference, Samuelson), not from reading minds."
+  },
+  {
+   "id": "e287bdb0ac",
+   "cls": "micro",
+   "note": "Unit 5 - Consumer Demand",
+   "kind": "term",
+   "front": "Budget line:",
+   "back": "all bundles that use up the whole budget: P_M·Q_M + P_S·Q_S = Y."
+  },
+  {
+   "id": "1d467b73bb",
+   "cls": "micro",
+   "note": "Unit 5 - Consumer Demand",
+   "kind": "term",
+   "front": "Budget set:",
+   "back": "the affordable area on and under the budget line."
+  },
+  {
+   "id": "b3b254e4c7",
+   "cls": "micro",
+   "note": "Unit 5 - Consumer Demand",
+   "kind": "term",
+   "front": "Relative price:",
+   "back": "price of one good in terms of the other. It is the (negative) slope of the budget line: −P_M/P_S."
+  },
+  {
+   "id": "b31cfbb3df",
+   "cls": "micro",
+   "note": "Unit 5 - Consumer Demand",
+   "kind": "term",
+   "front": "Indifference curve:",
+   "back": "combinations of goods that are equally good to the consumer. Higher curves are better (\"more is better\")."
+  },
+  {
+   "id": "ad769a9772",
+   "cls": "micro",
+   "note": "Unit 5 - Consumer Demand",
+   "kind": "term",
+   "front": "Marginal rate of substitution (MRS):",
+   "back": "how much of one good you'd give up for one more of the other and still be equally happy. It's the slope of the indifference curve and measures marginal benefit."
+  },
+  {
+   "id": "8318c7c4db",
+   "cls": "micro",
+   "note": "Unit 5 - Consumer Demand",
+   "kind": "term",
+   "front": "Diminishing MRS:",
+   "back": "curves get flatter as you move right, which reflects a preference for variety."
+  },
+  {
+   "id": "b723425cd7",
+   "cls": "micro",
+   "note": "Unit 5 - Consumer Demand",
+   "kind": "question",
+   "front": "Write the budget line for $60 income, $4 coffee, $6 muffin. What is its slope?",
+   "back": ""
+  },
+  {
+   "id": "0a256770b5",
+   "cls": "micro",
+   "note": "Unit 5 - Consumer Demand",
+   "kind": "question",
+   "front": "What happens to the budget line if income rises but prices stay the same? If only the price of coffee rises?",
+   "back": ""
+  },
+  {
+   "id": "155ce46a5a",
+   "cls": "micro",
+   "note": "Unit 5 - Consumer Demand",
+   "kind": "question",
+   "front": "What does it mean that Anna is indifferent between two bundles?",
+   "back": ""
+  },
+  {
+   "id": "337c131354",
+   "cls": "micro",
+   "note": "Unit 5 - Consumer Demand",
+   "kind": "question",
+   "front": "Why are indifference curves usually bowed in, and what does that say about MRS?",
+   "back": ""
+  },
+  {
+   "id": "8c5bc12d06",
+   "cls": "micro",
+   "note": "Unit 5 - Consumer Demand",
+   "kind": "question",
+   "front": "State the optimality condition in words and in symbols.",
+   "back": ""
+  },
+  {
+   "id": "19b14ebaf3",
+   "cls": "micro",
+   "note": "Unit 5 - Consumer Demand",
+   "kind": "question",
+   "front": "What do the indifference curves look like for perfect substitutes? For perfect complements?",
+   "back": ""
+  },
+  {
+   "id": "1b40e5787f",
+   "cls": "micro",
+   "note": "Unit 5 - Consumer Demand",
+   "kind": "question",
+   "front": "Why is a bundle on the budget line but on a lower indifference curve not optimal?",
+   "back": ""
+  },
+  {
+   "id": "4cb729bef2",
+   "cls": "calc",
+   "note": "Week 1 - Functions and Trig Review",
+   "kind": "term",
+   "front": "Composition (f∘g)(x)",
+   "back": "put g(x) inside f. Order matters: f(g(x)) ≠ g(f(x)) in general."
+  },
+  {
+   "id": "af0f81f5d1",
+   "cls": "calc",
+   "note": "Week 1 - Functions and Trig Review",
+   "kind": "term",
+   "front": "Piecewise function",
+   "back": "different rules on different intervals (written with a left brace)."
+  },
+  {
+   "id": "0e33e20ac5",
+   "cls": "calc",
+   "note": "Week 1 - Functions and Trig Review",
+   "kind": "term",
+   "front": "Absolute value as piecewise",
+   "back": "|stuff| = stuff when stuff ≥ 0, and −stuff when stuff < 0."
+  },
+  {
+   "id": "1edf618dd1",
+   "cls": "calc",
+   "note": "Week 1 - Functions and Trig Review",
+   "kind": "term",
+   "front": "Domain",
+   "back": "all inputs where the formula makes sense (no dividing by 0, no even roots of negatives, log inputs > 0)."
+  },
+  {
+   "id": "68e8698b5e",
+   "cls": "calc",
+   "note": "Week 1 - Functions and Trig Review",
+   "kind": "term",
+   "front": "Unit circle",
+   "back": "the circle of radius 1; cos is the x-coordinate, sin the y-coordinate."
+  },
+  {
+   "id": "4359917df9",
+   "cls": "calc",
+   "note": "Week 1 - Functions and Trig Review",
+   "kind": "term",
+   "front": "Inverse trig",
+   "back": "sin⁻¹, cos⁻¹, tan⁻¹ undo sin, cos, tan, but only on restricted ranges."
+  },
+  {
+   "id": "6e7c04bbb3",
+   "cls": "calc",
+   "note": "Week 1 - Functions and Trig Review",
+   "kind": "question",
+   "front": "What are three conditions that can restrict a function's domain?",
+   "back": ""
+  },
+  {
+   "id": "42e90a288c",
+   "cls": "calc",
+   "note": "Week 1 - Functions and Trig Review",
+   "kind": "question",
+   "front": "How do you rewrite |x − 3| as a piecewise function?",
+   "back": ""
+  },
+  {
+   "id": "58b8f75cef",
+   "cls": "calc",
+   "note": "Week 1 - Functions and Trig Review",
+   "kind": "question",
+   "front": "Why is f(g(x)) usually different from g(f(x))?",
+   "back": ""
+  },
+  {
+   "id": "e001668150",
+   "cls": "calc",
+   "note": "Week 1 - Functions and Trig Review",
+   "kind": "question",
+   "front": "How can you turn e²ˣ + 5eˣ + 6 = 0 into a quadratic? What do you need to check about your answers?",
+   "back": ""
+  },
+  {
+   "id": "70d7b862da",
+   "cls": "calc",
+   "note": "Week 1 - Functions and Trig Review",
+   "kind": "question",
+   "front": "Why isn't cos⁻¹(cos(2π)) equal to 2π?",
+   "back": ""
+  },
+  {
+   "id": "d947b1ca46",
+   "cls": "calc",
+   "note": "Week 1 - Functions and Trig Review",
+   "kind": "question",
+   "front": "How do you find *all* solutions of a trig equation, not just one?",
+   "back": ""
+  },
+  {
+   "id": "90d139da86",
+   "cls": "calc",
+   "note": "Week 2 - Exponentials, Logs, Inverses and Limits",
+   "kind": "term",
+   "front": "Exponential function bᵡ",
+   "back": "base b > 0 and b ≠ 1."
+  },
+  {
+   "id": "9b9fe39a75",
+   "cls": "calc",
+   "note": "Week 2 - Exponentials, Logs, Inverses and Limits",
+   "kind": "term",
+   "front": "Logarithm log_b(x)",
+   "back": "the inverse of bˣ."
+  },
+  {
+   "id": "a26c8002bf",
+   "cls": "calc",
+   "note": "Week 2 - Exponentials, Logs, Inverses and Limits",
+   "kind": "term",
+   "front": "Natural log ln(x)",
+   "back": "log base e. **e ≈ 2.718** (Euler's number)."
+  },
+  {
+   "id": "e5518a2504",
+   "cls": "calc",
+   "note": "Week 2 - Exponentials, Logs, Inverses and Limits",
+   "kind": "term",
+   "front": "Inverse function f⁻¹",
+   "back": "undoes f. f⁻¹ is *not* 1/f."
+  },
+  {
+   "id": "c2b2bd4c46",
+   "cls": "calc",
+   "note": "Week 2 - Exponentials, Logs, Inverses and Limits",
+   "kind": "term",
+   "front": "One-to-one",
+   "back": "a function that has an inverse."
+  },
+  {
+   "id": "661703a58b",
+   "cls": "calc",
+   "note": "Week 2 - Exponentials, Logs, Inverses and Limits",
+   "kind": "term",
+   "front": "Left / right / two-sided limit",
+   "back": "where f(x) heads as x approaches a from the left, the right, or both."
+  },
+  {
+   "id": "ecd3a38092",
+   "cls": "calc",
+   "note": "Week 2 - Exponentials, Logs, Inverses and Limits",
+   "kind": "question",
+   "front": "What are the two statements that say eˣ and ln(x) are inverses, and where is each one valid?",
+   "back": ""
+  },
+  {
+   "id": "6889a9101e",
+   "cls": "calc",
+   "note": "Week 2 - Exponentials, Logs, Inverses and Limits",
+   "kind": "question",
+   "front": "Rewrite 3ˣ in terms of e. Rewrite log₅(x) in terms of ln.",
+   "back": ""
+  },
+  {
+   "id": "b72acc44b7",
+   "cls": "calc",
+   "note": "Week 2 - Exponentials, Logs, Inverses and Limits",
+   "kind": "question",
+   "front": "Expand ln(x²·y / z) into separate logs. Then compress 2 ln a − ln b into one log.",
+   "back": ""
+  },
+  {
+   "id": "e37c2415a3",
+   "cls": "calc",
+   "note": "Week 2 - Exponentials, Logs, Inverses and Limits",
+   "kind": "question",
+   "front": "Why can ln(x) + ln(x − 1) = ln(6) have an extraneous solution?",
+   "back": ""
+  },
+  {
+   "id": "704b2e26b0",
+   "cls": "calc",
+   "note": "Week 2 - Exponentials, Logs, Inverses and Limits",
+   "kind": "question",
+   "front": "For a made-up equation like e^(3x) = 20, what's the first step? For ln(2x) = 4?",
+   "back": ""
+  },
+  {
+   "id": "40638ae84a",
+   "cls": "calc",
+   "note": "Week 2 - Exponentials, Logs, Inverses and Limits",
+   "kind": "question",
+   "front": "How are the domain and range of f and f⁻¹ related?",
+   "back": ""
+  },
+  {
+   "id": "7279df3ffe",
+   "cls": "calc",
+   "note": "Week 2 - Exponentials, Logs, Inverses and Limits",
+   "kind": "question",
+   "front": "Why does f(x) = x² need a restricted domain before it has an inverse?",
+   "back": ""
+  },
+  {
+   "id": "7f557c5a56",
+   "cls": "calc",
+   "note": "Week 2 - Exponentials, Logs, Inverses and Limits",
+   "kind": "question",
+   "front": "If the left limit is 2 and the right limit is 5 at a, what can you say about the two-sided limit?",
+   "back": ""
+  },
+  {
+   "id": "2a1b71df2f",
+   "cls": "calc",
+   "note": "Week 3 - Limits and Continuity",
+   "kind": "term",
+   "front": "Direct substitution",
+   "back": "for basic functions (polynomials, rational, trig, eˣ, ln) inside their domain, lim f(x) = f(a)."
+  },
+  {
+   "id": "8b446d8f74",
+   "cls": "calc",
+   "note": "Week 3 - Limits and Continuity",
+   "kind": "term",
+   "front": "Limit laws",
+   "back": "limits of sums, differences, products, quotients, powers and roots can be split up **only when each smaller limit exists** (and the bottom limit ≠ 0)."
+  },
+  {
+   "id": "2d5d988af0",
+   "cls": "calc",
+   "note": "Week 3 - Limits and Continuity",
+   "kind": "term",
+   "front": "Squeeze theorem",
+   "back": "if f ≤ g ≤ h near a and f and h both → L, then g → L."
+  },
+  {
+   "id": "9b2b802386",
+   "cls": "calc",
+   "note": "Week 3 - Limits and Continuity",
+   "kind": "term",
+   "front": "Continuous at a",
+   "back": "lim f(x) = f(a). Needs the limit to exist, f(a) to exist, and them to be equal."
+  },
+  {
+   "id": "63b1c543d6",
+   "cls": "calc",
+   "note": "Week 3 - Limits and Continuity",
+   "kind": "term",
+   "front": "Change of variable",
+   "back": "substitute u = g(x) to turn a hard limit into an easy one."
+  },
+  {
+   "id": "0501a0e142",
+   "cls": "calc",
+   "note": "Week 3 - Limits and Continuity",
+   "kind": "question",
+   "front": "What do you do first when you see lim x→a f(x)? What if the denominator is then 0?",
+   "back": ""
+  },
+  {
+   "id": "ca880222b3",
+   "cls": "calc",
+   "note": "Week 3 - Limits and Continuity",
+   "kind": "question",
+   "front": "Why can't you use the sum law on lim (1/x + something) when lim 1/x doesn't exist?",
+   "back": ""
+  },
+  {
+   "id": "de0f74a0c5",
+   "cls": "calc",
+   "note": "Week 3 - Limits and Continuity",
+   "kind": "question",
+   "front": "Name the three types of discontinuity and what one-sided limits look like in each.",
+   "back": ""
+  },
+  {
+   "id": "cdd9d2ef54",
+   "cls": "calc",
+   "note": "Week 3 - Limits and Continuity",
+   "kind": "question",
+   "front": "Why does \"(x²−1)/(x−1)\" have a hole instead of a vertical asymptote at x = 1?",
+   "back": ""
+  },
+  {
+   "id": "4996b10701",
+   "cls": "calc",
+   "note": "Week 3 - Limits and Continuity",
+   "kind": "question",
+   "front": "When is the squeeze theorem a good tool?",
+   "back": ""
+  },
+  {
+   "id": "1a45d7e4fe",
+   "cls": "calc",
+   "note": "Week 3 - Limits and Continuity",
+   "kind": "question",
+   "front": "What are the three things you must check to say f is continuous at a?",
+   "back": ""
+  },
+  {
+   "id": "d2ee7d22aa",
+   "cls": "calc",
+   "note": "Week 3 - Limits and Continuity",
+   "kind": "question",
+   "front": "For a piecewise function, which three values do you compare at each boundary?",
+   "back": ""
+  },
+  {
+   "id": "fc415e140e",
+   "cls": "calc",
+   "note": "Week 4 - IVT and Limits at Infinity",
+   "kind": "term",
+   "front": "Intermediate Value Theorem",
+   "back": "if f is continuous on [a, b] and z is between f(a) and f(b), some c in [a, b] has f(c) = z."
+  },
+  {
+   "id": "7e105224aa",
+   "cls": "calc",
+   "note": "Week 4 - IVT and Limits at Infinity",
+   "kind": "term",
+   "front": "Closed and bounded interval",
+   "back": "finite length, includes both endpoints (e.g., [1, 3])."
+  },
+  {
+   "id": "f38947e385",
+   "cls": "calc",
+   "note": "Week 4 - IVT and Limits at Infinity",
+   "kind": "term",
+   "front": "Horizontal asymptote y = L",
+   "back": "lim x→∞ f(x) = L or lim x→−∞ f(x) = L."
+  },
+  {
+   "id": "6c63d34a5a",
+   "cls": "calc",
+   "note": "Week 4 - IVT and Limits at Infinity",
+   "kind": "term",
+   "front": "Dominant term",
+   "back": "the fastest-growing term (largest power, or eˣ beating polynomials)."
+  },
+  {
+   "id": "d9835b2862",
+   "cls": "calc",
+   "note": "Week 4 - IVT and Limits at Infinity",
+   "kind": "term",
+   "front": "∞ − ∞",
+   "back": "not a number; needs a rationalization trick."
+  },
+  {
+   "id": "9d6debbec8",
+   "cls": "calc",
+   "note": "Week 4 - IVT and Limits at Infinity",
+   "kind": "question",
+   "front": "What three checks do you need before applying the IVT?",
+   "back": ""
+  },
+  {
+   "id": "0766d253dd",
+   "cls": "calc",
+   "note": "Week 4 - IVT and Limits at Infinity",
+   "kind": "question",
+   "front": "Why does the IVT fail on (1, 3] or [1, ∞)?",
+   "back": ""
+  },
+  {
+   "id": "35e2e8b7a4",
+   "cls": "calc",
+   "note": "Week 4 - IVT and Limits at Infinity",
+   "kind": "question",
+   "front": "How do you start a problem asking for the constant k that makes a piecewise function continuous?",
+   "back": ""
+  },
+  {
+   "id": "04c3798ae9",
+   "cls": "calc",
+   "note": "Week 4 - IVT and Limits at Infinity",
+   "kind": "question",
+   "front": "What's a horizontal asymptote in terms of limits? How many can a function have?",
+   "back": ""
+  },
+  {
+   "id": "f865c95c72",
+   "cls": "calc",
+   "note": "Week 4 - IVT and Limits at Infinity",
+   "kind": "question",
+   "front": "Describe the \"dominant terms\" method in your own words.",
+   "back": ""
+  },
+  {
+   "id": "7c0f28a033",
+   "cls": "calc",
+   "note": "Week 4 - IVT and Limits at Infinity",
+   "kind": "question",
+   "front": "Why is ∞ − ∞ not a valid answer, and what trick is used instead?",
+   "back": ""
+  },
+  {
+   "id": "31f78dfc27",
+   "cls": "calc",
+   "note": "Week 4 - IVT and Limits at Infinity",
+   "kind": "question",
+   "front": "For x → −∞, why does √(x²) need extra care?",
+   "back": ""
+  },
+  {
+   "id": "468455d4c2",
+   "cls": "calc",
+   "note": "Week 4 - IVT and Limits at Infinity",
+   "kind": "question",
+   "front": "What happens to (eˣ + 1)/(eˣ − 2) as x → −∞, versus x → +∞?",
+   "back": ""
+  },
+  {
+   "id": "564a19c096",
+   "cls": "anthro",
+   "note": "Week 2 - What Is Anthropology",
+   "kind": "term",
+   "front": "Anthropology",
+   "back": "from Greek *anthropos* (human) + *logos* (study of)."
+  },
+  {
+   "id": "2886592eb8",
+   "cls": "anthro",
+   "note": "Week 2 - What Is Anthropology",
+   "kind": "term",
+   "front": "Four subfields",
+   "back": "\n• **Sociocultural**: social and cultural variation between societies\n• **Linguistic**: how language shapes social life and culture\n• **Archaeology**: the human past (and present) through **material remains**\n• **Biological anthropology**: human biology and evolution, seen in a **biocultural** perspective (also called *physical anthropology*)"
+  },
+  {
+   "id": "c88dc1c527",
+   "cls": "anthro",
+   "note": "Week 2 - What Is Anthropology",
+   "kind": "term",
+   "front": "Holism",
+   "back": "you can't understand one part (biology, culture, environment) without the whole."
+  },
+  {
+   "id": "d82c1e9e94",
+   "cls": "anthro",
+   "note": "Week 2 - What Is Anthropology",
+   "kind": "term",
+   "front": "Comparative",
+   "back": "compare across cultures, within cultures, across deep time, and with other primates."
+  },
+  {
+   "id": "694a789c30",
+   "cls": "anthro",
+   "note": "Week 2 - What Is Anthropology",
+   "kind": "term",
+   "front": "Cultural relativism",
+   "back": "understand a practice on its own culture's terms, without judging it by another culture's standards. Associated with Franz Boas."
+  },
+  {
+   "id": "44ec74472c",
+   "cls": "anthro",
+   "note": "Week 2 - What Is Anthropology",
+   "kind": "term",
+   "front": "Culture",
+   "back": "shared, learned, social behaviour, or \"the way we do things.\""
+  },
+  {
+   "id": "46e0d4d3e5",
+   "cls": "anthro",
+   "note": "Week 2 - What Is Anthropology",
+   "kind": "term",
+   "front": "Material culture",
+   "back": "the physical traces of human activity."
+  },
+  {
+   "id": "775a915626",
+   "cls": "anthro",
+   "note": "Week 2 - What Is Anthropology",
+   "kind": "term",
+   "front": "Artifacts / ecofacts",
+   "back": "objects people made or used / natural remains like food waste or seeds."
+  },
+  {
+   "id": "97ba2ad0df",
+   "cls": "anthro",
+   "note": "Week 2 - What Is Anthropology",
+   "kind": "question",
+   "front": "How does the textbook define *anthropology*, *human* and *culture*?",
+   "back": ""
+  },
+  {
+   "id": "dfec190110",
+   "cls": "anthro",
+   "note": "Week 2 - What Is Anthropology",
+   "kind": "question",
+   "front": "Name the four fields of anthropology. What is *applied* anthropology?",
+   "back": ""
+  },
+  {
+   "id": "1806945d25",
+   "cls": "anthro",
+   "note": "Week 2 - What Is Anthropology",
+   "kind": "question",
+   "front": "What is another name for biological anthropology, and what areas fall under it?",
+   "back": ""
+  },
+  {
+   "id": "90a2cb56db",
+   "cls": "anthro",
+   "note": "Week 2 - What Is Anthropology",
+   "kind": "question",
+   "front": "Describe the three parts of the anthropological perspective.",
+   "back": ""
+  },
+  {
+   "id": "0f3c949c40",
+   "cls": "anthro",
+   "note": "Week 2 - What Is Anthropology",
+   "kind": "question",
+   "front": "Why have anthropologists been called \"agents of colonialism,\" and what does decolonization mean for the field?",
+   "back": ""
+  },
+  {
+   "id": "70af7ddbf5",
+   "cls": "anthro",
+   "note": "Week 2 - What Is Anthropology",
+   "kind": "question",
+   "front": "Why do anthropologists care so much about food practices?",
+   "back": ""
+  },
+  {
+   "id": "af38c110c0",
+   "cls": "anthro",
+   "note": "Week 3a - What Is a Primate",
+   "kind": "term",
+   "front": "Taxonomy",
+   "back": "the science of classifying living things."
+  },
+  {
+   "id": "d909d283e4",
+   "cls": "anthro",
+   "note": "Week 3a - What Is a Primate",
+   "kind": "term",
+   "front": "Binomial nomenclature",
+   "back": "*Genus species* naming (e.g., *Homo sapiens*), from **Linnaeus** (*Systema Naturae*, 1735)."
+  },
+  {
+   "id": "787ef54a10",
+   "cls": "anthro",
+   "note": "Week 3a - What Is a Primate",
+   "kind": "term",
+   "front": "Heterodont dentition",
+   "back": "different tooth types (incisors, canines, premolars, molars), allowing a varied diet."
+  },
+  {
+   "id": "c302bf69a1",
+   "cls": "anthro",
+   "note": "Week 3a - What Is a Primate",
+   "kind": "term",
+   "front": "Dental formula",
+   "back": "count of incisors.canines.premolars.molars in one quarter of the mouth."
+  },
+  {
+   "id": "71fb5294ae",
+   "cls": "anthro",
+   "note": "Week 3a - What Is a Primate",
+   "kind": "term",
+   "front": "Prehensile",
+   "back": "able to grasp."
+  },
+  {
+   "id": "178438acf3",
+   "cls": "anthro",
+   "note": "Week 3a - What Is a Primate",
+   "kind": "term",
+   "front": "Stereoscopic vision",
+   "back": "overlapping fields of view from forward-facing eyes, giving 3D depth perception."
+  },
+  {
+   "id": "a91c514138",
+   "cls": "anthro",
+   "note": "Week 3a - What Is a Primate",
+   "kind": "term",
+   "front": "Olfaction",
+   "back": "sense of smell."
+  },
+  {
+   "id": "5785a1f8be",
+   "cls": "anthro",
+   "note": "Week 3a - What Is a Primate",
+   "kind": "term",
+   "front": "Rhinarium",
+   "back": "the moist, hairless nose pad of strepsirhines."
+  },
+  {
+   "id": "801403a9cd",
+   "cls": "anthro",
+   "note": "Week 3a - What Is a Primate",
+   "kind": "term",
+   "front": "Arboreal / terrestrial",
+   "back": "living in trees / on the ground."
+  },
+  {
+   "id": "2aa2616a56",
+   "cls": "anthro",
+   "note": "Week 3a - What Is a Primate",
+   "kind": "term",
+   "front": "Diurnal / nocturnal / cathemeral",
+   "back": "active by day / at night / at irregular times."
+  },
+  {
+   "id": "cb423f5e9c",
+   "cls": "anthro",
+   "note": "Week 3a - What Is a Primate",
+   "kind": "term",
+   "front": "Phylogeny",
+   "back": "evolutionary relationships between species, estimated using genetic differences and \"molecular clocks.\""
+  },
+  {
+   "id": "ce1a043ba0",
+   "cls": "anthro",
+   "note": "Week 3a - What Is a Primate",
+   "kind": "term",
+   "front": "LCA",
+   "back": "last common ancestor."
+  },
+  {
+   "id": "c7b7eba87c",
+   "cls": "anthro",
+   "note": "Week 3a - What Is a Primate",
+   "kind": "question",
+   "front": "What are the distinguishing characteristics of primates?",
+   "back": ""
+  },
+  {
+   "id": "d9bb4f3b0d",
+   "cls": "anthro",
+   "note": "Week 3a - What Is a Primate",
+   "kind": "question",
+   "front": "What primates are strepsirhines, and what makes them unique?",
+   "back": ""
+  },
+  {
+   "id": "594ca28a05",
+   "cls": "anthro",
+   "note": "Week 3a - What Is a Primate",
+   "kind": "question",
+   "front": "How do New World and Old World monkeys differ? How did New World monkeys reach the Americas?",
+   "back": ""
+  },
+  {
+   "id": "f0ec127af8",
+   "cls": "anthro",
+   "note": "Week 3a - What Is a Primate",
+   "kind": "question",
+   "front": "Name the two families of Hominoidea. Where do humans fit?",
+   "back": ""
+  },
+  {
+   "id": "25e9ba39cf",
+   "cls": "anthro",
+   "note": "Week 3a - What Is a Primate",
+   "kind": "question",
+   "front": "When did the first primates evolve?",
+   "back": ""
+  },
+  {
+   "id": "7b8f56fcf8",
+   "cls": "anthro",
+   "note": "Week 3a - What Is a Primate",
+   "kind": "question",
+   "front": "True or false: today's non-human primates have been evolving for millions of years, just like us.",
+   "back": ""
+  },
+  {
+   "id": "d529671edd",
+   "cls": "anthro",
+   "note": "Week 3a - What Is a Primate",
+   "kind": "question",
+   "front": "Keywords to define: taxonomic order, olfaction/rhinarium, dental formula, ontogeny, adaptive radiation.",
+   "back": ""
+  },
+  {
+   "id": "94c64c0acc",
+   "cls": "anthro",
+   "note": "Week 3b - Primate Behaviour",
+   "kind": "term",
+   "front": "Anthropomorphism",
+   "back": "giving animals human traits. Traditionally avoided in science, but Frans de Waal argued that refusing to do it at all can make us miss real similarities. Do it consciously and critically."
+  },
+  {
+   "id": "4ceb8e64b7",
+   "cls": "anthro",
+   "note": "Week 3b - Primate Behaviour",
+   "kind": "term",
+   "front": "Primatology",
+   "back": "the study of non-human primates (pioneers: **Jane Goodall** (chimps), **Dian Fossey** (gorillas), **Biruté Galdikas** (orangutans), all supported by Louis Leakey)."
+  },
+  {
+   "id": "3188ea1e39",
+   "cls": "anthro",
+   "note": "Week 3b - Primate Behaviour",
+   "kind": "term",
+   "front": "Basal metabolic rate (BMR)",
+   "back": "energy used at rest. Smaller animals have a higher BMR, so they need energy-rich food (insects, fruit, seeds; not leaves)."
+  },
+  {
+   "id": "0f81548c2c",
+   "cls": "anthro",
+   "note": "Week 3b - Primate Behaviour",
+   "kind": "term",
+   "front": "Dispersal",
+   "back": "one sex leaves the birth group at maturity (usually males)."
+  },
+  {
+   "id": "7e27b7a3a8",
+   "cls": "anthro",
+   "note": "Week 3b - Primate Behaviour",
+   "kind": "term",
+   "front": "Life history",
+   "back": "gestation length, interbirth interval, weaning age, maturity age, life expectancy."
+  },
+  {
+   "id": "9591e38c58",
+   "cls": "anthro",
+   "note": "Week 3b - Primate Behaviour",
+   "kind": "term",
+   "front": "Agonistic",
+   "back": "aggressive or conflict behaviour."
+  },
+  {
+   "id": "9d6467f53f",
+   "cls": "anthro",
+   "note": "Week 3b - Primate Behaviour",
+   "kind": "term",
+   "front": "Affiliative",
+   "back": "friendly or bonding behaviour."
+  },
+  {
+   "id": "efa46bb162",
+   "cls": "anthro",
+   "note": "Week 3b - Primate Behaviour",
+   "kind": "term",
+   "front": "Kin selection",
+   "back": "helping relatives, which indirectly passes on your own genes."
+  },
+  {
+   "id": "cc14ba1ae0",
+   "cls": "anthro",
+   "note": "Week 3b - Primate Behaviour",
+   "kind": "term",
+   "front": "Estrus",
+   "back": "the period of sexual receptivity around ovulation."
+  },
+  {
+   "id": "6f2feb7c29",
+   "cls": "anthro",
+   "note": "Week 3b - Primate Behaviour",
+   "kind": "term",
+   "front": "K-selection",
+   "back": "few offspring, heavy investment in each (primates). *r-selection*: many offspring, little investment."
+  },
+  {
+   "id": "e65407fc9a",
+   "cls": "anthro",
+   "note": "Week 3b - Primate Behaviour",
+   "kind": "term",
+   "front": "Sexual selection",
+   "back": "traits that evolve because they help win mates (big canines, a mandrill's colourful face)."
+  },
+  {
+   "id": "cb12f8f290",
+   "cls": "anthro",
+   "note": "Week 3b - Primate Behaviour",
+   "kind": "term",
+   "front": "Theory of mind",
+   "back": "understanding that others have their own beliefs and knowledge."
+  },
+  {
+   "id": "b66a9456cd",
+   "cls": "anthro",
+   "note": "Week 3b - Primate Behaviour",
+   "kind": "term",
+   "front": "Egalitarian",
+   "back": "no strong hierarchy."
+  },
+  {
+   "id": "6533572654",
+   "cls": "anthro",
+   "note": "Week 3b - Primate Behaviour",
+   "kind": "term",
+   "front": "Bushmeat",
+   "back": "wild animals hunted for food, a major threat to primates."
+  },
+  {
+   "id": "d1217cf15e",
+   "cls": "anthro",
+   "note": "Week 3b - Primate Behaviour",
+   "kind": "question",
+   "front": "Why does studying non-human primates matter for human biology, evolution and primate advocacy?",
+   "back": ""
+  },
+  {
+   "id": "bb68505c45",
+   "cls": "anthro",
+   "note": "Week 3b - Primate Behaviour",
+   "kind": "question",
+   "front": "What five aspects of behaviour do primatologists study, and why?",
+   "back": ""
+  },
+  {
+   "id": "7137982848",
+   "cls": "anthro",
+   "note": "Week 3b - Primate Behaviour",
+   "kind": "question",
+   "front": "What methods do primatologists use?",
+   "back": ""
+  },
+  {
+   "id": "0b95da2151",
+   "cls": "anthro",
+   "note": "Week 3b - Primate Behaviour",
+   "kind": "question",
+   "front": "What are primatologists' conservation goals?",
+   "back": ""
+  },
+  {
+   "id": "d618dc508b",
+   "cls": "anthro",
+   "note": "Week 3b - Primate Behaviour",
+   "kind": "question",
+   "front": "How would you use scientific evidence to counter the myth of Bigfoot?",
+   "back": ""
+  },
+  {
+   "id": "9cb176c0fe",
+   "cls": "anthro",
+   "note": "Week 3b - Primate Behaviour",
+   "kind": "question",
+   "front": "Why does a behaviour need to vary *within* a subspecies, in the same kind of environment, to count as cultural?",
+   "back": ""
+  },
+  {
+   "id": "f163bbfb13",
+   "cls": "anthro",
+   "note": "Week 4 - Evolutionary Thought and Theory",
+   "kind": "term",
+   "front": "Hypothesis",
+   "back": "a testable, **falsifiable** proposed explanation. If it can't be proven wrong, it's a belief system."
+  },
+  {
+   "id": "578da4596b",
+   "cls": "anthro",
+   "note": "Week 4 - Evolutionary Thought and Theory",
+   "kind": "term",
+   "front": "Theory",
+   "back": "a well-supported explanation backed by lots of evidence."
+  },
+  {
+   "id": "50cad07d98",
+   "cls": "anthro",
+   "note": "Week 4 - Evolutionary Thought and Theory",
+   "kind": "term",
+   "front": "Inference",
+   "back": "a conclusion from evidence plus reasoning."
+  },
+  {
+   "id": "a357e07df2",
+   "cls": "anthro",
+   "note": "Week 4 - Evolutionary Thought and Theory",
+   "kind": "term",
+   "front": "Essentialism",
+   "back": "(Plato) everything has a fixed, perfect \"ideal\" form."
+  },
+  {
+   "id": "fe6a8178db",
+   "cls": "anthro",
+   "note": "Week 4 - Evolutionary Thought and Theory",
+   "kind": "term",
+   "front": "Great Chain of Being",
+   "back": "(Aristotle) a fixed ladder of life from simple to complex."
+  },
+  {
+   "id": "8c7ef31155",
+   "cls": "anthro",
+   "note": "Week 4 - Evolutionary Thought and Theory",
+   "kind": "term",
+   "front": "Teleology",
+   "back": "nature is directed toward a purpose."
+  },
+  {
+   "id": "82859a0a17",
+   "cls": "anthro",
+   "note": "Week 4 - Evolutionary Thought and Theory",
+   "kind": "term",
+   "front": "Fixity of species",
+   "back": "species never change (the medieval view)."
+  },
+  {
+   "id": "051d7e998d",
+   "cls": "anthro",
+   "note": "Week 4 - Evolutionary Thought and Theory",
+   "kind": "term",
+   "front": "Uniformitarianism",
+   "back": "(Hutton, then Lyell) the slow processes we see today worked the same way in the past, so Earth must be very old (\"**deep time**\")."
+  },
+  {
+   "id": "3290915ff6",
+   "cls": "anthro",
+   "note": "Week 4 - Evolutionary Thought and Theory",
+   "kind": "term",
+   "front": "Catastrophism",
+   "back": "(Cuvier) sudden disasters caused extinctions."
+  },
+  {
+   "id": "55cded230b",
+   "cls": "anthro",
+   "note": "Week 4 - Evolutionary Thought and Theory",
+   "kind": "term",
+   "front": "Species",
+   "back": "(John Ray) a group that can interbreed and produce **fertile offspring**."
+  },
+  {
+   "id": "b07c607578",
+   "cls": "anthro",
+   "note": "Week 4 - Evolutionary Thought and Theory",
+   "kind": "term",
+   "front": "Microevolution",
+   "back": "small changes within a population over a few generations."
+  },
+  {
+   "id": "e1bb00486a",
+   "cls": "anthro",
+   "note": "Week 4 - Evolutionary Thought and Theory",
+   "kind": "term",
+   "front": "Macroevolution",
+   "back": "new species forming over long periods."
+  },
+  {
+   "id": "bddb87d9d8",
+   "cls": "anthro",
+   "note": "Week 4 - Evolutionary Thought and Theory",
+   "kind": "term",
+   "front": "Reproductive fitness",
+   "back": "how successful an individual is at leaving offspring."
+  },
+  {
+   "id": "e65407fc9a",
+   "cls": "anthro",
+   "note": "Week 4 - Evolutionary Thought and Theory",
+   "kind": "term",
+   "front": "Sexual selection",
+   "back": "selection for traits that win mates."
+  },
+  {
+   "id": "5a8e8a523b",
+   "cls": "anthro",
+   "note": "Week 4 - Evolutionary Thought and Theory",
+   "kind": "term",
+   "front": "Gene / allele / locus",
+   "back": "a DNA segment coding for a molecule / one version of a gene / the gene's position on a chromosome."
+  },
+  {
+   "id": "04de20a16e",
+   "cls": "anthro",
+   "note": "Week 4 - Evolutionary Thought and Theory",
+   "kind": "term",
+   "front": "Genotype / phenotype",
+   "back": "genetic makeup / observable traits."
+  },
+  {
+   "id": "ceef781118",
+   "cls": "anthro",
+   "note": "Week 4 - Evolutionary Thought and Theory",
+   "kind": "term",
+   "front": "Homozygous / heterozygous",
+   "back": "two identical alleles (RR, rr) / two different alleles (Rr)."
+  },
+  {
+   "id": "04e0621fc1",
+   "cls": "anthro",
+   "note": "Week 4 - Evolutionary Thought and Theory",
+   "kind": "term",
+   "front": "Gradualism / punctuated equilibrium",
+   "back": "slow steady change / long stability broken by bursts of change."
+  },
+  {
+   "id": "a15e66d1d4",
+   "cls": "anthro",
+   "note": "Week 4 - Evolutionary Thought and Theory",
+   "kind": "question",
+   "front": "Define *science*, *hypothesis* and *theory*.",
+   "back": ""
+  },
+  {
+   "id": "7b470d9181",
+   "cls": "anthro",
+   "note": "Week 4 - Evolutionary Thought and Theory",
+   "kind": "question",
+   "front": "Explain evolution from Darwin's perspective.",
+   "back": ""
+  },
+  {
+   "id": "8c839ba797",
+   "cls": "anthro",
+   "note": "Week 4 - Evolutionary Thought and Theory",
+   "kind": "question",
+   "front": "Compare Lamarck's \"transformational\" evolution with Darwin's \"variational\" evolution. Why was Lamarck wrong?",
+   "back": ""
+  },
+  {
+   "id": "392c0975fa",
+   "cls": "anthro",
+   "note": "Week 4 - Evolutionary Thought and Theory",
+   "kind": "question",
+   "front": "How did Hutton and Lyell challenge traditional views?",
+   "back": ""
+  },
+  {
+   "id": "0fb8d251e6",
+   "cls": "anthro",
+   "note": "Week 4 - Evolutionary Thought and Theory",
+   "kind": "question",
+   "front": "What did Mendel contribute? What do we now call his \"factors\"?",
+   "back": ""
+  },
+  {
+   "id": "153c1ca74b",
+   "cls": "anthro",
+   "note": "Week 4 - Evolutionary Thought and Theory",
+   "kind": "question",
+   "front": "Dominant vs. recessive; phenotype vs. genotype?",
+   "back": ""
+  },
+  {
+   "id": "3edddda6b0",
+   "cls": "anthro",
+   "note": "Week 4 - Evolutionary Thought and Theory",
+   "kind": "question",
+   "front": "Which of mutation, gene flow, drift and selection is the only true source of **new** variation?",
+   "back": ""
+  },
+  {
+   "id": "0d0f43084d",
+   "cls": "anthro",
+   "note": "Week 4 - Evolutionary Thought and Theory",
+   "kind": "question",
+   "front": "How does lactose tolerance show mutation and natural selection working together?",
+   "back": ""
+  },
+  {
+   "id": "fb8d91e6de",
+   "cls": "anthro",
+   "note": "Week 4 - Evolutionary Thought and Theory",
+   "kind": "question",
+   "front": "Keywords: sexual selection, gradualism, punctuated equilibrium, speciation, mass extinction.",
+   "back": ""
+  },
+  {
+   "id": "6e56dab03e",
+   "cls": "business",
+   "note": "01 - Course Intro and the Case Method",
+   "kind": "question",
+   "front": "What are the three steps of the case method?",
+   "back": ""
+  },
+  {
+   "id": "69ab93fac4",
+   "cls": "business",
+   "note": "01 - Course Intro and the Case Method",
+   "kind": "question",
+   "front": "How many absences do you get for the whole year?",
+   "back": ""
+  },
+  {
+   "id": "61fc2ef6ea",
+   "cls": "business",
+   "note": "01 - Course Intro and the Case Method",
+   "kind": "question",
+   "front": "What separates a 5–7 participation day from an 8–10 day?",
+   "back": ""
+  },
+  {
+   "id": "65f92d5d9a",
+   "cls": "business",
+   "note": "02 - The Three Financial Statements",
+   "kind": "question",
+   "front": "Which statement is a \"snapshot,\" and which covers a period of time?",
+   "back": ""
+  },
+  {
+   "id": "6a81fbeec2",
+   "cls": "business",
+   "note": "02 - The Three Financial Statements",
+   "kind": "question",
+   "front": "Beginning inventory $20k, purchases $90k, ending inventory $25k. What's COGS?",
+   "back": ""
+  },
+  {
+   "id": "aab5d01539",
+   "cls": "business",
+   "note": "02 - The Three Financial Statements",
+   "kind": "question",
+   "front": "Why can a profitable company still run out of cash?",
+   "back": ""
+  },
+  {
+   "id": "92a08a6e3f",
+   "cls": "business",
+   "note": "02 - The Three Financial Statements",
+   "kind": "question",
+   "front": "Where does depreciation expense show up, and where does accumulated depreciation show up?",
+   "back": ""
+  },
+  {
+   "id": "91fb5474af",
+   "cls": "business",
+   "note": "02 - The Three Financial Statements",
+   "kind": "question",
+   "front": "What's the difference between drawings and dividends?",
+   "back": ""
+  },
+  {
+   "id": "966e9b5730",
+   "cls": "business",
+   "note": "03 - The Plug",
+   "kind": "question",
+   "front": "Projected assets $500k, liabilities without the loan $180k, equity $250k. What's the plug, and what does it mean?",
+   "back": ""
+  },
+  {
+   "id": "a3b859f55e",
+   "cls": "business",
+   "note": "03 - The Plug",
+   "kind": "question",
+   "front": "Why is the plug always treated as a *short-term* loan in this course?",
+   "back": ""
+  },
+  {
+   "id": "2781add7c6",
+   "cls": "business",
+   "note": "04 - Statement of Cash Flows",
+   "kind": "question",
+   "front": "Inventory went up $30k. Source or use? Why?",
+   "back": ""
+  },
+  {
+   "id": "9219c8e68d",
+   "cls": "business",
+   "note": "04 - Statement of Cash Flows",
+   "kind": "question",
+   "front": "Why do you add depreciation back to net income?",
+   "back": ""
+  },
+  {
+   "id": "02490d56e3",
+   "cls": "business",
+   "note": "04 - Statement of Cash Flows",
+   "kind": "question",
+   "front": "A company has positive net income but negative operating cash flow. Give two possible reasons.",
+   "back": ""
+  },
+  {
+   "id": "00d5c97485",
+   "cls": "business",
+   "note": "04 - Statement of Cash Flows",
+   "kind": "question",
+   "front": "Which section do dividends go in?",
+   "back": ""
+  },
+  {
+   "id": "58bd0fd08e",
+   "cls": "business",
+   "note": "05 - Financial Ratios",
+   "kind": "question",
+   "front": "Sales $730k and AR $60k. What's the age of receivables?",
+   "back": ""
+  },
+  {
+   "id": "d3b133b420",
+   "cls": "business",
+   "note": "05 - Financial Ratios",
+   "kind": "question",
+   "front": "Current ratio 2.5:1 but acid test 0.4:1. What does that tell you?",
+   "back": ""
+  },
+  {
+   "id": "647044f62c",
+   "cls": "business",
+   "note": "05 - Financial Ratios",
+   "kind": "question",
+   "front": "Interest coverage fell from 6× to 1.5×. Why would a bank care?",
+   "back": ""
+  },
+  {
+   "id": "45c6dfe312",
+   "cls": "business",
+   "note": "05 - Financial Ratios",
+   "kind": "question",
+   "front": "Sales grew 20% but earnings fell. Name two possible causes.",
+   "back": ""
+  },
+  {
+   "id": "79d2a9960a",
+   "cls": "business",
+   "note": "06 - Projected Financial Statements",
+   "kind": "question",
+   "front": "Why do you have to solve for purchases instead of being given them?",
+   "back": ""
+  },
+  {
+   "id": "4bc3f71165",
+   "cls": "business",
+   "note": "06 - Projected Financial Statements",
+   "kind": "question",
+   "front": "Sales rise 25%. Which expenses go up, and which stay the same?",
+   "back": ""
+  },
+  {
+   "id": "222710ecdc",
+   "cls": "business",
+   "note": "06 - Projected Financial Statements",
+   "kind": "question",
+   "front": "Why is the plug the *last* number you calculate?",
+   "back": ""
+  },
+  {
+   "id": "e665e2b094",
+   "cls": "business",
+   "note": "06 - Projected Financial Statements",
+   "kind": "question",
+   "front": "A toy store's balance sheet is dated January 31. Why might the plug understate what it needs to borrow?",
+   "back": ""
+  },
+  {
+   "id": "c027f52dca",
+   "cls": "business",
+   "note": "07 - Working Capital Gap",
+   "kind": "question",
+   "front": "Inventory 120 days, AR 30 days, AP 45 days. What's the gap?",
+   "back": ""
+  },
+  {
+   "id": "32daf8825f",
+   "cls": "business",
+   "note": "07 - Working Capital Gap",
+   "kind": "question",
+   "front": "Why do seasonal businesses have a bigger gap at certain times of year?",
+   "back": ""
+  },
+  {
+   "id": "248fcaffc4",
+   "cls": "business",
+   "note": "07 - Working Capital Gap",
+   "kind": "question",
+   "front": "Give one risk of stretching your payables days too far.",
+   "back": ""
+  },
+  {
+   "id": "e207c3a4fb",
+   "cls": "business",
+   "note": "FAM Study Guide",
+   "kind": "question",
+   "front": "Name the six steps in order without looking.",
+   "back": ""
+  },
+  {
+   "id": "defce69fd8",
+   "cls": "business",
+   "note": "FAM Study Guide",
+   "kind": "question",
+   "front": "Net income was negative. Was it a source or a use of cash?",
+   "back": ""
+  },
+  {
+   "id": "2b790bed0c",
+   "cls": "business",
+   "note": "FAM Study Guide",
+   "kind": "question",
+   "front": "For each of AR, inventory and AP: does *more days* increase or decrease the plug?",
+   "back": ""
+  },
+  {
+   "id": "2392c1140b",
+   "cls": "business",
+   "note": "FAM Study Guide",
+   "kind": "question",
+   "front": "What are the three areas of the risk assessment?",
+   "back": ""
+  },
+  {
+   "id": "d4733babed",
+   "cls": "business",
+   "note": "FAM Study Guide",
+   "kind": "question",
+   "front": "How do you adjust the plug for a seasonal business?",
+   "back": ""
+  },
+  {
+   "id": "b452b5fecb",
+   "cls": "philosophy",
+   "note": "Unit 1 - Introduction to Critical Thinking",
+   "kind": "term",
+   "front": "Critical thinking",
+   "back": "\"the ability to think clearly and rationally about what to do or what to believe\" (Lau, ch. 1)."
+  },
+  {
+   "id": "64a0486593",
+   "cls": "philosophy",
+   "note": "Unit 1 - Introduction to Critical Thinking",
+   "kind": "term",
+   "front": "Theoretical reasoning",
+   "back": "reasoning about what to **believe**."
+  },
+  {
+   "id": "c45b792c83",
+   "cls": "philosophy",
+   "note": "Unit 1 - Introduction to Critical Thinking",
+   "kind": "term",
+   "front": "Practical reasoning",
+   "back": "reasoning about what to **do**."
+  },
+  {
+   "id": "02fb94a6b5",
+   "cls": "philosophy",
+   "note": "Unit 1 - Introduction to Critical Thinking",
+   "kind": "term",
+   "front": "Domain-general skill",
+   "back": "useful in any field, not just one subject."
+  },
+  {
+   "id": "73735f0fee",
+   "cls": "philosophy",
+   "note": "Unit 1 - Introduction to Critical Thinking",
+   "kind": "term",
+   "front": "Premise / conclusion",
+   "back": "the reasons, and the claim they're meant to support (see Unit 2 - Arguments and Standard Form)."
+  },
+  {
+   "id": "3ca0d153a9",
+   "cls": "philosophy",
+   "note": "Unit 1 - Introduction to Critical Thinking",
+   "kind": "question",
+   "front": "Define critical thinking in one sentence. Is it knowledge or a skill?",
+   "back": ""
+  },
+  {
+   "id": "c31f922e5b",
+   "cls": "philosophy",
+   "note": "Unit 1 - Introduction to Critical Thinking",
+   "kind": "question",
+   "front": "What's the difference between theoretical and practical reasoning? Give one example of each.",
+   "back": ""
+  },
+  {
+   "id": "08749cdf4a",
+   "cls": "philosophy",
+   "note": "Unit 1 - Introduction to Critical Thinking",
+   "kind": "question",
+   "front": "List the three skill areas critical thinking involves.",
+   "back": ""
+  },
+  {
+   "id": "776dac33c7",
+   "cls": "philosophy",
+   "note": "Unit 1 - Introduction to Critical Thinking",
+   "kind": "question",
+   "front": "Why does the course rely so heavily on practice exercises?",
+   "back": ""
+  },
+  {
+   "id": "7334cc791a",
+   "cls": "philosophy",
+   "note": "Unit 1 - Introduction to Critical Thinking",
+   "kind": "question",
+   "front": "Put the \"choose your major\" reasoning in standard form. Which premise would you question first, and why?",
+   "back": ""
+  },
+  {
+   "id": "bb9937b196",
+   "cls": "philosophy",
+   "note": "Unit 1 - Introduction to Critical Thinking",
+   "kind": "question",
+   "front": "Why isn't critical thinking the same as being critical?",
+   "back": ""
+  },
+  {
+   "id": "1d28a579d4",
+   "cls": "philosophy",
+   "note": "Unit 2 - Arguments and Standard Form",
+   "kind": "term",
+   "front": "Statement",
+   "back": "(declarative sentence) says that something is the case. It can be true or false, even if it's false or only an opinion. \"Spot is a good dog\" is a statement."
+  },
+  {
+   "id": "4bb3d2ac57",
+   "cls": "philosophy",
+   "note": "Unit 2 - Arguments and Standard Form",
+   "kind": "term",
+   "front": "Interrogative",
+   "back": "asks a question (\"Is Spot a good dog?\"). Not a statement."
+  },
+  {
+   "id": "213f9f0578",
+   "cls": "philosophy",
+   "note": "Unit 2 - Arguments and Standard Form",
+   "kind": "term",
+   "front": "Imperative",
+   "back": "gives a command (\"Be a good dog, Spot\"). Not a statement."
+  },
+  {
+   "id": "5b0279ef42",
+   "cls": "philosophy",
+   "note": "Unit 2 - Arguments and Standard Form",
+   "kind": "term",
+   "front": "Argument",
+   "back": "a set of statements, one of which (the conclusion) is supposed to be supported by the others (the premises)."
+  },
+  {
+   "id": "1f9c5f09dc",
+   "cls": "philosophy",
+   "note": "Unit 2 - Arguments and Standard Form",
+   "kind": "term",
+   "front": "Premise / conclusion indicators",
+   "back": "words that flag which statements are which."
+  },
+  {
+   "id": "12f45dcf9b",
+   "cls": "philosophy",
+   "note": "Unit 2 - Arguments and Standard Form",
+   "kind": "term",
+   "front": "Standard form",
+   "back": "numbered premises, then the conclusion on the last line."
+  },
+  {
+   "id": "78cada922a",
+   "cls": "philosophy",
+   "note": "Unit 2 - Arguments and Standard Form",
+   "kind": "term",
+   "front": "Valid",
+   "back": "no logically possible situation where all premises are true and the conclusion is false."
+  },
+  {
+   "id": "76aae19710",
+   "cls": "philosophy",
+   "note": "Unit 2 - Arguments and Standard Form",
+   "kind": "term",
+   "front": "Invalid",
+   "back": "not valid."
+  },
+  {
+   "id": "714571e167",
+   "cls": "philosophy",
+   "note": "Unit 2 - Arguments and Standard Form",
+   "kind": "term",
+   "front": "Sound",
+   "back": "valid **and** all premises are actually true."
+  },
+  {
+   "id": "a6bde9a104",
+   "cls": "philosophy",
+   "note": "Unit 2 - Arguments and Standard Form",
+   "kind": "term",
+   "front": "Unsound",
+   "back": "not sound (invalid, or has a false premise)."
+  },
+  {
+   "id": "9e1d1b9479",
+   "cls": "philosophy",
+   "note": "Unit 2 - Arguments and Standard Form",
+   "kind": "question",
+   "front": "Use the \"It is true that...\" test on: \"Close the door\", \"Cats are reptiles\", \"Is it raining?\". Which are statements?",
+   "back": ""
+  },
+  {
+   "id": "fd1c23bb45",
+   "cls": "philosophy",
+   "note": "Unit 2 - Arguments and Standard Form",
+   "kind": "question",
+   "front": "Pick out the premises, conclusion, and indicators: \"Since the lake froze, it must have been below zero, because water freezes at zero.\"",
+   "back": ""
+  },
+  {
+   "id": "0921dd88e6",
+   "cls": "philosophy",
+   "note": "Unit 2 - Arguments and Standard Form",
+   "kind": "question",
+   "front": "Put this in standard form: \"Everyone in the club is a student. Priya is in the club. So Priya is a student.\"",
+   "back": ""
+  },
+  {
+   "id": "01dcf4bb3c",
+   "cls": "philosophy",
+   "note": "Unit 2 - Arguments and Standard Form",
+   "kind": "question",
+   "front": "Can an argument be valid and have a false conclusion? Can it be sound and have a false conclusion? Explain.",
+   "back": ""
+  },
+  {
+   "id": "fcd541897b",
+   "cls": "philosophy",
+   "note": "Unit 2 - Arguments and Standard Form",
+   "kind": "question",
+   "front": "Why is \"That statement is invalid\" a category mistake?",
+   "back": ""
+  },
+  {
+   "id": "6a83fd62a3",
+   "cls": "philosophy",
+   "note": "Unit 2 - Arguments and Standard Form",
+   "kind": "question",
+   "front": "In your own words, why does \"the premises are true and the conclusion is true\" *not* by itself make an argument valid?",
+   "back": ""
+  },
+  {
+   "id": "4a3719b7b9",
+   "cls": "philosophy",
+   "note": "Unit 3 - Validity and Argument Forms",
+   "kind": "term",
+   "front": "Logically possible",
+   "back": "not contradictory. (A four-sided triangle is logically impossible. A flying gold mountain is logically possible, even if it breaks the laws of nature.)"
+  },
+  {
+   "id": "b5ea6aee7b",
+   "cls": "philosophy",
+   "note": "Unit 3 - Validity and Argument Forms",
+   "kind": "term",
+   "front": "Invalidating counterexample",
+   "back": "a logically possible scenario where the premises are true and the conclusion is false."
+  },
+  {
+   "id": "a20ba5006b",
+   "cls": "philosophy",
+   "note": "Unit 3 - Validity and Argument Forms",
+   "kind": "term",
+   "front": "Argument form",
+   "back": "the pattern left when you replace statements with variables (p, q, r)."
+  },
+  {
+   "id": "bc52414de6",
+   "cls": "philosophy",
+   "note": "Unit 3 - Validity and Argument Forms",
+   "kind": "term",
+   "front": "Tautology",
+   "back": "a statement that's true no matter what (e.g. \"Either it's raining or it's not\")."
+  },
+  {
+   "id": "16638f385f",
+   "cls": "philosophy",
+   "note": "Unit 3 - Validity and Argument Forms",
+   "kind": "term",
+   "front": "Inconsistent",
+   "back": "premises: cannot all be true at the same time."
+  },
+  {
+   "id": "7f2d71d152",
+   "cls": "philosophy",
+   "note": "Unit 3 - Validity and Argument Forms",
+   "kind": "term",
+   "front": "Circular argument",
+   "back": "(as defined here) the conclusion is also one of the premises."
+  },
+  {
+   "id": "21e6133ce5",
+   "cls": "philosophy",
+   "note": "Unit 3 - Validity and Argument Forms",
+   "kind": "term",
+   "front": "Reductio ad absurdum",
+   "back": "a *method* of arguing by showing the opposite leads to an absurdity."
+  },
+  {
+   "id": "d6262b7c7e",
+   "cls": "philosophy",
+   "note": "Unit 3 - Validity and Argument Forms",
+   "kind": "question",
+   "front": "What exactly do you have to show to prove an argument is invalid?",
+   "back": ""
+  },
+  {
+   "id": "e978ad814a",
+   "cls": "philosophy",
+   "note": "Unit 3 - Validity and Argument Forms",
+   "kind": "question",
+   "front": "Write an invalidating counterexample for: \"All birds have wings. Bats have wings. ∴ Bats are birds.\"",
+   "back": ""
+  },
+  {
+   "id": "1b222d955e",
+   "cls": "philosophy",
+   "note": "Unit 3 - Validity and Argument Forms",
+   "kind": "question",
+   "front": "Name the form: \"If p then q. Not q. ∴ Not p.\" How is it different from denying the antecedent?",
+   "back": ""
+  },
+  {
+   "id": "ed9b167937",
+   "cls": "philosophy",
+   "note": "Unit 3 - Validity and Argument Forms",
+   "kind": "question",
+   "front": "Is this valid? \"If it snows, school is cancelled. School is cancelled. ∴ It snowed.\" (Hint: which form does this resemble, and can you build a counterexample?)",
+   "back": ""
+  },
+  {
+   "id": "b708b167a9",
+   "cls": "philosophy",
+   "note": "Unit 3 - Validity and Argument Forms",
+   "kind": "question",
+   "front": "Why is \"The moon is cheese. ∴ The moon is cheese\" valid even though it's useless?",
+   "back": ""
+  },
+  {
+   "id": "6366288e66",
+   "cls": "philosophy",
+   "note": "Unit 3 - Validity and Argument Forms",
+   "kind": "question",
+   "front": "Explain in one sentence why an argument with inconsistent premises is always valid.",
+   "back": ""
+  },
+  {
+   "id": "02f4fb22c5",
+   "cls": "philosophy",
+   "note": "Unit 3 - Validity and Argument Forms",
+   "kind": "question",
+   "front": "What are the steps of a reductio ad absurdum?",
+   "back": ""
+  },
+  {
+   "id": "8140653971",
+   "cls": "philosophy",
+   "note": "Web Reading - Statements",
+   "kind": "term",
+   "front": "Declarative sentence",
+   "back": "asserts something (\"He is here.\"). **This is a statement.**"
+  },
+  {
+   "id": "f0c205e0ae",
+   "cls": "philosophy",
+   "note": "Web Reading - Statements",
+   "kind": "term",
+   "front": "Interrogative sentence",
+   "back": "asks a question (\"Is he here?\")."
+  },
+  {
+   "id": "95fb39d4c7",
+   "cls": "philosophy",
+   "note": "Web Reading - Statements",
+   "kind": "term",
+   "front": "Imperative sentence",
+   "back": "makes a request or gives a command (\"Come here!\")."
+  },
+  {
+   "id": "1d28a579d4",
+   "cls": "philosophy",
+   "note": "Web Reading - Statements",
+   "kind": "term",
+   "front": "Statement",
+   "back": "any declarative sentence (a complete, grammatical sentence that makes a claim)."
+  },
+  {
+   "id": "3e486cec33",
+   "cls": "philosophy",
+   "note": "Web Reading - Statements",
+   "kind": "question",
+   "front": "Apply the \"It is true that\" test to: \"Turn off the lights\", \"Penguins can swim\", \"Tomorrow's exam\".",
+   "back": ""
+  },
+  {
+   "id": "06e3ca7eb7",
+   "cls": "philosophy",
+   "note": "Web Reading - Statements",
+   "kind": "question",
+   "front": "Why is \"Bridge over troubled waters\" not a statement but \"I am like a bridge over troubled waters\" is?",
+   "back": ""
+  },
+  {
+   "id": "ba1cfd69d0",
+   "cls": "philosophy",
+   "note": "Web Reading - Statements",
+   "kind": "question",
+   "front": "Rewrite as a full statement: \"Paintings stolen from the palace.\"",
+   "back": ""
+  },
+  {
+   "id": "bb50a1f188",
+   "cls": "philosophy",
+   "note": "Web Reading - Statements",
+   "kind": "question",
+   "front": "Give an example of a sentence that is both a statement and a command.",
+   "back": ""
+  },
+  {
+   "id": "7ec95a7d79",
+   "cls": "philosophy",
+   "note": "Web Reading - Valid Patterns",
+   "kind": "term",
+   "front": "Sentence letters",
+   "back": "(P, Q, R…) stand for statements."
+  },
+  {
+   "id": "c2b06ae9cd",
+   "cls": "philosophy",
+   "note": "Web Reading - Valid Patterns",
+   "kind": "term",
+   "front": "Not-Q",
+   "back": "the denial of Q (\"It is not the case that Q\")."
+  },
+  {
+   "id": "82eb25a137",
+   "cls": "philosophy",
+   "note": "Web Reading - Valid Patterns",
+   "kind": "term",
+   "front": "Fallacy",
+   "back": "a mistake in reasoning."
+  },
+  {
+   "id": "a976d69d52",
+   "cls": "philosophy",
+   "note": "Web Reading - Valid Patterns",
+   "kind": "term",
+   "front": "Exclusive or",
+   "back": "P or Q but *not both*."
+  },
+  {
+   "id": "cac31503a5",
+   "cls": "philosophy",
+   "note": "Web Reading - Valid Patterns",
+   "kind": "term",
+   "front": "Inclusive or",
+   "back": "P or Q *or both*. Default in this course: inclusive."
+  },
+  {
+   "id": "a523ff0a4e",
+   "cls": "philosophy",
+   "note": "Web Reading - Valid Patterns",
+   "kind": "question",
+   "front": "Name the form: \"If Betty is on the plane, she's in seat A1. She isn't in seat A1. So she isn't on the plane.\"",
+   "back": ""
+  },
+  {
+   "id": "f490935cef",
+   "cls": "philosophy",
+   "note": "Web Reading - Valid Patterns",
+   "kind": "question",
+   "front": "Why is \"If P then Q. Q. ∴ P\" invalid? Make up a counterexample.",
+   "back": ""
+  },
+  {
+   "id": "064f73cc74",
+   "cls": "philosophy",
+   "note": "Web Reading - Valid Patterns",
+   "kind": "question",
+   "front": "Compare modus tollens and denying the antecedent. What's the difference?",
+   "back": ""
+  },
+  {
+   "id": "54d6187ebd",
+   "cls": "philosophy",
+   "note": "Web Reading - Valid Patterns",
+   "kind": "question",
+   "front": "State the three steps of a reductio ad absurdum.",
+   "back": ""
+  },
+  {
+   "id": "d96b36d013",
+   "cls": "philosophy",
+   "note": "Web Reading - Valid Patterns",
+   "kind": "question",
+   "front": "When is \"P or Q. P. ∴ Not-Q\" valid, and when isn't it?",
+   "back": ""
+  },
+  {
+   "id": "3a26ca173e",
+   "cls": "philosophy",
+   "note": "Web Reading - Valid Patterns",
+   "kind": "question",
+   "front": "Name the form: \"Either we raise taxes or we don't. If we do, people are unhappy. If we don't, people are unhappy. ∴ People will be unhappy.\"",
+   "back": ""
+  }
+ ]
+}

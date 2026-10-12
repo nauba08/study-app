@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0d0f14">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Study">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Study</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="apple-touch-icon" href="icon-180.png">
+  <link rel="icon" href="icon-180.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main id="view" aria-live="polite"></main>
+
+  <nav class="tabbar" aria-label="Sections">
+    <button data-tab="today" aria-label="Today">
+      <svg viewBox="0 0 24 24"><path d="M4 12.5l5 5L20 6.5"/></svg><span>Today</span>
+    </button>
+    <button data-tab="deadlines" aria-label="Deadlines">
+      <svg viewBox="0 0 24 24"><rect x="3.5" y="5" width="17" height="15" rx="3"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg><span>Deadlines</span>
+    </button>
+    <button data-tab="focus" aria-label="Focus timer">
+      <svg viewBox="0 0 24 24"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l2.5 2.5M9.5 2.5h5"/></svg><span>Focus</span>
+    </button>
+    <button data-tab="cards" aria-label="Flashcards">
+      <svg viewBox="0 0 24 24"><rect x="6.5" y="3.5" width="14" height="17" rx="2.5"/><path d="M3.5 7v11a3 3 0 0 0 3 3h9"/></svg><span>Cards</span>
+    </button>
+  </nav>
+
+  <script src="app.js"></script>
+</body>
+</html>
