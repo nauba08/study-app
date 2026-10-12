@@ -92,6 +92,7 @@ h2 { font-size: 13px; color: var(--muted); font-weight: 600; letter-spacing: .06
   display: inline-flex; align-items: center; justify-content: center; gap: 8px;
   padding: 13px 20px; border-radius: 14px; font-weight: 650; background: var(--surface-2);
 }
+a.btn { color: var(--text); }
 .btn.primary { background: var(--text); color: var(--bg); }
 .btn.block { width: 100%; }
 .btn:active, .chip:active, .row:active { transform: scale(.98); }
