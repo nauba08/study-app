@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-12T07:13:25.797Z",
+ "generated": "2026-10-13T14:07:21.461Z",
  "classes": [
   {
    "id": "micro",
@@ -989,7 +989,7 @@
    "cls": "micro",
    "note": "Unit 5 - Consumer Demand",
    "kind": "term",
-   "front": "Rational consumer:",
+   "front": "Rational consumer",
    "back": "has consistent preferences and picks the best affordable bundle. Preferences are learned from *choices* (revealed preference, Samuelson), not from reading minds."
   },
   {
@@ -997,7 +997,7 @@
    "cls": "micro",
    "note": "Unit 5 - Consumer Demand",
    "kind": "term",
-   "front": "Budget line:",
+   "front": "Budget line",
    "back": "all bundles that use up the whole budget: P_M·Q_M + P_S·Q_S = Y."
   },
   {
@@ -1005,7 +1005,7 @@
    "cls": "micro",
    "note": "Unit 5 - Consumer Demand",
    "kind": "term",
-   "front": "Budget set:",
+   "front": "Budget set",
    "back": "the affordable area on and under the budget line."
   },
   {
@@ -1013,7 +1013,7 @@
    "cls": "micro",
    "note": "Unit 5 - Consumer Demand",
    "kind": "term",
-   "front": "Relative price:",
+   "front": "Relative price",
    "back": "price of one good in terms of the other. It is the (negative) slope of the budget line: −P_M/P_S."
   },
   {
@@ -1021,7 +1021,7 @@
    "cls": "micro",
    "note": "Unit 5 - Consumer Demand",
    "kind": "term",
-   "front": "Indifference curve:",
+   "front": "Indifference curve",
    "back": "combinations of goods that are equally good to the consumer. Higher curves are better (\"more is better\")."
   },
   {
@@ -1029,7 +1029,7 @@
    "cls": "micro",
    "note": "Unit 5 - Consumer Demand",
    "kind": "term",
-   "front": "Marginal rate of substitution (MRS):",
+   "front": "Marginal rate of substitution (MRS)",
    "back": "how much of one good you'd give up for one more of the other and still be equally happy. It's the slope of the indifference curve and measures marginal benefit."
   },
   {
@@ -1037,7 +1037,7 @@
    "cls": "micro",
    "note": "Unit 5 - Consumer Demand",
    "kind": "term",
-   "front": "Diminishing MRS:",
+   "front": "Diminishing MRS",
    "back": "curves get flatter as you move right, which reflects a preference for variety."
   },
   {

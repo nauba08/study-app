@@ -507,18 +507,31 @@ function flip() {
   $(".study")?.classList.toggle("flipped", session.flipped);
 }
 
-views.cards = () => (session ? studyView() : deckView());
+views.cards = () => (quiz ? quizView() : session ? studyView() : deckView());
 
 function deckView() {
   const decks = [{ id: "all", short: "All classes", color: "var(--text)" }, ...DATA.classes];
   $("#view").innerHTML = `
     <div class="eyebrow">Active recall</div>
-    <h1>Flashcards</h1>
-    <div class="seg" style="margin-bottom:16px">
-      ${[["both", "Both"], ["term", "Key terms"], ["question", "Questions"]].map(([k, l]) => `<button class="${cardKind === k ? "on" : ""}" data-act="kind" data-kind="${k}">${l}</button>`).join("")}
+    <h1>${{ flash: "Flashcards", quiz: "Quiz", write: "Write" }[cardMode]}</h1>
+    <div class="seg mode-seg" style="margin-bottom:10px">
+      ${[["flash", "Flashcards"], ["quiz", "Multiple choice"], ["write", "Write"]].map(([k, l]) => `<button class="${cardMode === k ? "on" : ""}" data-act="mode-card" data-mode="${k}">${l}</button>`).join("")}
     </div>
+    ${cardMode === "flash" ? `<div class="seg" style="margin-bottom:16px">
+      ${[["both", "Both"], ["term", "Key terms"], ["question", "Questions"]].map(([k, l]) => `<button class="${cardKind === k ? "on" : ""}" data-act="kind" data-kind="${k}">${l}</button>`).join("")}
+    </div>` : `<p class="note" style="margin:0 4px 16px">${cardMode === "quiz"
+      ? "Rounds of 10 multiple-choice questions from your key terms. Pick the term for a definition, or the definition for a term."
+      : "Type what a term means, then compare with your note. Key words you hit turn green. Sometimes you'll get the definition and type the term instead."}</p>`}
     <div class="deck-grid">
-      ${decks.map((d) => {
+      ${cardMode !== "flash" ? decks.map((d) => {
+        const n = cardsFor(d.id, "term").length;
+        return `<button class="panel deck" data-act="quiz-start" data-deck="${d.id}" ${n ? "" : "disabled"}>
+          <span class="dot" style="background:${d.color};width:12px;height:12px"></span>
+          <div class="main"><div class="name">${esc(d.short)}</div>
+            <div class="meta">${n} key terms · ${Math.min(ROUND, n)} questions per round</div></div>
+          <span class="due-badge">›</span>
+        </button>`;
+      }).join("") : decks.map((d) => {
         const n = deckCounts(d.id, cardKind);
         const ready = n.due + Math.min(n.fresh, newAllowance());
         return `<button class="panel deck" data-act="study" data-deck="${d.id}">
@@ -529,11 +542,11 @@ function deckView() {
         </button>`;
       }).join("")}
     </div>
-    <h2>Practice anytime</h2>
+    ${cardMode !== "flash" ? `<p class="note">Right answers move a card forward in your review schedule (when it's due). Wrong answers bring it back sooner. It all counts toward Progress.</p>` : `<h2>Practice anytime</h2>
     <div class="chips">
       ${decks.map((d) => `<button class="chip" data-act="cram" data-deck="${d.id}"><span class="dot" style="background:${d.color}"></span>${esc(d.short)}</button>`).join("")}
     </div>
-    <p class="note">Practice mode shuffles every card in a class and doesn't change your review schedule. Normal study shows cards that are due, plus up to ${NEW_PER_DAY} new cards a day.</p>
+    <p class="note">Practice mode shuffles every card in a class and doesn't change your review schedule. Normal study shows cards that are due, plus up to ${NEW_PER_DAY} new cards a day.</p>`}
   `;
 }
 
@@ -592,6 +605,266 @@ function studyView() {
     </div>
     </div>
   `;
+}
+
+// ------------------------------------------------------- Quiz and Write -----
+// Both modes use Key term cards. Quiz = multiple choice, Write = type your answer.
+const ROUND = 10;
+let cardMode = store.get("cardMode", "flash"); // "flash" | "quiz" | "write"
+let quiz = null; // { deck, mode, items, i, answer, results }
+
+const shuffle = (a) => { for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; };
+const firstLine = (s) => s.split("\n")[0];
+const plain = (s) => s.replace(/\*\*|\*/g, "");
+// Hide the term inside its own definition so the question doesn't give it away
+function maskTerm(def, term) {
+  let out = def;
+  for (const part of term.split(/\s*\/\s*/)) {
+    if (part.length < 3) continue;
+    out = out.replace(new RegExp(part.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"), "gi"), "_____");
+  }
+  return out;
+}
+
+// Pick round cards: due ones first, then shaky ones, then new, then anything
+function pickRound(deck) {
+  const s = srs(), t = today();
+  const pool = shuffle(cardsFor(deck, "term"));
+  const rank = (c) => { const st = s[c.id]; return !st ? 2 : st.due <= t ? 0 : st.box <= 1 ? 1 : 3; };
+  return pool.sort((a, b) => rank(a) - rank(b)).slice(0, ROUND);
+}
+function distractors(card, field, n) {
+  const seen = new Set([plain(firstLine(card[field])).toLowerCase()]);
+  const pick = [];
+  const groups = [
+    DATA.cards.filter((c) => c.kind === "term" && c.note === card.note),
+    DATA.cards.filter((c) => c.kind === "term" && c.cls === card.cls),
+    DATA.cards.filter((c) => c.kind === "term"),
+  ];
+  for (const g of groups) {
+    for (const c of shuffle([...g])) {
+      const key = plain(firstLine(c[field])).toLowerCase();
+      if (pick.length >= n) break;
+      if (c.id === card.id || seen.has(key)) continue;
+      // a wrong definition that mentions the asked-about term would be a giveaway
+      if (field === "back" && plain(c.back).toLowerCase().includes(plain(card.front).toLowerCase())) continue;
+      seen.add(key); pick.push(c);
+    }
+  }
+  return pick;
+}
+function makeItem(card, mode) {
+  if (mode === "quiz") {
+    const type = Math.random() < 0.5 ? "pick-term" : "pick-def";
+    const field = type === "pick-term" ? "front" : "back";
+    const options = shuffle([card, ...distractors(card, field, 3)]).map((c) => ({ id: c.id, text: firstLine(c[field]) }));
+    return { cardId: card.id, type, options };
+  }
+  return { cardId: card.id, type: Math.random() < 0.7 ? "write-def" : "write-term" };
+}
+
+function startQuiz(deck, mode = cardMode) {
+  session = null;
+  const cards = pickRound(deck);
+  quiz = { deck, mode, items: cards.map((c) => makeItem(c, mode)), i: 0, answer: null, results: [] };
+  render();
+}
+
+// Results feed the same schedule as flashcards (and so the Progress tab).
+// Right only moves a card forward if it was new or due, so cramming can't inflate mastery.
+function record(cardId, outcome) {
+  const all = srs(), st = all[cardId], t = today();
+  if (outcome === "wrong") all[cardId] = { box: 0, due: t };
+  else if (outcome === "partial") all[cardId] = { box: st ? Math.max(0, st.box - 1) : 0, due: addDays(t, 1) };
+  else if (!st || st.due <= t) { const box = Math.min(INTERVALS.length - 1, (st ? st.box : 0) + 1); all[cardId] = { box, due: addDays(t, INTERVALS[box]) }; }
+  store.set("srs", all);
+}
+
+// --- grading written answers ---
+const STOP = new Set("the a an and or of to in on for with by from as at is are was were be been being it its this that these those which who whom whose what when where why how than then so such not no but if into onto out up down over under about between through during before after above below can could will would should may might must do does did done has have had having one two more most less least very also just only any all each every some other another same own your you their them they there here our we us he she his her i me my x".split(" "));
+const stem = (w) => w.length > 4 ? w.replace(/(ing|ed|es|ly|s)$/, "") : w;
+const words = (s) => (plain(s).toLowerCase().match(/[a-z0-9]+(?:['-][a-z]+)*/g) || []);
+function keywords(def, term) {
+  const skip = new Set(words(term).map(stem));
+  return [...new Set(words(def).filter((w) => w.length >= 3 && !STOP.has(w)).map(stem))].filter((w) => !skip.has(w));
+}
+function gradeWritten(answer, card) {
+  const keys = keywords(card.back, card.front);
+  const said = new Set(words(answer).map(stem));
+  // close-enough match catches small spelling slips ("elastisity")
+  const hit = (k) => said.has(k) || [...said].some((w) => w.length >= 5 && k.length >= 5 && similar(w, k) >= 0.8);
+  const got = keys.filter(hit);
+  return { keys, got: new Set(got), score: keys.length ? got.length / keys.length : 0 };
+}
+function similar(a, b) {
+  const m = a.length, n = b.length;
+  if (!m || !n) return 0;
+  let prev = Array.from({ length: n + 1 }, (_, j) => j);
+  for (let i = 1; i <= m; i++) {
+    const cur = [i];
+    for (let j = 1; j <= n; j++) cur[j] = Math.min(prev[j] + 1, cur[j - 1] + 1, prev[j - 1] + (a[i - 1] === b[j - 1] ? 0 : 1));
+    prev = cur;
+  }
+  return 1 - prev[n] / Math.max(m, n);
+}
+function checkTerm(answer, card) {
+  const norm = (s) => plain(s).toLowerCase().replace(/\([^)]*\)/g, "").replace(/[^a-z0-9/ ]/g, " ").replace(/\s+/g, " ").trim();
+  const a = norm(answer), full = norm(card.front);
+  const parts = [full, ...full.split("/").map((p) => p.trim())].filter(Boolean);
+  return parts.some((p) => similar(a, p) >= 0.8);
+}
+// Colour the definition: green = key words you used, red = ones you missed
+function highlight(def, g) {
+  return md(def).split(/(<[^>]+>)/).map((seg) => seg.startsWith("<") ? seg
+    : seg.replace(/[A-Za-z0-9]+(?:['-][A-Za-z]+)*/g, (w) => {
+        const k = stem(w.toLowerCase());
+        if (!g.keys.includes(k)) return w;
+        return `<mark class="${g.got.has(k) ? "hit" : "miss"}">${w}</mark>`;
+      })).join("");
+}
+
+function answerQuiz(value) {
+  const item = quiz.items[quiz.i];
+  const card = DATA.cards.find((c) => c.id === item.cardId);
+  if (item.type.startsWith("pick")) {
+    const right = value === card.id;
+    quiz.answer = { choice: value, outcome: right ? "right" : "wrong" };
+    record(card.id, quiz.answer.outcome);
+  } else if (item.type === "write-term") {
+    const right = checkTerm(value, card);
+    quiz.answer = { text: value, outcome: right ? "right" : "wrong" };
+    record(card.id, quiz.answer.outcome);
+  } else {
+    const g = gradeWritten(value, card);
+    quiz.answer = { text: value, grade: g, outcome: null }; // you decide how to count it
+  }
+  render();
+}
+function selfGrade(outcome) {
+  const item = quiz.items[quiz.i];
+  quiz.answer.outcome = outcome;
+  record(item.cardId, outcome);
+  nextQuestion();
+}
+function overrideRight() {
+  const item = quiz.items[quiz.i];
+  quiz.answer.outcome = "right";
+  record(item.cardId, "right");
+  render();
+}
+function nextQuestion() {
+  const item = quiz.items[quiz.i];
+  quiz.results.push({ cardId: item.cardId, type: item.type, outcome: quiz.answer.outcome, text: quiz.answer.text });
+  quiz.i += 1;
+  quiz.answer = null;
+  render();
+}
+
+function quizView() {
+  const { items, i, answer, mode } = quiz;
+  const deckName = quiz.deck === "all" ? "All classes" : quiz.deck.startsWith("note:") ? quiz.deck.slice(5) : cls(quiz.deck).short;
+  const label = mode === "quiz" ? "Quiz" : "Write";
+
+  if (!items.length) {
+    $("#view").innerHTML = `<div class="study-top"><button class="pill" data-act="end">‹ Decks</button></div>
+      <div class="empty">No key terms here to quiz on yet. Try another class, or use Flashcards for review questions.</div>`;
+    return;
+  }
+
+  if (i >= items.length) {
+    const right = quiz.results.filter((r) => r.outcome === "right").length;
+    const partial = quiz.results.filter((r) => r.outcome === "partial").length;
+    const missed = quiz.results.filter((r) => r.outcome !== "right");
+    const pctScore = Math.round(((right + partial * 0.5) / items.length) * 100);
+    $("#view").innerHTML = `
+      <div class="study-top"><button class="pill" data-act="end">‹ Decks</button><span class="sub" style="color:var(--muted)">${esc(deckName)} · ${label}</span></div>
+      <section class="panel" style="padding:28px 22px;text-align:center">
+        <div class="score-ring">${miniRing(pctScore / 100, pctScore >= 80 ? "#4cc38a" : pctScore >= 50 ? "#f2c94c" : "#ff6b6b", 110)}<b>${right}/${items.length}</b></div>
+        <h1 style="margin:12px 0 4px">${pctScore >= 80 ? "Great round" : pctScore >= 50 ? "Getting there" : "Keep going"}</h1>
+        <p style="color:var(--muted);margin:0">${right} right${partial ? ` · ${partial} partly` : ""} · ${items.length - right - partial} missed</p>
+      </section>
+      ${missed.length ? `<h2>Review these</h2><section class="panel list">${missed.map((r) => {
+        const c = DATA.cards.find((x) => x.id === r.cardId);
+        return `<div class="row"><span class="bar" style="background:${r.outcome === "partial" ? "#f2c94c" : "#ff6b6b"}"></span>
+          <div class="main"><div class="title">${md(c.front)}</div><div class="sub">${md(c.back)}</div></div></div>`;
+      }).join("")}</section>` : ""}
+      <button class="btn primary block" style="margin-top:18px" data-act="quiz-again">Next round</button>
+      <button class="btn block" style="margin-top:10px" data-act="end">Back to decks</button>`;
+    return;
+  }
+
+  const item = items[i];
+  const card = DATA.cards.find((c) => c.id === item.cardId);
+  const c = cls(card.cls);
+  const prompt = {
+    "pick-term": ["Which term matches this?", md(maskTerm(card.back, card.front))],
+    "pick-def": ["What does this mean?", md(card.front)],
+    "write-def": ["Explain in your own words", md(card.front)],
+    "write-term": ["Name the term", md(maskTerm(card.back, card.front))],
+  }[item.type];
+  const big = item.type === "pick-def" || item.type === "write-def";
+
+  let body = "";
+  if (item.type.startsWith("pick")) {
+    body = `<div class="opts">${item.options.map((o, n) => {
+      let state = "";
+      if (answer) state = o.id === card.id ? "right" : o.id === answer.choice ? "wrong" : "dim";
+      return `<button class="opt ${state}" data-act="pick" data-id="${o.id}" ${answer ? "disabled" : ""}>
+        <span class="key">${"ABCD"[n]}</span><span>${md(o.text)}</span></button>`;
+    }).join("")}</div>
+    ${answer ? `${answer.outcome === "wrong" && item.type === "pick-term" ? `<p class="note">${md(card.front)}: ${md(card.back)}</p>` : ""}
+      <button class="btn primary block" style="margin-top:14px" data-act="quiz-next">Next</button>` : ""}`;
+  } else if (!answer) {
+    body = `<form id="write-form">
+      <textarea id="write-box" class="write-box" rows="${item.type === "write-def" ? 4 : 1}" placeholder="${item.type === "write-def" ? "Type the meaning…" : "Type the term…"}" autocomplete="off" spellcheck="true"></textarea>
+      <button class="btn primary block" style="margin-top:12px">Check</button>
+      <button type="button" class="btn block" style="margin-top:8px" data-act="write-skip">I don't know</button>
+    </form>`;
+  } else if (item.type === "write-term") {
+    body = `<div class="verdict ${answer.outcome}">${answer.outcome === "right" ? "✓ Correct" : "✗ Not quite"}</div>
+      <div class="panel compare">
+        <div class="lbl">You wrote</div><div>${esc(answer.text || "—")}</div>
+        <div class="lbl">Answer</div><div><b>${md(card.front)}</b></div>
+      </div>
+      ${answer.outcome === "wrong" && answer.text ? `<button class="btn block" style="margin-top:10px" data-act="override">I was right, count it</button>` : ""}
+      <button class="btn primary block" style="margin-top:10px" data-act="quiz-next">Next</button>`;
+  } else {
+    const g = answer.grade;
+    const v = !answer.text ? ["miss", "Skipped"] : g.score >= 0.6 ? ["right", "Very close"] : g.score >= 0.3 ? ["partial", "Partly there"] : ["wrong", "Not quite"];
+    body = `<div class="verdict ${v[0]}">${v[1]}${answer.text ? ` · ${g.got.size}/${g.keys.length} key words` : ""}</div>
+      <div class="panel compare">
+        <div class="lbl">You wrote</div><div>${esc(answer.text || "—")}</div>
+        <div class="lbl">Definition</div><div class="def">${highlight(card.back, g)}</div>
+      </div>
+      <p class="note"><mark class="hit">green</mark> = key words you used · <mark class="miss">red</mark> = ones you missed. Different wording can still be right, so you decide.</p>
+      <div class="rate">
+        <button class="btn" data-act="self" data-o="wrong">Missed</button>
+        <button class="btn" data-act="self" data-o="partial">Partly</button>
+        <button class="btn primary" data-act="self" data-o="right">Got it</button>
+      </div>`;
+  }
+
+  $("#view").innerHTML = `
+    <div class="study-top">
+      <button class="pill" data-act="end">‹ Decks</button>
+      <span class="sub" style="color:var(--muted);font-size:14px">${label} · ${i + 1} of ${items.length}</span>
+    </div>
+    <div class="progress"><div style="width:${(i / items.length) * 100}%;background:${c.color}"></div></div>
+    <section class="panel qcard">
+      <div class="tag"><span class="dot" style="background:${c.color}"></span>${esc(c.short)} · ${esc(card.note)}</div>
+      <div class="qlabel">${prompt[0]}</div>
+      <div class="qtext ${big ? "big" : ""}">${prompt[1]}</div>
+    </section>
+    ${body}
+  `;
+
+  const form = $("#write-form");
+  if (form) {
+    const box = $("#write-box");
+    form.addEventListener("submit", (e) => { e.preventDefault(); answerQuiz(box.value.trim()); });
+    box.addEventListener("keydown", (e) => { if (e.key === "Enter" && !e.shiftKey) { e.preventDefault(); answerQuiz(box.value.trim()); } });
+    setTimeout(() => box.focus(), 50);
+  }
 }
 
 // ------------------------------------------------------------- Progress -----
@@ -799,7 +1072,7 @@ async function restore(file) {
 // ============================================================================
 document.addEventListener("click", (e) => {
   const tabBtn = e.target.closest(".tabbar button");
-  if (tabBtn) { if (tabBtn.dataset.tab === "cards" && tab === "cards") session = null; return go(tabBtn.dataset.tab); }
+  if (tabBtn) { if (tabBtn.dataset.tab === "cards" && tab === "cards") { session = null; quiz = null; } return go(tabBtn.dataset.tab); }
   const el = e.target.closest("[data-act]");
   if (!el) return;
   const { act, id } = el.dataset;
@@ -846,15 +1119,25 @@ document.addEventListener("click", (e) => {
     case "wake": pomo.wake = !pomo.wake; savePomo(); if (timer.running) keepAwake(pomo.wake); render(); break;
     case "kind": cardKind = el.dataset.kind; store.set("cardKind", cardKind); render(); break;
     case "study": startSession(el.dataset.deck, false); break;
-    case "cram": startSession(el.dataset.deck, true); break;
-    case "end": session = null; render(); break;
+    case "cram": quiz = null; startSession(el.dataset.deck, true); break;
+    case "end": session = null; quiz = null; render(); break;
+    case "mode-card": cardMode = el.dataset.mode; store.set("cardMode", cardMode); render(); break;
+    case "quiz-start": startQuiz(el.dataset.deck); break;
+    case "quiz-again": startQuiz(quiz.deck, quiz.mode); break;
+    case "pick": if (quiz && !quiz.answer) answerQuiz(el.dataset.id); break;
+    case "quiz-next": nextQuestion(); break;
+    case "write-skip": answerQuiz(""); break;
+    case "self": selfGrade(el.dataset.o); break;
+    case "override": overrideRight(); break;
     case "prog-cls": progCls = el.dataset.cls; render(); break;
     case "conf": {
       const conf = store.get("conf", {}), n = Number(el.dataset.n);
       conf[el.dataset.note] = conf[el.dataset.note] === n ? 0 : n; // tap the same dot again to clear
       store.set("conf", conf); render(); break;
     }
-    case "study-topic": session = null; tab = "cards"; store.set("tab", "cards"); startSession("note:" + el.dataset.note, false);
+    case "study-topic": session = null; quiz = null; tab = "cards"; store.set("tab", "cards");
+      if (cardMode !== "flash" && cardsFor("note:" + el.dataset.note, "term").length) { startQuiz("note:" + el.dataset.note); break; }
+      startSession("note:" + el.dataset.note, false);
       if (session.queue.length === 0) startSession("note:" + el.dataset.note, true); // nothing due: practise them all
       break;
     case "backup": backup(); break;
@@ -865,6 +1148,12 @@ document.addEventListener("click", (e) => {
 });
 
 document.addEventListener("keydown", (e) => {
+  if (tab === "cards" && quiz && quiz.i < quiz.items.length && !e.target.closest("input, textarea")) {
+    const item = quiz.items[quiz.i];
+    if (!quiz.answer && item.type.startsWith("pick") && ["1", "2", "3", "4"].includes(e.key)) answerQuiz(item.options[Number(e.key) - 1]?.id);
+    else if (quiz.answer && quiz.answer.outcome && e.key === "Enter") nextQuestion();
+    return;
+  }
   if (tab !== "cards" || !session || session.i >= session.queue.length || e.target.closest("input")) return;
   if (e.key === " ") { e.preventDefault(); flip(); }
   else if (session.flipped && ["1", "2", "3"].includes(e.key)) rate(["again", "good", "easy"][Number(e.key) - 1]);
