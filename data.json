@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-13T14:07:21.461Z",
+ "generated": "2026-10-13T14:46:31.063Z",
  "classes": [
   {
    "id": "micro",
@@ -515,6 +515,15 @@
    "note": "Week 4 - IVT and Limits at Infinity",
    "cls": "calc",
    "concepts": []
+  },
+  {
+   "note": "Reading - Ch 2 We Are Primates",
+   "cls": "anthro",
+   "concepts": [
+    "Culture",
+    "Scarcity and Competition",
+    "Scientific Method"
+   ]
   },
   {
    "note": "Week 2 - What Is Anthropology",
@@ -1502,6 +1511,238 @@
    "note": "Week 4 - IVT and Limits at Infinity",
    "kind": "question",
    "front": "What happens to (eˣ + 1)/(eˣ − 2) as x → −∞, versus x → +∞?",
+   "back": ""
+  },
+  {
+   "id": "f2762f0ee9",
+   "cls": "anthro",
+   "note": "Reading - Ch 2 We Are Primates",
+   "kind": "term",
+   "front": "Taxonomic order",
+   "back": "a major subdivision of a class (Primates is an order within the class Mammalia)."
+  },
+  {
+   "id": "27445d6874",
+   "cls": "anthro",
+   "note": "Reading - Ch 2 We Are Primates",
+   "kind": "term",
+   "front": "Prehensile",
+   "back": "able to grasp with fingers, toes, or (in some New World monkeys) the tail."
+  },
+  {
+   "id": "1a11d23ec5",
+   "cls": "anthro",
+   "note": "Reading - Ch 2 We Are Primates",
+   "kind": "term",
+   "front": "Taxa",
+   "back": "(singular *taxon*) any group in a classification (order, family, genus, …)."
+  },
+  {
+   "id": "830af9f5c5",
+   "cls": "anthro",
+   "note": "Reading - Ch 2 We Are Primates",
+   "kind": "term",
+   "front": "Olfaction",
+   "back": "sense of smell."
+  },
+  {
+   "id": "1101d4672b",
+   "cls": "anthro",
+   "note": "Reading - Ch 2 We Are Primates",
+   "kind": "term",
+   "front": "Rhinarium",
+   "back": "the moist nose pad strepsirhines have."
+  },
+  {
+   "id": "a38cfe29f0",
+   "cls": "anthro",
+   "note": "Reading - Ch 2 We Are Primates",
+   "kind": "term",
+   "front": "Prognathism",
+   "back": "how far the face/jaw sticks forward (more in strepsirhines)."
+  },
+  {
+   "id": "ca4aa7cffb",
+   "cls": "anthro",
+   "note": "Reading - Ch 2 We Are Primates",
+   "kind": "term",
+   "front": "Dental formula",
+   "back": "teeth in one quarter of the mouth, front to back (incisors-canines-premolars-molars). Catarrhini and humans: **2-1-2-3** (32 teeth). Platyrrhini: **2-1-3-3**."
+  },
+  {
+   "id": "f00684e1d4",
+   "cls": "anthro",
+   "note": "Reading - Ch 2 We Are Primates",
+   "kind": "term",
+   "front": "Sexual dimorphism",
+   "back": "size or shape differences between males and females."
+  },
+  {
+   "id": "704159e894",
+   "cls": "anthro",
+   "note": "Reading - Ch 2 We Are Primates",
+   "kind": "term",
+   "front": "Ontogeny",
+   "back": "the course of growing up; in the book, how long the young depend on adults."
+  },
+  {
+   "id": "1e74adabe3",
+   "cls": "anthro",
+   "note": "Reading - Ch 2 We Are Primates",
+   "kind": "term",
+   "front": "Brachiation",
+   "back": "swinging arm-over-arm, made possible by flexible shoulders."
+  },
+  {
+   "id": "9fbcaf1a9d",
+   "cls": "anthro",
+   "note": "Reading - Ch 2 We Are Primates",
+   "kind": "term",
+   "front": "Hominin",
+   "back": "(in this book) humans plus every bipedal relative since the split from chimps and bonobos about **7 mya**. Only one genus is alive today: *Homo*."
+  },
+  {
+   "id": "c51ca27feb",
+   "cls": "anthro",
+   "note": "Reading - Ch 2 We Are Primates",
+   "kind": "term",
+   "front": "Frugivory / folivory / insectivory",
+   "back": "diets based mainly on fruit / leaves / insects."
+  },
+  {
+   "id": "50c56ff04c",
+   "cls": "anthro",
+   "note": "Reading - Ch 2 We Are Primates",
+   "kind": "term",
+   "front": "Adaptive radiation",
+   "back": "many new species quickly spreading into empty niches (mammals after the dinosaurs died out)."
+  },
+  {
+   "id": "1ca36c4def",
+   "cls": "anthro",
+   "note": "Reading - Ch 2 We Are Primates",
+   "kind": "term",
+   "front": "Anthropocene",
+   "back": "proposed epoch defined by human impact on Earth; no agreed start date (~12,000 years ago? the 1800s?)."
+  },
+  {
+   "id": "39fb04872a",
+   "cls": "anthro",
+   "note": "Reading - Ch 2 We Are Primates",
+   "kind": "term",
+   "front": "Focal-animal sampling",
+   "back": "following one individual for a set time, then the next on a list. Cuts bias toward the flashiest animals."
+  },
+  {
+   "id": "aed9c30e49",
+   "cls": "anthro",
+   "note": "Reading - Ch 2 We Are Primates",
+   "kind": "term",
+   "front": "Affiliative",
+   "back": "friendly, bonding behaviour (grooming, hugging)."
+  },
+  {
+   "id": "67f4efb38c",
+   "cls": "anthro",
+   "note": "Reading - Ch 2 We Are Primates",
+   "kind": "term",
+   "front": "Egalitarian",
+   "back": "without strong rank differences (bonobos)."
+  },
+  {
+   "id": "48b1ee2b82",
+   "cls": "anthro",
+   "note": "Reading - Ch 2 We Are Primates",
+   "kind": "term",
+   "front": "Bushmeat",
+   "back": "wild animals (including primates) hunted for food."
+  },
+  {
+   "id": "498f05f8bb",
+   "cls": "anthro",
+   "note": "Reading - Ch 2 We Are Primates",
+   "kind": "question",
+   "front": "Give three reasons anthropologists study humans as primates, and one limit of using living primates as models.",
+   "back": ""
+  },
+  {
+   "id": "5afb023028",
+   "cls": "anthro",
+   "note": "Reading - Ch 2 We Are Primates",
+   "kind": "question",
+   "front": "List six distinguishing characteristics of primates. Why does \"most of\" matter?",
+   "back": ""
+  },
+  {
+   "id": "c68f6789fc",
+   "cls": "anthro",
+   "note": "Reading - Ch 2 We Are Primates",
+   "kind": "question",
+   "front": "Compare Strepsirhini and Haplorhini on four traits.",
+   "back": ""
+  },
+  {
+   "id": "993200b1de",
+   "cls": "anthro",
+   "note": "Reading - Ch 2 We Are Primates",
+   "kind": "question",
+   "front": "You see a small monkey in Brazil hanging by its tail. Which infraorder is it, and what's its dental formula?",
+   "back": ""
+  },
+  {
+   "id": "fac20a02ad",
+   "cls": "anthro",
+   "note": "Reading - Ch 2 We Are Primates",
+   "kind": "question",
+   "front": "How are Hominoidea different from Old World monkeys? How does that help with brachiation?",
+   "back": ""
+  },
+  {
+   "id": "bab4e75dd8",
+   "cls": "anthro",
+   "note": "Reading - Ch 2 We Are Primates",
+   "kind": "question",
+   "front": "Put the Cenozoic epochs in order and give one primate event for each.",
+   "back": ""
+  },
+  {
+   "id": "80e98cd5d2",
+   "cls": "anthro",
+   "note": "Reading - Ch 2 We Are Primates",
+   "kind": "question",
+   "front": "What is the rafting hypothesis, and what evidence supports it?",
+   "back": ""
+  },
+  {
+   "id": "30b0519bb6",
+   "cls": "anthro",
+   "note": "Reading - Ch 2 We Are Primates",
+   "kind": "question",
+   "front": "Why is \"humans evolved from chimpanzees\" wrong?",
+   "back": ""
+  },
+  {
+   "id": "88db073035",
+   "cls": "anthro",
+   "note": "Reading - Ch 2 We Are Primates",
+   "kind": "question",
+   "front": "Describe chimpanzee hunting. Which parts resemble human hunter-gatherers, and which don't?",
+   "back": ""
+  },
+  {
+   "id": "a8cd0ab701",
+   "cls": "anthro",
+   "note": "Reading - Ch 2 We Are Primates",
+   "kind": "question",
+   "front": "Give four reasons primates are endangered.",
+   "back": ""
+  },
+  {
+   "id": "2a8bb175dc",
+   "cls": "anthro",
+   "note": "Reading - Ch 2 We Are Primates",
+   "kind": "question",
+   "front": "Use three facts about primates to argue Bigfoot is unlikely.",
    "back": ""
   },
   {
