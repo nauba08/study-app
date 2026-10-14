@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-13T14:46:31.063Z",
+ "generated": "2026-10-14T18:35:55.255Z",
  "classes": [
   {
    "id": "micro",
@@ -518,6 +518,15 @@
   },
   {
    "note": "Reading - Ch 2 We Are Primates",
+   "cls": "anthro",
+   "concepts": [
+    "Culture",
+    "Scarcity and Competition",
+    "Scientific Method"
+   ]
+  },
+  {
+   "note": "Reading - Ch 3 Evolutionary Thought and Theory",
    "cls": "anthro",
    "concepts": [
     "Culture",
@@ -1743,6 +1752,334 @@
    "note": "Reading - Ch 2 We Are Primates",
    "kind": "question",
    "front": "Use three facts about primates to argue Bigfoot is unlikely.",
+   "back": ""
+  },
+  {
+   "id": "e940a3ee4a",
+   "cls": "anthro",
+   "note": "Reading - Ch 3 Evolutionary Thought and Theory",
+   "kind": "term",
+   "front": "Lactase persistence",
+   "back": "(lactose tolerance) still making the enzyme **lactase** as an adult, so you can digest milk. A recent human mutation."
+  },
+  {
+   "id": "1f1b30f68b",
+   "cls": "anthro",
+   "note": "Reading - Ch 3 Evolutionary Thought and Theory",
+   "kind": "term",
+   "front": "Empirical",
+   "back": "based on things that can be observed, measured and analyzed."
+  },
+  {
+   "id": "e67d1bca8d",
+   "cls": "anthro",
+   "note": "Reading - Ch 3 Evolutionary Thought and Theory",
+   "kind": "term",
+   "front": "Law",
+   "back": "(in science) something so certain it never changes, like gravity. Very few things qualify."
+  },
+  {
+   "id": "e354816e69",
+   "cls": "anthro",
+   "note": "Reading - Ch 3 Evolutionary Thought and Theory",
+   "kind": "term",
+   "front": "Hypothesis",
+   "back": "a testable explanation; there must be some way to collect data that supports or rejects it."
+  },
+  {
+   "id": "0ff55695ab",
+   "cls": "anthro",
+   "note": "Reading - Ch 3 Evolutionary Thought and Theory",
+   "kind": "term",
+   "front": "Theory",
+   "back": "(in science) \"as good as it gets\". A body of well-supported hypotheses, *not* a guess."
+  },
+  {
+   "id": "826230b70e",
+   "cls": "anthro",
+   "note": "Reading - Ch 3 Evolutionary Thought and Theory",
+   "kind": "term",
+   "front": "Nonoverlapping magisteria",
+   "back": "Stephen Jay Gould's (1997) idea that science covers the natural world and religion covers morals and values, so they don't have to conflict."
+  },
+  {
+   "id": "58ce3cf9f9",
+   "cls": "anthro",
+   "note": "Reading - Ch 3 Evolutionary Thought and Theory",
+   "kind": "term",
+   "front": "Pseudoscience",
+   "back": "(one sign of it) proposing several hypotheses, rejecting all but one, and accepting the last one *just because it's left*, without testing it."
+  },
+  {
+   "id": "fa20020bd7",
+   "cls": "anthro",
+   "note": "Reading - Ch 3 Evolutionary Thought and Theory",
+   "kind": "term",
+   "front": "Descent with modification / transmutation",
+   "back": "Darwin's preferred words instead of \"evolution\"."
+  },
+  {
+   "id": "25fa8b5998",
+   "cls": "anthro",
+   "note": "Reading - Ch 3 Evolutionary Thought and Theory",
+   "kind": "term",
+   "front": "Inheritance of acquired characteristics",
+   "back": "Lamarck's wrong idea that traits gained during life (a stretched giraffe neck) are passed on."
+  },
+  {
+   "id": "afed0807ce",
+   "cls": "anthro",
+   "note": "Reading - Ch 3 Evolutionary Thought and Theory",
+   "kind": "term",
+   "front": "Uniformitarianism",
+   "back": "the same slow geological processes work now as in the past, so Earth is very old."
+  },
+  {
+   "id": "0b8ef488c5",
+   "cls": "anthro",
+   "note": "Reading - Ch 3 Evolutionary Thought and Theory",
+   "kind": "term",
+   "front": "True-breeding",
+   "back": "a plant variety that always produces the same trait generation after generation."
+  },
+  {
+   "id": "1a793124b9",
+   "cls": "anthro",
+   "note": "Reading - Ch 3 Evolutionary Thought and Theory",
+   "kind": "term",
+   "front": "Genes / alleles",
+   "back": "Mendel's \"factors\" / the one version of each that you get from each parent."
+  },
+  {
+   "id": "2ea5533f1a",
+   "cls": "anthro",
+   "note": "Reading - Ch 3 Evolutionary Thought and Theory",
+   "kind": "term",
+   "front": "Genotype / phenotype",
+   "back": "what the genes code for / how they actually show up in the body."
+  },
+  {
+   "id": "77d728ea20",
+   "cls": "anthro",
+   "note": "Reading - Ch 3 Evolutionary Thought and Theory",
+   "kind": "term",
+   "front": "Mutation",
+   "back": "a copying error in DNA. The **ultimate source of all variation**. Can be neutral, helpful or harmful."
+  },
+  {
+   "id": "6dc6decb45",
+   "cls": "anthro",
+   "note": "Reading - Ch 3 Evolutionary Thought and Theory",
+   "kind": "term",
+   "front": "Gene flow",
+   "back": "genes moving between populations of the same species that don't normally mate."
+  },
+  {
+   "id": "ced5728401",
+   "cls": "anthro",
+   "note": "Reading - Ch 3 Evolutionary Thought and Theory",
+   "kind": "term",
+   "front": "Genetic drift",
+   "back": "**random** change in **allele frequency**, biggest when a small group splits off."
+  },
+  {
+   "id": "2a2c823359",
+   "cls": "anthro",
+   "note": "Reading - Ch 3 Evolutionary Thought and Theory",
+   "kind": "term",
+   "front": "Adaptive radiation",
+   "back": "a species quickly spreads into new niches and splits into many species."
+  },
+  {
+   "id": "31851305bb",
+   "cls": "anthro",
+   "note": "Reading - Ch 3 Evolutionary Thought and Theory",
+   "kind": "term",
+   "front": "Sexual selection",
+   "back": "mate choice shaping traits (firefly displays, bowerbird nests)."
+  },
+  {
+   "id": "936dc65b52",
+   "cls": "anthro",
+   "note": "Reading - Ch 3 Evolutionary Thought and Theory",
+   "kind": "term",
+   "front": "Gradualism / punctuated equilibrium",
+   "back": "slow steady change / long stable periods broken by short bursts of change."
+  },
+  {
+   "id": "dd06b5f934",
+   "cls": "anthro",
+   "note": "Reading - Ch 3 Evolutionary Thought and Theory",
+   "kind": "term",
+   "front": "Species",
+   "back": "(book's definition) a population that can mate and produce **fertile offspring in the wild**."
+  },
+  {
+   "id": "3b0abc7986",
+   "cls": "anthro",
+   "note": "Reading - Ch 3 Evolutionary Thought and Theory",
+   "kind": "term",
+   "front": "Speciation",
+   "back": "how new species form (e.g. geographic isolation)."
+  },
+  {
+   "id": "58c1c7b060",
+   "cls": "anthro",
+   "note": "Reading - Ch 3 Evolutionary Thought and Theory",
+   "kind": "term",
+   "front": "Braided stream model",
+   "back": "populations branch off, evolve separately, then **rejoin** and mix again."
+  },
+  {
+   "id": "645411e20a",
+   "cls": "anthro",
+   "note": "Reading - Ch 3 Evolutionary Thought and Theory",
+   "kind": "term",
+   "front": "Mass extinction",
+   "back": "a period when about half of all species die out (five so far)."
+  },
+  {
+   "id": "f3ec505f6a",
+   "cls": "anthro",
+   "note": "Reading - Ch 3 Evolutionary Thought and Theory",
+   "kind": "term",
+   "front": "Genome / genomics",
+   "back": "an organism's entire genetic makeup / the study of genomes."
+  },
+  {
+   "id": "9dc96555c3",
+   "cls": "anthro",
+   "note": "Reading - Ch 3 Evolutionary Thought and Theory",
+   "kind": "term",
+   "front": "Epigenetics",
+   "back": "how factors **other than DNA** (environment, diet, stress, age, disease) change a phenotype **without changing the genotype**."
+  },
+  {
+   "id": "e27bbece26",
+   "cls": "anthro",
+   "note": "Reading - Ch 3 Evolutionary Thought and Theory",
+   "kind": "term",
+   "front": "Genetic engineering",
+   "back": "deliberately altering genes."
+  },
+  {
+   "id": "42f4960c80",
+   "cls": "anthro",
+   "note": "Reading - Ch 3 Evolutionary Thought and Theory",
+   "kind": "term",
+   "front": "Modern evolutionary synthesis / extended evolutionary synthesis",
+   "back": "natural selection + genetics + mutation, gene flow, drift and speciation / the same plus newer ideas like epigenetics (some use the two terms as the same thing)."
+  },
+  {
+   "id": "c95e4133aa",
+   "cls": "anthro",
+   "note": "Reading - Ch 3 Evolutionary Thought and Theory",
+   "kind": "term",
+   "front": "De-extinction",
+   "back": "bringing back an extinct species by cloning."
+  },
+  {
+   "id": "f3a130ff18",
+   "cls": "anthro",
+   "note": "Reading - Ch 3 Evolutionary Thought and Theory",
+   "kind": "question",
+   "front": "What are the three principles and four methods of science?",
+   "back": ""
+  },
+  {
+   "id": "a47899f479",
+   "cls": "anthro",
+   "note": "Reading - Ch 3 Evolutionary Thought and Theory",
+   "kind": "question",
+   "front": "Why is \"evolution is just a theory\" a misunderstanding of the word *theory*?",
+   "back": ""
+  },
+  {
+   "id": "f84bfbd9a4",
+   "cls": "anthro",
+   "note": "Reading - Ch 3 Evolutionary Thought and Theory",
+   "kind": "question",
+   "front": "Give one example of pseudoscientific reasoning about hypotheses.",
+   "back": ""
+  },
+  {
+   "id": "d2302766b1",
+   "cls": "anthro",
+   "note": "Reading - Ch 3 Evolutionary Thought and Theory",
+   "kind": "question",
+   "front": "Name four people who shaped evolutionary thought before 1859 and what each contributed.",
+   "back": ""
+  },
+  {
+   "id": "b0ec665b93",
+   "cls": "anthro",
+   "note": "Reading - Ch 3 Evolutionary Thought and Theory",
+   "kind": "question",
+   "front": "Summarize Darwin's theory of natural selection in five steps.",
+   "back": ""
+  },
+  {
+   "id": "df6842c43c",
+   "cls": "anthro",
+   "note": "Reading - Ch 3 Evolutionary Thought and Theory",
+   "kind": "question",
+   "front": "Why do Darwin and Wallace share credit for natural selection?",
+   "back": ""
+  },
+  {
+   "id": "475ec53a64",
+   "cls": "anthro",
+   "note": "Reading - Ch 3 Evolutionary Thought and Theory",
+   "kind": "question",
+   "front": "Why did Mendel succeed where earlier pea-plant researchers failed?",
+   "back": ""
+  },
+  {
+   "id": "fec6815947",
+   "cls": "anthro",
+   "note": "Reading - Ch 3 Evolutionary Thought and Theory",
+   "kind": "question",
+   "front": "Explain how lactose tolerance shows mutation and natural selection working together.",
+   "back": ""
+  },
+  {
+   "id": "adadc7cccd",
+   "cls": "anthro",
+   "note": "Reading - Ch 3 Evolutionary Thought and Theory",
+   "kind": "question",
+   "front": "Compare gene flow and genetic drift. Why does drift matter more in small groups?",
+   "back": ""
+  },
+  {
+   "id": "b0e71baef5",
+   "cls": "anthro",
+   "note": "Reading - Ch 3 Evolutionary Thought and Theory",
+   "kind": "question",
+   "front": "Which fits *Homo erectus* better, gradualism or punctuated equilibrium? Why?",
+   "back": ""
+  },
+  {
+   "id": "9d9fe80ebc",
+   "cls": "anthro",
+   "note": "Reading - Ch 3 Evolutionary Thought and Theory",
+   "kind": "question",
+   "front": "What is the braided stream model, and why might it fit humans better than a tree?",
+   "back": ""
+  },
+  {
+   "id": "b5fd6a6764",
+   "cls": "anthro",
+   "note": "Reading - Ch 3 Evolutionary Thought and Theory",
+   "kind": "question",
+   "front": "What is epigenetics? Give an example.",
+   "back": ""
+  },
+  {
+   "id": "857e8038b2",
+   "cls": "anthro",
+   "note": "Reading - Ch 3 Evolutionary Thought and Theory",
+   "kind": "question",
+   "front": "How is the modern evolutionary synthesis different from the extended evolutionary synthesis?",
    "back": ""
   },
   {
